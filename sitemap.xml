@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Home Page -->
+  <url>
+    <loc>https://legal.neuera.app/</loc>
+    <lastmod>2025-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- NetCloak Product Page -->
+  <url>
+    <loc>https://legal.neuera.app/netcloak/</loc>
+    <lastmod>2025-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- NetCloak Privacy Policy - Current -->
+  <url>
+    <loc>https://legal.neuera.app/netcloak/privacy/</loc>
+    <lastmod>2025-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- NetCloak Privacy Policy - Archive -->
+  <url>
+    <loc>https://legal.neuera.app/netcloak/privacy/archive.html</loc>
+    <lastmod>2025-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- NetCloak Privacy Policy - Version 2025-08-05 -->
+  <url>
+    <loc>https://legal.neuera.app/netcloak/privacy/versions/2025-08-05.html</loc>
+    <lastmod>2025-08-05</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <!-- Note: Terms of Service excluded until ready -->
+  
+</urlset>

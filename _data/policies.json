@@ -1,0 +1,28 @@
+{
+  "netcloak": {
+    "name": "NetCloak VPN",
+    "description": "Privacy-focused VPN service for mobile devices",
+    "privacy": {
+      "current_version": "2025-08-05",
+      "versions": [
+        {
+          "version": "2025-08-05",
+          "effective_date": "August 5, 2025",
+          "summary": "Initial privacy policy. Establishes no-logs policy, minimal data collection, and age restriction (18+).",
+          "file": "2025-08-05.html",
+          "highlights": [
+            "No-logs VPN policy",
+            "Minimal data collection (IP addresses only for security)",
+            "18+ age requirement",
+            "Free service supported by ads",
+            "WireGuard encryption protocol"
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "current_version": null,
+      "versions": []
+    }
+  }
+}

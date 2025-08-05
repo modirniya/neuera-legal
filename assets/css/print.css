@@ -1,0 +1,396 @@
+/* ==========================================================================
+   Print Stylesheet for NeuEra Apps Legal Platform
+   ========================================================================== */
+
+@media print {
+  /* Reset and base styles */
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  html {
+    font-size: 12pt;
+  }
+
+  body {
+    font-family: "Times New Roman", Times, serif;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Page setup */
+  @page {
+    margin: 0.75in;
+    size: letter;
+  }
+
+  @page :first {
+    margin-top: 1in;
+  }
+
+  /* Hide non-essential elements */
+  .site-header,
+  .main-nav,
+  .breadcrumb,
+  .site-footer,
+  .document-footer,
+  .btn,
+  .policy-actions,
+  .archive-actions,
+  .product-actions,
+  .version-actions,
+  .table-of-contents,
+  nav[aria-label="Table of Contents"],
+  .future-versions,
+  .contact-section,
+  .features-section,
+  button,
+  input,
+  select,
+  textarea {
+    display: none !important;
+  }
+
+  /* Container and layout */
+  .container {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-content {
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Typography for print */
+  h1, h2, h3, h4, h5, h6 {
+    color: black;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 18pt;
+    text-align: center;
+    margin-bottom: 1em;
+    border-bottom: 2pt solid black;
+    padding-bottom: 0.5em;
+  }
+
+  h2 {
+    font-size: 16pt;
+    margin-top: 1.5em;
+  }
+
+  h3 {
+    font-size: 14pt;
+    margin-top: 1.2em;
+  }
+
+  h4 {
+    font-size: 12pt;
+    margin-top: 1em;
+  }
+
+  h5, h6 {
+    font-size: 11pt;
+    margin-top: 0.8em;
+  }
+
+  p {
+    margin: 0 0 0.8em 0;
+    text-align: justify;
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* Links - show URLs */
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    color: #666;
+  }
+
+  a[href^="mailto:"]:after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    color: #666;
+  }
+
+  /* Don't show URLs for internal links */
+  a[href^="/"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* Lists */
+  ul, ol {
+    margin: 0.8em 0;
+    padding-left: 1.5em;
+  }
+
+  li {
+    margin-bottom: 0.3em;
+    page-break-inside: avoid;
+  }
+
+  /* Document header */
+  .document-header {
+    text-align: center;
+    margin-bottom: 2em;
+    padding-bottom: 1em;
+    border-bottom: 1pt solid black;
+  }
+
+  .document-meta {
+    justify-content: center;
+    gap: 2em;
+    margin-top: 1em;
+    font-size: 10pt;
+  }
+
+  .version-badge,
+  .effective-date {
+    display: inline-block;
+    padding: 0.2em 0.5em;
+    border: 1pt solid black;
+    font-weight: bold;
+  }
+
+  /* Legal document sections */
+  .legal-document section {
+    margin-bottom: 1.5em;
+    page-break-inside: avoid;
+  }
+
+  /* Policy header for print */
+  .policy-header {
+    background: none !important;
+    border: 1pt solid black;
+    padding: 1em;
+    margin-bottom: 1.5em;
+    text-align: center;
+  }
+
+  .policy-meta {
+    justify-content: center;
+  }
+
+  .current-badge {
+    background: none !important;
+    color: black !important;
+    border: 1pt solid black;
+    padding: 0.2em 0.5em;
+    font-weight: bold;
+  }
+
+  /* Version information */
+  .version-number {
+    font-weight: bold;
+    font-size: 12pt;
+  }
+
+  .effective-date {
+    font-size: 10pt;
+  }
+
+  /* Important notices */
+  .important-notice {
+    background: none !important;
+    border: 2pt solid black !important;
+    border-left: 4pt solid black !important;
+    padding: 0.5em !important;
+    margin: 1em 0 !important;
+    page-break-inside: avoid;
+  }
+
+  /* Contact information */
+  address {
+    font-style: normal;
+    margin: 1em 0;
+    page-break-inside: avoid;
+  }
+
+  /* Time elements */
+  time {
+    font-weight: bold;
+  }
+
+  /* Special list styling for print */
+  .no-collect-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .no-collect-list li::before {
+    content: " ";
+    font-weight: bold;
+    margin-right: 0.3em;
+  }
+
+  .commitments-list li {
+    margin-bottom: 0.5em;
+  }
+
+  /* Page breaks */
+  .legal-document section h2 {
+    page-break-before: auto;
+  }
+
+  .legal-document section:nth-of-type(n+3) h2 {
+    page-break-before: always;
+  }
+
+  /* Archive page specific */
+  .archive-header {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  .version-entry {
+    border: 1pt solid black;
+    padding: 1em;
+    margin-bottom: 1.5em;
+    page-break-inside: avoid;
+  }
+
+  .version-entry.current {
+    border: 2pt solid black;
+  }
+
+  .version-header {
+    border-bottom: 1pt solid black;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+  }
+
+  .version-info h4 {
+    margin: 0;
+    display: inline;
+  }
+
+  .version-date {
+    float: right;
+    font-weight: normal;
+  }
+
+  /* Metadata boxes */
+  .version-metadata {
+    background: none !important;
+    border: 1pt solid black;
+    padding: 0.5em;
+    margin: 1em 0;
+    font-size: 9pt;
+  }
+
+  /* Print-specific header */
+  .legal-document::before {
+    content: "Printed from: legal.neuera.app";
+    display: block;
+    text-align: right;
+    font-size: 8pt;
+    color: #666;
+    margin-bottom: 1em;
+    border-bottom: 1pt solid #ccc;
+    padding-bottom: 0.5em;
+  }
+
+  /* Print date */
+  .legal-document::after {
+    content: "Printed on: " counter(page);
+    display: block;
+    text-align: center;
+    font-size: 8pt;
+    color: #666;
+    margin-top: 2em;
+    padding-top: 1em;
+    border-top: 1pt solid #ccc;
+  }
+
+  /* Force page breaks before major sections */
+  #information-sharing,
+  #data-security,
+  #privacy-rights {
+    page-break-before: always;
+  }
+
+  /* Avoid page breaks after headings */
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* Avoid page breaks in lists */
+  ul, ol {
+    page-break-before: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* Keep related content together */
+  .version-entry,
+  .important-notice,
+  address,
+  .document-meta {
+    page-break-inside: avoid;
+  }
+
+  /* Table of contents (if accidentally shown) */
+  .table-of-contents {
+    display: none !important;
+  }
+
+  /* Home page product cards for print */
+  .product-card {
+    border: 1pt solid black;
+    padding: 1em;
+    margin-bottom: 1em;
+    page-break-inside: avoid;
+  }
+
+  .product-header {
+    border-bottom: 1pt solid black;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .document-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .document-list li {
+    margin-bottom: 0.5em;
+    padding: 0.3em;
+    border: 1pt solid #ccc;
+  }
+
+  /* Status badges for print */
+  .status-badge {
+    background: none !important;
+    color: black !important;
+    border: 1pt solid black;
+    padding: 0.1em 0.3em;
+    font-size: 8pt;
+    font-weight: bold;
+  }
+
+  /* Print optimization */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Hide decorative elements */
+  .feature-icon,
+  .document-icon {
+    display: none;
+  }
+}
