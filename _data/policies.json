@@ -21,8 +21,25 @@
       ]
     },
     "terms": {
-      "current_version": null,
-      "versions": []
+      "current_version": "2025-08-20",
+      "versions": [
+        {
+          "version": "2025-08-20",
+          "effective_date": "August 20, 2025",
+          "summary": "Initial Terms of Use. Establishes service rules, acceptable use policy, and legal framework for the free, ad-supported VPN service.",
+          "file": "2025-08-20.html",
+          "highlights": [
+            "Free service with ad-supported model (8-second video ads)",
+            "Three service tiers (Marathon, Balanced, Sprint)",
+            "18+ age requirement",
+            "Comprehensive acceptable use policy",
+            "Anonymous authentication system",
+            "Service provided 'as is' without warranties",
+            "California law governance",
+            "Binding arbitration for disputes"
+          ]
+        }
+      ]
     }
   }
 }
