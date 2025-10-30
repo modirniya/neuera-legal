@@ -41,5 +41,34 @@
         }
       ]
     }
+  },
+  "playlounge": {
+    "name": "Play Lounge",
+    "description": "Multiplayer board game platform for web and mobile",
+    "privacy": {
+      "current_version": "2025-10-29",
+      "versions": [
+        {
+          "version": "2025-10-29",
+          "effective_date": "October 29, 2025",
+          "summary": "Initial privacy policy. Establishes privacy-first design with no accounts, session-only data, and minimal collection practices.",
+          "file": "2025-10-29.html",
+          "highlights": [
+            "No user accounts or personal information required",
+            "Session-only data storage (auto-deleted on app close)",
+            "Safe for all ages (PEGI 3 / Everyone rated)",
+            "COPPA compliant for children's privacy",
+            "No tracking or analytics services",
+            "Transparent advertising disclosure (AdMob/AdSense)",
+            "Anonymous multiplayer gameplay",
+            "Cross-platform (web and Android)"
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "current_version": null,
+      "versions": []
+    }
   }
 }
