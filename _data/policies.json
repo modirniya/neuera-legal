@@ -67,8 +67,26 @@
       ]
     },
     "terms": {
-      "current_version": null,
-      "versions": []
+      "current_version": "2025-10-29",
+      "versions": [
+        {
+          "version": "2025-10-29",
+          "effective_date": "October 29, 2025",
+          "summary": "Initial Terms of Use. Establishes service rules, acceptable use policy, and legal framework for the free, ad-supported multiplayer gaming platform.",
+          "file": "2025-10-29.html",
+          "highlights": [
+            "No-account, session-based service model",
+            "Free service with ad-supported model (AdMob/AdSense)",
+            "All ages appropriate (PEGI 3 / Everyone rated)",
+            "Comprehensive acceptable use policy (fair play, no cheating)",
+            "No communication features (privacy and safety)",
+            "COPPA compliant for children's safety",
+            "Anonymous multiplayer gameplay",
+            "California law governance",
+            "Binding arbitration for disputes"
+          ]
+        }
+      ]
     }
   }
 }
