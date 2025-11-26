@@ -88,5 +88,52 @@
         }
       ]
     }
+  },
+  "odometer": {
+    "name": "Odometer - No-GPS Trip Log",
+    "description": "Privacy-first offline mileage tracking app for Android",
+    "privacy": {
+      "current_version": "2025-11-26",
+      "versions": [
+        {
+          "version": "2025-11-26",
+          "effective_date": "November 26, 2025",
+          "summary": "Initial privacy policy. Establishes zero data collection policy for 100% offline mileage tracking app with local-only storage.",
+          "file": "2025-11-26.html",
+          "highlights": [
+            "Zero data collection - app collects nothing",
+            "100% offline operation - no internet access",
+            "All data stored locally in SQLite database",
+            "No GPS or location tracking",
+            "No analytics, telemetry, or crash reporting",
+            "No third-party services of any kind",
+            "No advertisements",
+            "User has complete control over all data"
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "current_version": "2025-11-26",
+      "versions": [
+        {
+          "version": "2025-11-26",
+          "effective_date": "November 26, 2025",
+          "summary": "Initial Terms of Use. Establishes service rules and legal framework for the free, offline mileage tracking application.",
+          "file": "2025-11-26.html",
+          "highlights": [
+            "Free service with no purchases or subscriptions",
+            "100% offline operation",
+            "User responsible for data accuracy",
+            "Record-keeping tool only - not tax/legal advice",
+            "All data stored locally on user's device",
+            "No age restrictions",
+            "Service provided 'as is'",
+            "California law governance",
+            "Binding arbitration for disputes"
+          ]
+        }
+      ]
+    }
   }
 }
