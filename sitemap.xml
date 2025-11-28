@@ -122,31 +122,31 @@
     <priority>0.5</priority>
   </url>
 
-  <!-- Odometer Product Page -->
+  <!-- Odo Product Page -->
   <url>
     <loc>https://legal.neuera.app/odometer/</loc>
-    <lastmod>2025-11-26</lastmod>
+    <lastmod>2025-11-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Odometer Privacy Policy - Current -->
+  <!-- Odo Privacy Policy - Current -->
   <url>
     <loc>https://legal.neuera.app/odometer/privacy/</loc>
-    <lastmod>2025-11-26</lastmod>
+    <lastmod>2025-11-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Odometer Privacy Policy - Archive -->
+  <!-- Odo Privacy Policy - Archive -->
   <url>
     <loc>https://legal.neuera.app/odometer/privacy/archive.html</loc>
-    <lastmod>2025-11-26</lastmod>
+    <lastmod>2025-11-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
-  <!-- Odometer Privacy Policy - Version 2025-11-26 -->
+  <!-- Odo Privacy Policy - Version 2025-11-26 (archived) -->
   <url>
     <loc>https://legal.neuera.app/odometer/privacy/versions/2025-11-26.html</loc>
     <lastmod>2025-11-26</lastmod>
@@ -154,23 +154,23 @@
     <priority>0.5</priority>
   </url>
 
-  <!-- Odometer Terms of Use - Current -->
+  <!-- Odo Terms of Use - Current -->
   <url>
     <loc>https://legal.neuera.app/odometer/terms/</loc>
-    <lastmod>2025-11-26</lastmod>
+    <lastmod>2025-11-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Odometer Terms of Use - Archive -->
+  <!-- Odo Terms of Use - Archive -->
   <url>
     <loc>https://legal.neuera.app/odometer/terms/archive.html</loc>
-    <lastmod>2025-11-26</lastmod>
+    <lastmod>2025-11-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
-  <!-- Odometer Terms of Use - Version 2025-11-26 -->
+  <!-- Odo Terms of Use - Version 2025-11-26 (archived) -->
   <url>
     <loc>https://legal.neuera.app/odometer/terms/versions/2025-11-26.html</loc>
     <lastmod>2025-11-26</lastmod>

@@ -90,15 +90,31 @@
     }
   },
   "odometer": {
-    "name": "Odometer - No-GPS Trip Log",
-    "description": "Privacy-first offline mileage tracking app for Android",
+    "name": "Odo - Simple Mileage Tracking",
+    "description": "Privacy-first mileage tracking app for iOS and Android",
     "privacy": {
-      "current_version": "2025-11-26",
+      "current_version": "2025-11-28",
       "versions": [
+        {
+          "version": "2025-11-28",
+          "effective_date": "November 28, 2025",
+          "summary": "Updated privacy policy reflecting app rename to Odo and addition of optional location snapshots feature.",
+          "file": "2025-11-28.html",
+          "highlights": [
+            "App renamed from Odometer to Odo",
+            "Optional location snapshots (one-time GPS capture, not tracking)",
+            "All data stored locally in SQLite database",
+            "OpenStreetMap for map display",
+            "Location permission is optional",
+            "No analytics, telemetry, or crash reporting",
+            "No advertisements",
+            "iOS and Android support (Flutter)"
+          ]
+        },
         {
           "version": "2025-11-26",
           "effective_date": "November 26, 2025",
-          "summary": "Initial privacy policy. Establishes zero data collection policy for 100% offline mileage tracking app with local-only storage.",
+          "summary": "Initial privacy policy under Odometer name. Zero data collection policy for 100% offline app.",
           "file": "2025-11-26.html",
           "highlights": [
             "Zero data collection - app collects nothing",
@@ -114,12 +130,28 @@
       ]
     },
     "terms": {
-      "current_version": "2025-11-26",
+      "current_version": "2025-11-28",
       "versions": [
+        {
+          "version": "2025-11-28",
+          "effective_date": "November 28, 2025",
+          "summary": "Updated Terms of Use reflecting app rename to Odo and addition of optional location snapshots feature.",
+          "file": "2025-11-28.html",
+          "highlights": [
+            "App renamed from Odometer to Odo",
+            "iOS and Android support (Flutter)",
+            "Optional location snapshots feature",
+            "Free service with no purchases or subscriptions",
+            "User responsible for data accuracy",
+            "Record-keeping tool only - not tax/legal advice",
+            "All data stored locally on user's device",
+            "California law governance"
+          ]
+        },
         {
           "version": "2025-11-26",
           "effective_date": "November 26, 2025",
-          "summary": "Initial Terms of Use. Establishes service rules and legal framework for the free, offline mileage tracking application.",
+          "summary": "Initial Terms of Use under Odometer name. Establishes service rules for free, offline mileage tracking.",
           "file": "2025-11-26.html",
           "highlights": [
             "Free service with no purchases or subscriptions",
