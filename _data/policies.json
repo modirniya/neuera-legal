@@ -167,5 +167,52 @@
         }
       ]
     }
+  },
+  "kalum": {
+    "name": "Kalum",
+    "description": "Prepaid VoIP international calling app",
+    "privacy": {
+      "current_version": "2026-02-07",
+      "versions": [
+        {
+          "version": "2026-02-07",
+          "effective_date": "February 7, 2026",
+          "summary": "Initial privacy policy for Kalum prepaid VoIP calling service.",
+          "file": "2026-02-07.html",
+          "highlights": [
+            "Phone number verification via Firebase Authentication",
+            "Call metadata collected for billing (destination, duration, timestamps)",
+            "Payment processing via Stripe (we never see card details)",
+            "Voice call audio handled by Twilio (we never access call content)",
+            "No advertising or third-party marketing",
+            "CCPA compliance for California residents",
+            "18+ age requirement",
+            "Data security with encryption in transit and at rest"
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "current_version": "2026-02-07",
+      "versions": [
+        {
+          "version": "2026-02-07",
+          "effective_date": "February 7, 2026",
+          "summary": "Initial Terms of Use for Kalum prepaid VoIP calling service.",
+          "file": "2026-02-07.html",
+          "highlights": [
+            "18+ age requirement",
+            "Prepaid credit system ($5, $10, $25, $50 packages)",
+            "Per-minute billing, rounded up to nearest minute",
+            "7-day refund window for unused credits",
+            "Credits do not expire",
+            "No emergency calling (911, 112, 999, etc.)",
+            "Prohibited uses including robocalls and harassment",
+            "Binding arbitration for disputes",
+            "California law governance"
+          ]
+        }
+      ]
+    }
   }
 }
