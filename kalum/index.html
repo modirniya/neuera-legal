@@ -38,13 +38,13 @@
                 <h2>Kalum</h2>
                 <p class="product-tagline">Pay-as-you-go International Calls</p>
                 <div class="product-info">
-                    <p>Kalum is a prepaid VoIP calling app that lets you make affordable international calls to 200+ countries. No subscriptions, no contracts - just buy credits and call.</p>
+                    <p>Kalum is a prepaid VoIP calling app that lets you make affordable international calls to 216+ countries. No subscriptions, no contracts - just buy credits and call.</p>
                     <div class="product-features">
                         <span class="feature-tag">Prepaid Credits</span>
-                        <span class="feature-tag">200+ Countries</span>
+                        <span class="feature-tag">216+ Countries</span>
                         <span class="feature-tag">No Subscriptions</span>
                         <span class="feature-tag">Per-Minute Billing</span>
-                        <span class="feature-tag">Secure Payments</span>
+                        <span class="feature-tag">Apple Pay & Google Pay</span>
                         <span class="feature-tag">Credits Never Expire</span>
                     </div>
                 </div>
@@ -61,18 +61,19 @@
                         <div class="document-content">
                             <p>Learn how we protect your privacy and handle your data when using our calling service.</p>
                             <div class="document-meta">
-                                <p><strong>Current Version:</strong> 2026-02-07</p>
-                                <p><strong>Effective Date:</strong> February 7, 2026</p>
-                                <p><strong>Last Updated:</strong> <time datetime="2026-02-07">February 7, 2026</time></p>
+                                <p><strong>Current Version:</strong> 2026-05-04</p>
+                                <p><strong>Effective Date:</strong> May 4, 2026</p>
+                                <p><strong>Last Updated:</strong> <time datetime="2026-05-04">May 4, 2026</time></p>
                             </div>
                             <div class="document-highlights">
                                 <h4>Key Points:</h4>
                                 <ul>
-                                    <li>Phone number verification via Firebase</li>
-                                    <li>Call metadata for billing (we never access call audio)</li>
-                                    <li>Payment via Stripe (we never see card details)</li>
-                                    <li>No advertising or third-party marketing</li>
-                                    <li>CCPA compliance for California residents</li>
+                                    <li>Phone number verification via Firebase Authentication</li>
+                                    <li>Call metadata for billing — voice audio handled by Twilio, never by us</li>
+                                    <li>Payments via Stripe (Apple Pay / Google Pay supported); we never see card details</li>
+                                    <li>Manually added contacts only — no device address-book import</li>
+                                    <li>No analytics, telemetry, or advertising SDKs</li>
+                                    <li>GDPR / UK GDPR rights and CCPA / CPRA rights covered</li>
                                 </ul>
                             </div>
                             <div class="document-actions">
@@ -90,18 +91,19 @@
                         <div class="document-content">
                             <p>Terms and conditions for using the Kalum prepaid calling service.</p>
                             <div class="document-meta">
-                                <p><strong>Current Version:</strong> 2026-02-07</p>
-                                <p><strong>Effective Date:</strong> February 7, 2026</p>
-                                <p><strong>Last Updated:</strong> <time datetime="2026-02-07">February 7, 2026</time></p>
+                                <p><strong>Current Version:</strong> 2026-05-04</p>
+                                <p><strong>Effective Date:</strong> May 4, 2026</p>
+                                <p><strong>Last Updated:</strong> <time datetime="2026-05-04">May 4, 2026</time></p>
                             </div>
                             <div class="document-highlights">
                                 <h4>Key Points:</h4>
                                 <ul>
                                     <li>18+ age requirement</li>
-                                    <li>Prepaid credits ($5, $10, $25, $50)</li>
-                                    <li>7-day refund window for unused credits</li>
+                                    <li>Prepaid credits ($2, $10, $25)</li>
+                                    <li>All call attempts billed; minimum balance 1.5× the destination rate</li>
+                                    <li>7-day refund window for fully unused purchases</li>
                                     <li>No emergency calling support</li>
-                                    <li>California law governance</li>
+                                    <li>California law governance; binding arbitration for U.S. users</li>
                                 </ul>
                             </div>
                             <div class="document-actions">
@@ -118,35 +120,34 @@
                 <div class="app-info-content">
                     <div class="info-block">
                         <h3>App Overview</h3>
-                        <p>Kalum is a prepaid Voice over Internet Protocol (VoIP) calling app that enables you to make outbound voice calls to telephone numbers in over 200 countries. Perfect for staying connected with family and friends abroad without expensive international calling plans.</p>
+                        <p>Kalum is a prepaid Voice over Internet Protocol (VoIP) calling app that enables you to make outbound voice calls to telephone numbers in over 216 countries. Perfect for staying connected with family and friends abroad without expensive international calling plans.</p>
                     </div>
                     <div class="info-block">
                         <h3>Core Features</h3>
                         <ul>
-                            <li>Outbound voice calls to 200+ countries</li>
+                            <li>Outbound voice calls to 216+ countries</li>
                             <li>Prepaid credit system (no subscriptions)</li>
                             <li>Transparent per-minute rates shown before calling</li>
                             <li>Call history and transaction records</li>
-                            <li>Saved contacts for quick dialing</li>
+                            <li>Manually added contacts for quick dialing</li>
                             <li>Credits never expire</li>
                         </ul>
                     </div>
                     <div class="info-block">
                         <h3>Pricing</h3>
                         <ul>
-                            <li>Small: $5.00</li>
-                            <li>Medium: $10.00</li>
-                            <li>Large: $25.00</li>
-                            <li>Premium: $50.00</li>
+                            <li>Starter: $2.00</li>
+                            <li>Standard: $10.00</li>
+                            <li>Premium: $25.00</li>
                         </ul>
-                        <p>Rates vary by destination. Calls billed per minute, rounded up.</p>
+                        <p>Rates vary by destination. All call attempts (including unanswered) are billed per minute, rounded up.</p>
                     </div>
                     <div class="info-block">
                         <h3>Platform</h3>
                         <ul>
                             <li>iOS and Android</li>
-                            <li>Phone number verification</li>
-                            <li>Secure Stripe payments</li>
+                            <li>Phone number verification (Firebase)</li>
+                            <li>Secure Stripe payments — Apple Pay & Google Pay supported</li>
                             <li>Twilio-powered calling</li>
                         </ul>
                     </div>
@@ -197,7 +198,7 @@
                     <a href="../#contact">Contact</a>
                 </p>
             </div>
-            <p class="last-updated">Page last updated: <time datetime="2026-02-07">February 7, 2026</time></p>
+            <p class="last-updated">Page last updated: <time datetime="2026-05-04">May 4, 2026</time></p>
         </div>
     </footer>
 </body>

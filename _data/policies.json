@@ -172,8 +172,24 @@
     "name": "Kalum",
     "description": "Prepaid VoIP international calling app",
     "privacy": {
-      "current_version": "2026-02-07",
+      "current_version": "2026-05-04",
       "versions": [
+        {
+          "version": "2026-05-04",
+          "effective_date": "May 4, 2026",
+          "summary": "Aligned with current product. Disclosed Firebase App Check and Crashlytics, clarified manual-only contact entry, added GDPR/UK lawful bases, expanded retention disclosure for financial records, and listed the iOS/Android permissions actually requested.",
+          "file": "2026-05-04.html",
+          "highlights": [
+            "Sub-processors expanded: Firebase Auth, Firebase App Check, Firebase Crashlytics, Twilio, Stripe, Fly.io",
+            "Apple Pay and Google Pay disclosed as Stripe-routed payment methods",
+            "Manually added contacts only — no OS address-book import",
+            "GDPR / UK GDPR rights and lawful bases included",
+            "iOS and Android permissions explicitly listed; AD_ID confirmed removed",
+            "Financial-records retention up to 7 years for tax and anti-fraud",
+            "Standard Contractual Clauses for international transfers",
+            "No analytics, telemetry, or advertising SDKs"
+          ]
+        },
         {
           "version": "2026-02-07",
           "effective_date": "February 7, 2026",
@@ -193,8 +209,26 @@
       ]
     },
     "terms": {
-      "current_version": "2026-02-07",
+      "current_version": "2026-05-04",
       "versions": [
+        {
+          "version": "2026-05-04",
+          "effective_date": "May 4, 2026",
+          "summary": "Aligned with current product. Updated credit packages to a 3-tier structure ($2 / $10 / $25), corrected billing to reflect that all call attempts are billed, corrected the minimum-balance gate to 1.5× the per-minute rate, and added EEA/UK consumer-protection language and Apple/Google platform-additional-terms.",
+          "file": "2026-05-04.html",
+          "highlights": [
+            "Credit packages updated to $2 / $10 / $25 (3-tier)",
+            "All call attempts are billed (including unanswered, busy, failed)",
+            "Minimum balance to start a call: 1.5× the per-minute rate",
+            "Up to 2 concurrent active calls per account",
+            "New-account restrictions on certain high-risk destinations (24h)",
+            "Apple Pay and Google Pay disclosed as payment methods",
+            "EEA/UK 14-day right of withdrawal acknowledged",
+            "Liability cap floor of USD $100",
+            "Apple App Store / Google Play platform-additional-terms section",
+            "Coverage expanded to 216+ destination countries"
+          ]
+        },
         {
           "version": "2026-02-07",
           "effective_date": "February 7, 2026",
