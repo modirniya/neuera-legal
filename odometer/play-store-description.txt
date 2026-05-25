@@ -1,0 +1,39 @@
+SHORT DESCRIPTION (80 characters max):
+Track mileage & expenses for tax deductions. Simple trip logging for drivers.
+
+---
+
+FULL DESCRIPTION:
+
+Odo makes mileage tracking simple. Just enter your odometer reading and go.
+
+Perfect for anyone who drives for work and needs accurate records for tax deductions or expense reimbursements.
+
+📝 SIMPLE TRIP LOGGING
+Enter your start and end odometer readings. Odo calculates the distance automatically. Mark trips as business or personal with one tap.
+
+💰 TRACK ALL YOUR VEHICLE EXPENSES
+- Gas fill-ups
+- Tolls
+- Parking
+- Maintenance & repairs
+- Car washes
+
+📊 IRS-READY REPORTS
+Set your mileage rate and Odo calculates your deduction. Export clean reports anytime you need them for taxes or reimbursement.
+
+🚗 MULTIPLE VEHICLES
+Track mileage and expenses for all your cars, trucks, or work vehicles in one place.
+
+📅 MONTHLY SUMMARIES
+See your total miles driven, business vs personal breakdown, and expenses at a glance.
+
+✨ WHY DRIVERS LOVE ODO
+- No complicated setup - start tracking in seconds
+- Works offline - no internet needed
+- Your data stays on your phone - we never see it
+- Completely free - no ads, no subscriptions
+
+Whether you're a delivery driver, rideshare driver, salesperson, realtor, or just need to track work miles - Odo keeps it simple.
+
+Stop guessing at tax time. Start tracking with Odo today.
