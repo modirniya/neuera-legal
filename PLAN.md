@@ -187,7 +187,7 @@ Essential elements:
 
 ### Step 15: Add Logo/Branding
 - Create or obtain NeuEra Apps logo (SVG preferred)
-- Save to `assets/img/neuera-logo.svg`
+- Save to `assets/img/neuera-icon.png`
 
 ## Phase 5: JavaScript Enhancements (Day 3)
 
