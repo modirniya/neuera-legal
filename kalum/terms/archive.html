@@ -46,12 +46,39 @@
 
                 <article class="version-card current">
                     <div class="version-header">
-                        <h4>Version 2026-05-04</h4>
+                        <h4>Version 2026-05-24</h4>
                         <span class="current-badge">Current Version</span>
                     </div>
                     <div class="version-meta">
-                        <p><strong>Effective Date:</strong> May 4, 2026</p>
+                        <p><strong>Effective Date:</strong> May 24, 2026</p>
                         <p><strong>Status:</strong> Active</p>
+                    </div>
+                    <div class="version-summary">
+                        <p><strong>Summary:</strong> Updated to reflect the rollout of Apple in-app purchases on iOS. Rewrote credit-package pricing to show the actual iOS App Store tiers ($2.99 / $12.99 / $29.99 for 209 / 909 / 2,099 credits) instead of a misleading 1:1 USD-to-credits table. Split the refund policy into Stripe (we refund directly) and Apple (refunds go through reportaproblem.apple.com) sections. Added Apple as a payment processor in §5.7 and called out the in-app account-deletion path in §15.1.</p>
+                        <h5>Key Points:</h5>
+                        <ul>
+                            <li>Real iOS credit tiers disclosed — $2.99 / $12.99 / $29.99 → 209 / 909 / 2,099 credits</li>
+                            <li>In-app amount at time of purchase is authoritative; Android/web may differ</li>
+                            <li>Apple App Store added as iOS payment processor in §5.7</li>
+                            <li>New §6.5 documents Apple's refund flow (reportaproblem.apple.com)</li>
+                            <li>Stripe refund window scoped to Stripe-processed purchases only</li>
+                            <li>§15.1 now references in-app deletion (Settings → Delete Account)</li>
+                            <li>Country count tightened to "approximately 200 destination countries"</li>
+                        </ul>
+                    </div>
+                    <div class="version-actions">
+                        <a href="./index.html" class="btn btn-primary">View Current Version</a>
+                    </div>
+                </article>
+
+                <article class="version-card">
+                    <div class="version-header">
+                        <h4>Version 2026-05-04</h4>
+                        <span class="archived-badge">Archived</span>
+                    </div>
+                    <div class="version-meta">
+                        <p><strong>Effective Date:</strong> May 4, 2026</p>
+                        <p><strong>Status:</strong> Superseded by 2026-05-24</p>
                     </div>
                     <div class="version-summary">
                         <p><strong>Summary:</strong> Aligned the Terms with the current product. Updated credit packages to a 3-tier structure ($2 / $10 / $25), corrected the call-billing section to reflect that all attempts are billed (including unanswered calls), corrected the minimum-balance gate to 1.5× the per-minute rate, expanded refund and consumer-protection language for EEA/UK users, added an Apple/Google platform additional-terms section, and tightened anti-fraud and prohibited-use clauses.</p>
@@ -70,7 +97,7 @@
                         </ul>
                     </div>
                     <div class="version-actions">
-                        <a href="./index.html" class="btn btn-primary">View Current Version</a>
+                        <a href="./versions/2026-05-04.html" class="btn btn-secondary">View Archived Copy</a>
                     </div>
                 </article>
 

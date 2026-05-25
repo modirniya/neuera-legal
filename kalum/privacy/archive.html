@@ -46,12 +46,40 @@
 
                 <article class="version-card current">
                     <div class="version-header">
-                        <h4>Version 2026-05-04</h4>
+                        <h4>Version 2026-05-24</h4>
                         <span class="current-badge">Current Version</span>
                     </div>
                     <div class="version-meta">
-                        <p><strong>Effective Date:</strong> May 4, 2026</p>
+                        <p><strong>Effective Date:</strong> May 24, 2026</p>
                         <p><strong>Status:</strong> Active</p>
+                    </div>
+                    <div class="version-summary">
+                        <p><strong>Summary:</strong> Updated to reflect the rollout of Apple in-app purchases on iOS and additional opt-in flows. Added Apple Inc. as a sub-processor for App Store payment processing, restructured the iOS/Android permissions section to list optional permissions invoked by the Stripe SDK (camera, photo library, biometrics, approximate location) and the new opt-in contact-import flow (iOS Contacts / Android <code>READ_CONTACTS</code>), removed absolute "does not collect" claims that no longer fit the optional flows, and noted that account deletion is now available in-app at Settings → Delete Account.</p>
+                        <h5>Key Points:</h5>
+                        <ul>
+                            <li>Apple Inc. added as a sub-processor for iOS in-app purchase processing (StoreKit)</li>
+                            <li>Stripe role clarified: Android and web only (cards, Google Pay)</li>
+                            <li>New §2.5 documents opt-in permission flows (contacts, camera, photo library, biometrics, location)</li>
+                            <li>Android <code>READ_CONTACTS</code> added for opt-in "Import from contacts"</li>
+                            <li>iOS permission section expanded to list all Info.plist declarations</li>
+                            <li>Apple privacy policy added to third-party notices</li>
+                            <li>Account deletion now available in-app (Settings → Delete Account)</li>
+                            <li>Receipt-validation idempotency added to security controls</li>
+                        </ul>
+                    </div>
+                    <div class="version-actions">
+                        <a href="./index.html" class="btn btn-primary">View Current Version</a>
+                    </div>
+                </article>
+
+                <article class="version-card">
+                    <div class="version-header">
+                        <h4>Version 2026-05-04</h4>
+                        <span class="archived-badge">Archived</span>
+                    </div>
+                    <div class="version-meta">
+                        <p><strong>Effective Date:</strong> May 4, 2026</p>
+                        <p><strong>Status:</strong> Superseded by 2026-05-24</p>
                     </div>
                     <div class="version-summary">
                         <p><strong>Summary:</strong> Aligned the Privacy Policy with the current product. Disclosed Firebase App Check and Firebase Crashlytics, clarified that contacts are manually added in-app (no device address-book import), added GDPR/UK lawful bases and EEA/UK rights, expanded data-retention disclosure for financial records, and enumerated the iOS/Android permissions actually requested by the app (no AD_ID, no location).</p>
@@ -68,7 +96,7 @@
                         </ul>
                     </div>
                     <div class="version-actions">
-                        <a href="./index.html" class="btn btn-primary">View Current Version</a>
+                        <a href="./versions/2026-05-04.html" class="btn btn-secondary">View Archived Copy</a>
                     </div>
                 </article>
 

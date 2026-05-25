@@ -172,8 +172,24 @@
     "name": "Kalum",
     "description": "Prepaid VoIP international calling app",
     "privacy": {
-      "current_version": "2026-05-04",
+      "current_version": "2026-05-24",
       "versions": [
+        {
+          "version": "2026-05-24",
+          "effective_date": "May 24, 2026",
+          "summary": "Updated to reflect the rollout of Apple in-app purchases on iOS and additional opt-in flows. Added Apple Inc. as a sub-processor for App Store payment processing, restructured the iOS/Android permissions section to list optional permissions invoked by the Stripe SDK (camera, photo library, biometrics, approximate location) and the new opt-in contact-import flow (iOS Contacts / Android READ_CONTACTS), removed absolute 'does not collect' claims that no longer fit the optional flows, and noted that account deletion is now available in-app at Settings → Delete Account.",
+          "file": "2026-05-24.html",
+          "highlights": [
+            "Apple Inc. added as a sub-processor for iOS in-app purchase processing (StoreKit)",
+            "Stripe role clarified: Android and web only (cards, Google Pay)",
+            "New §2.5 documents opt-in permission flows (contacts, camera, photo library, biometrics, location)",
+            "Android READ_CONTACTS added for opt-in 'Import from contacts'",
+            "iOS permission section expanded to list all Info.plist declarations",
+            "Apple privacy policy added to third-party notices",
+            "Account deletion now available in-app (Settings → Delete Account)",
+            "Receipt-validation idempotency added to security controls"
+          ]
+        },
         {
           "version": "2026-05-04",
           "effective_date": "May 4, 2026",
@@ -209,8 +225,23 @@
       ]
     },
     "terms": {
-      "current_version": "2026-05-04",
+      "current_version": "2026-05-24",
       "versions": [
+        {
+          "version": "2026-05-24",
+          "effective_date": "May 24, 2026",
+          "summary": "Updated to reflect the rollout of Apple in-app purchases on iOS. Rewrote credit-package pricing to show the actual iOS App Store tiers ($2.99 / $12.99 / $29.99 for 209 / 909 / 2,099 credits) instead of a misleading 1:1 USD-to-credits table. Split the refund policy into Stripe (we refund directly) and Apple (refunds go through reportaproblem.apple.com) sections. Added Apple as a payment processor in §5.7 and called out the in-app account-deletion path in §15.1.",
+          "file": "2026-05-24.html",
+          "highlights": [
+            "Real iOS credit tiers disclosed — $2.99 / $12.99 / $29.99 → 209 / 909 / 2,099 credits",
+            "In-app amount at time of purchase is authoritative; Android/web may differ",
+            "Apple App Store added as iOS payment processor in §5.7",
+            "New §6.5 documents Apple's refund flow (reportaproblem.apple.com)",
+            "Stripe refund window scoped to Stripe-processed purchases only",
+            "§15.1 now references in-app deletion (Settings → Delete Account)",
+            "Country count tightened to 'approximately 200 destination countries'"
+          ]
+        },
         {
           "version": "2026-05-04",
           "effective_date": "May 4, 2026",
