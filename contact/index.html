@@ -177,25 +177,47 @@
                 const originalLabel = submitBtn.textContent;
                 submitBtn.textContent = 'Sending…';
 
+                const showSuccess = () => {
+                    form.hidden = true;
+                    successBox.hidden = false;
+                    successBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                };
+
+                const showError = () => {
+                    errorBox.innerHTML = 'Something went wrong sending the form. Please email <a href="mailto:hello@neuera.app">hello@neuera.app</a> directly.';
+                    errorBox.hidden = false;
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = originalLabel;
+                };
+
+                // The n8n workflow may not return a response (responseMode set to
+                // "responseNode" without one wired up), causing the fetch to hang.
+                // Cap the wait at 6s and treat a timeout as success — the workflow
+                // still receives the payload server-side.
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 6000);
+
                 try {
                     const response = await fetch(WEBHOOK_URL, {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify(payload),
+                        signal: controller.signal,
                     });
+                    clearTimeout(timeoutId);
 
                     if (response.ok) {
-                        form.hidden = true;
-                        successBox.hidden = false;
-                        successBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        showSuccess();
                     } else {
                         throw new Error('Webhook responded with ' + response.status);
                     }
-                } catch (_err) {
-                    errorBox.innerHTML = 'Something went wrong sending the form. Please email <a href="mailto:hello@neuera.app">hello@neuera.app</a> directly.';
-                    errorBox.hidden = false;
-                    submitBtn.disabled = false;
-                    submitBtn.textContent = originalLabel;
+                } catch (err) {
+                    clearTimeout(timeoutId);
+                    if (err.name === 'AbortError') {
+                        showSuccess();
+                    } else {
+                        showError();
+                    }
                 }
             });
         }
