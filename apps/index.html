@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="NeuEra Apps — an independent app studio building mobile and web apps in the United States.">
-    <meta property="og:title" content="NeuEra Apps">
-    <meta property="og:description" content="Mobile and web apps, built independently in the United States.">
+    <meta name="description" content="The apps NeuEra Apps builds and maintains — NetCloak VPN, Play Lounge, Odo, and Kalum.">
+    <meta property="og:title" content="Apps — NeuEra Apps">
+    <meta property="og:description" content="Mobile and web apps built and maintained by NeuEra Apps.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://legal.neuera.app/">
-    <title>NeuEra Apps</title>
+    <meta property="og:url" content="https://legal.neuera.app/apps/">
+    <title>Apps — NeuEra Apps</title>
     <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="canonical" href="https://legal.neuera.app/">
+    <link rel="canonical" href="https://legal.neuera.app/apps/">
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to content</a>
@@ -22,7 +22,7 @@
                 <span>NeuEra Apps</span>
             </a>
             <nav class="main-nav" aria-label="Main">
-                <a href="/apps/">Apps</a>
+                <a href="/apps/" class="active">Apps</a>
                 <a href="/about/">About</a>
                 <a href="/legal/">Legal</a>
                 <a href="/contact/" class="btn btn--outline btn--sm">Contact</a>
@@ -30,40 +30,38 @@
         </div>
     </header>
 
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <div class="container">
+            <a href="/">Home</a>
+            <span class="breadcrumb-sep">/</span>
+            <span aria-current="page">Apps</span>
+        </div>
+    </nav>
+
     <main id="main">
         <section class="hero">
             <div class="container">
-                <span class="hero__eyebrow">NeuEra Apps</span>
-                <h1>Mobile and web apps, built independently in the United States.</h1>
-                <p>An independent app studio. A small portfolio of apps that we ship, maintain, and stand behind.</p>
-                <div class="hero__actions">
-                    <a href="/apps/" class="btn btn--primary">Browse apps</a>
-                    <a href="/about/" class="btn btn--ghost">About the studio &rarr;</a>
-                </div>
+                <span class="hero__eyebrow">Apps</span>
+                <h1>The portfolio.</h1>
+                <p>Four apps across privacy, gaming, productivity, and communication. Each is shipped, maintained, and supported by the studio.</p>
             </div>
         </section>
 
         <section class="section">
             <div class="container">
-                <div class="section-head">
-                    <span class="section-head__eyebrow">Apps</span>
-                    <h2>What we make</h2>
-                    <p>Four apps across privacy, gaming, productivity, and communication. Each is built and maintained by the studio.</p>
-                </div>
-
                 <div class="app-grid">
                     <a href="/netcloak/" class="app-card app-card--netcloak">
                         <div class="app-card__head">
                             <span class="app-card__icon" aria-hidden="true"><img src="/assets/img/netcloak-icon.png" alt=""></span>
                             <div>
                                 <h3 class="app-card__title">NetCloak VPN</h3>
-                                <span class="app-card__tag">Android</span>
+                                <span class="app-card__tag">Android &middot; Free</span>
                             </div>
                         </div>
-                        <p class="app-card__description">A no-logs VPN service for mobile. Free and ad-supported, built on WireGuard.</p>
+                        <p class="app-card__description">A no-logs VPN service built on WireGuard. Free and ad-supported, with three service tiers and minimal data collection. 18+.</p>
                         <div class="app-card__meta">
                             <span>Privacy &middot; Networking</span>
-                            <span class="app-card__arrow">View &rarr;</span>
+                            <span class="app-card__arrow">Open page &rarr;</span>
                         </div>
                     </a>
 
@@ -72,13 +70,13 @@
                             <span class="app-card__icon" aria-hidden="true"><img src="/assets/img/playlounge-icon.jpg" alt=""></span>
                             <div>
                                 <h3 class="app-card__title">Play Lounge</h3>
-                                <span class="app-card__tag">Web &middot; Android</span>
+                                <span class="app-card__tag">Web &middot; Android &middot; Free</span>
                             </div>
                         </div>
-                        <p class="app-card__description">A multiplayer board game platform. No accounts, session-only data, all ages.</p>
+                        <p class="app-card__description">A multiplayer board game platform designed around privacy. No accounts, session-only data, and no communication features. Safe for all ages.</p>
                         <div class="app-card__meta">
                             <span>Gaming &middot; Social</span>
-                            <span class="app-card__arrow">View &rarr;</span>
+                            <span class="app-card__arrow">Open page &rarr;</span>
                         </div>
                     </a>
 
@@ -87,13 +85,13 @@
                             <span class="app-card__icon" aria-hidden="true"><img src="/assets/img/odo-icon.png" alt=""></span>
                             <div>
                                 <h3 class="app-card__title">Odo</h3>
-                                <span class="app-card__tag">Android</span>
+                                <span class="app-card__tag">Android &middot; Free</span>
                             </div>
                         </div>
-                        <p class="app-card__description">A simple mileage tracker. Local-first storage with optional GPS snapshots.</p>
+                        <p class="app-card__description">A simple mileage tracker. All data stays in a local SQLite database. Optional one-shot GPS snapshots, no tracking, no ads.</p>
                         <div class="app-card__meta">
                             <span>Productivity</span>
-                            <span class="app-card__arrow">View &rarr;</span>
+                            <span class="app-card__arrow">Open page &rarr;</span>
                         </div>
                     </a>
 
@@ -102,40 +100,18 @@
                             <span class="app-card__icon" aria-hidden="true"><img src="/assets/img/kalum-icon.jpg" alt=""></span>
                             <div>
                                 <h3 class="app-card__title">Kalum</h3>
-                                <span class="app-card__tag">iOS &middot; Android</span>
+                                <span class="app-card__tag">iOS &middot; Android &middot; Pay-as-you-go</span>
                             </div>
                         </div>
-                        <p class="app-card__description">Pay-as-you-go international calls. Prepaid credit, no subscriptions, roughly 200 destinations.</p>
+                        <p class="app-card__description">Prepaid international calling to roughly 200 destinations. No subscriptions, no contracts. Per-minute billing in credits you top up. 18+.</p>
                         <div class="app-card__meta">
                             <span>Communication</span>
-                            <span class="app-card__arrow">View &rarr;</span>
+                            <span class="app-card__arrow">Open page &rarr;</span>
                         </div>
                     </a>
-                </div>
 
-                <p style="margin-top: var(--space-6); color: var(--ink-3); font-size: var(--text-sm);">More on the way.</p>
-            </div>
-        </section>
-
-        <section class="section section--alt">
-            <div class="container">
-                <div class="section-head">
-                    <span class="section-head__eyebrow">How we build</span>
-                    <h2>A small studio, deliberately so.</h2>
-                </div>
-
-                <div class="principles">
-                    <div class="principle">
-                        <h3>Independent</h3>
-                        <p>No outside funding, no growth targets dictated by investors. We choose what to build and when to ship it.</p>
-                    </div>
-                    <div class="principle">
-                        <h3>Long-lived</h3>
-                        <p>Apps stay maintained. Updates happen because they're needed, not on a quarterly release calendar.</p>
-                    </div>
-                    <div class="principle">
-                        <h3>Built carefully</h3>
-                        <p>We&rsquo;d rather ship fewer things, well-considered, than chase every category. The portfolio stays small on purpose.</p>
+                    <div class="app-card app-card--placeholder">
+                        More on the way.
                     </div>
                 </div>
             </div>

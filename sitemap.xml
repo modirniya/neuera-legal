@@ -1,64 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <!-- Home Page -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Marketing pages -->
   <url>
     <loc>https://legal.neuera.app/</loc>
-    <lastmod>2026-05-04</lastmod>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://legal.neuera.app/apps/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://legal.neuera.app/about/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://legal.neuera.app/contact/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://legal.neuera.app/legal/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-  <!-- NetCloak Product Page -->
+  <!-- Product pages -->
   <url>
     <loc>https://legal.neuera.app/netcloak/</loc>
-    <lastmod>2025-08-20</lastmod>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://legal.neuera.app/playlounge/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://legal.neuera.app/odometer/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://legal.neuera.app/kalum/</loc>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- NetCloak Privacy Policy - Current -->
+  <!-- NetCloak legal documents -->
   <url>
     <loc>https://legal.neuera.app/netcloak/privacy/</loc>
     <lastmod>2025-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- NetCloak Privacy Policy - Archive -->
   <url>
     <loc>https://legal.neuera.app/netcloak/privacy/archive.html</loc>
     <lastmod>2025-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
-  <!-- NetCloak Privacy Policy - Version 2025-08-05 -->
   <url>
     <loc>https://legal.neuera.app/netcloak/privacy/versions/2025-08-05.html</loc>
     <lastmod>2025-08-05</lastmod>
     <changefreq>never</changefreq>
     <priority>0.5</priority>
   </url>
-
-  <!-- NetCloak Terms of Use - Current -->
   <url>
     <loc>https://legal.neuera.app/netcloak/terms/</loc>
     <lastmod>2025-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- NetCloak Terms of Use - Archive -->
   <url>
     <loc>https://legal.neuera.app/netcloak/terms/archive.html</loc>
     <lastmod>2025-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
-  <!-- NetCloak Terms of Use - Version 2025-08-20 -->
   <url>
     <loc>https://legal.neuera.app/netcloak/terms/versions/2025-08-20.html</loc>
     <lastmod>2025-08-20</lastmod>
@@ -66,55 +97,37 @@
     <priority>0.5</priority>
   </url>
 
-  <!-- Play Lounge Product Page -->
-  <url>
-    <loc>https://legal.neuera.app/playlounge/</loc>
-    <lastmod>2025-10-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Play Lounge Privacy Policy - Current -->
+  <!-- Play Lounge legal documents -->
   <url>
     <loc>https://legal.neuera.app/playlounge/privacy/</loc>
     <lastmod>2025-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- Play Lounge Privacy Policy - Archive -->
   <url>
     <loc>https://legal.neuera.app/playlounge/privacy/archive.html</loc>
     <lastmod>2025-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
-  <!-- Play Lounge Privacy Policy - Version 2025-10-29 -->
   <url>
     <loc>https://legal.neuera.app/playlounge/privacy/versions/2025-10-29.html</loc>
     <lastmod>2025-10-29</lastmod>
     <changefreq>never</changefreq>
     <priority>0.5</priority>
   </url>
-
-  <!-- Play Lounge Terms of Use - Current -->
   <url>
     <loc>https://legal.neuera.app/playlounge/terms/</loc>
     <lastmod>2025-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- Play Lounge Terms of Use - Archive -->
   <url>
     <loc>https://legal.neuera.app/playlounge/terms/archive.html</loc>
     <lastmod>2025-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
-  <!-- Play Lounge Terms of Use - Version 2025-10-29 -->
   <url>
     <loc>https://legal.neuera.app/playlounge/terms/versions/2025-10-29.html</loc>
     <lastmod>2025-10-29</lastmod>
@@ -122,55 +135,37 @@
     <priority>0.5</priority>
   </url>
 
-  <!-- Odo Product Page -->
-  <url>
-    <loc>https://legal.neuera.app/odometer/</loc>
-    <lastmod>2025-11-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Odo Privacy Policy - Current -->
+  <!-- Odo legal documents -->
   <url>
     <loc>https://legal.neuera.app/odometer/privacy/</loc>
     <lastmod>2025-11-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- Odo Privacy Policy - Archive -->
   <url>
     <loc>https://legal.neuera.app/odometer/privacy/archive.html</loc>
     <lastmod>2025-11-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
-  <!-- Odo Privacy Policy - Version 2025-11-26 (archived) -->
   <url>
     <loc>https://legal.neuera.app/odometer/privacy/versions/2025-11-26.html</loc>
     <lastmod>2025-11-26</lastmod>
     <changefreq>never</changefreq>
     <priority>0.5</priority>
   </url>
-
-  <!-- Odo Terms of Use - Current -->
   <url>
     <loc>https://legal.neuera.app/odometer/terms/</loc>
     <lastmod>2025-11-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- Odo Terms of Use - Archive -->
   <url>
     <loc>https://legal.neuera.app/odometer/terms/archive.html</loc>
     <lastmod>2025-11-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
-  <!-- Odo Terms of Use - Version 2025-11-26 (archived) -->
   <url>
     <loc>https://legal.neuera.app/odometer/terms/versions/2025-11-26.html</loc>
     <lastmod>2025-11-26</lastmod>
@@ -178,87 +173,61 @@
     <priority>0.5</priority>
   </url>
 
-  <!-- Kalum Product Page -->
-  <url>
-    <loc>https://legal.neuera.app/kalum/</loc>
-    <lastmod>2026-05-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Kalum Privacy Policy - Current -->
+  <!-- Kalum legal documents -->
   <url>
     <loc>https://legal.neuera.app/kalum/privacy/</loc>
     <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- Kalum Privacy Policy - Archive -->
   <url>
     <loc>https://legal.neuera.app/kalum/privacy/archive.html</loc>
     <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
-  <!-- Kalum Privacy Policy - Version 2026-05-24 -->
   <url>
     <loc>https://legal.neuera.app/kalum/privacy/versions/2026-05-24.html</loc>
     <lastmod>2026-05-24</lastmod>
     <changefreq>never</changefreq>
     <priority>0.5</priority>
   </url>
-
-  <!-- Kalum Privacy Policy - Version 2026-05-04 (archived) -->
   <url>
     <loc>https://legal.neuera.app/kalum/privacy/versions/2026-05-04.html</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>never</changefreq>
     <priority>0.5</priority>
   </url>
-
-  <!-- Kalum Privacy Policy - Version 2026-02-07 (archived) -->
   <url>
     <loc>https://legal.neuera.app/kalum/privacy/versions/2026-02-07.html</loc>
     <lastmod>2026-02-07</lastmod>
     <changefreq>never</changefreq>
     <priority>0.5</priority>
   </url>
-
-  <!-- Kalum Terms of Use - Current -->
   <url>
     <loc>https://legal.neuera.app/kalum/terms/</loc>
     <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- Kalum Terms of Use - Archive -->
   <url>
     <loc>https://legal.neuera.app/kalum/terms/archive.html</loc>
     <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
-  <!-- Kalum Terms of Use - Version 2026-05-24 -->
   <url>
     <loc>https://legal.neuera.app/kalum/terms/versions/2026-05-24.html</loc>
     <lastmod>2026-05-24</lastmod>
     <changefreq>never</changefreq>
     <priority>0.5</priority>
   </url>
-
-  <!-- Kalum Terms of Use - Version 2026-05-04 (archived) -->
   <url>
     <loc>https://legal.neuera.app/kalum/terms/versions/2026-05-04.html</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>never</changefreq>
     <priority>0.5</priority>
   </url>
-
-  <!-- Kalum Terms of Use - Version 2026-02-07 (archived) -->
   <url>
     <loc>https://legal.neuera.app/kalum/terms/versions/2026-02-07.html</loc>
     <lastmod>2026-02-07</lastmod>

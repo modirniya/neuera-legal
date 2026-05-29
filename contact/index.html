@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact NeuEra Apps — questions, partnerships, press, or feedback about an app.">
+    <meta property="og:title" content="Contact — NeuEra Apps">
+    <meta property="og:description" content="Get in touch with NeuEra Apps.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://legal.neuera.app/contact/">
+    <title>Contact — NeuEra Apps</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="canonical" href="https://legal.neuera.app/contact/">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="brand" aria-label="NeuEra Apps home">
+                <span class="brand-mark"><img src="/assets/img/neuera-icon.png" alt=""></span>
+                <span>NeuEra Apps</span>
+            </a>
+            <nav class="main-nav" aria-label="Main">
+                <a href="/apps/">Apps</a>
+                <a href="/about/">About</a>
+                <a href="/legal/">Legal</a>
+                <a href="/contact/" class="btn btn--outline btn--sm active">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <div class="container">
+            <a href="/">Home</a>
+            <span class="breadcrumb-sep">/</span>
+            <span aria-current="page">Contact</span>
+        </div>
+    </nav>
+
+    <main id="main">
+        <section class="hero">
+            <div class="container">
+                <span class="hero__eyebrow">Contact</span>
+                <h1>Get in touch.</h1>
+                <p>Questions about an app, partnership ideas, press inquiries, or general feedback &mdash; send us a note. We read everything that comes in.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container container--narrow">
+                <form id="contact-form" class="form" novalidate>
+                    <div class="form-row">
+                        <div class="field">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" autocomplete="name" required>
+                        </div>
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" autocomplete="email" required>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Briefly &mdash; what is this about?" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+
+                    <!-- Honeypot anti-spam: real users leave this blank -->
+                    <div style="position: absolute; left: -9999px;" aria-hidden="true">
+                        <label>Do not fill this out: <input type="text" name="company" tabindex="-1" autocomplete="off"></label>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn--primary">Send message</button>
+                        <span class="form-note">Or email <a href="mailto:hello@neuera.app">hello@neuera.app</a></span>
+                    </div>
+
+                    <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <a href="/" class="brand" style="margin-bottom: var(--space-3);">
+                        <span class="brand-mark"><img src="/assets/img/neuera-icon.png" alt=""></span>
+                        <span>NeuEra Apps</span>
+                    </a>
+                    <p>An independent app studio based in the United States.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Apps</h4>
+                    <ul>
+                        <li><a href="/netcloak/">NetCloak VPN</a></li>
+                        <li><a href="/playlounge/">Play Lounge</a></li>
+                        <li><a href="/odometer/">Odo</a></li>
+                        <li><a href="/kalum/">Kalum</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Studio</h4>
+                    <ul>
+                        <li><a href="/about/">About</a></li>
+                        <li><a href="/contact/">Contact</a></li>
+                        <li><a href="/legal/">Legal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Elsewhere</h4>
+                    <ul>
+                        <li><a href="https://apps.apple.com/us/developer/neuera-apps/id1895216844" rel="noopener" target="_blank">App Store</a></li>
+                        <li><a href="https://play.google.com/store/apps/developer?id=NeuEra+Apps" rel="noopener" target="_blank">Google Play</a></li>
+                        <li><a href="mailto:hello@neuera.app">hello@neuera.app</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 NeuEra Apps LLC. All rights reserved.</span>
+                <span>Built independently in the United States.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Shared n8n support webhook (originally named for Play Lounge, now universal).
+        // CORS is open; the `source` field below tells the workflow which surface it came from.
+        const WEBHOOK_URL = 'https://n8n.neuera.app/webhook/support-playlounge';
+
+        const form = document.getElementById('contact-form');
+        const status = document.getElementById('form-status');
+        const submitBtn = form.querySelector('button[type="submit"]');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            status.className = 'form-status';
+            status.textContent = '';
+
+            if (!form.checkValidity()) {
+                form.reportValidity();
+                return;
+            }
+
+            const data = Object.fromEntries(new FormData(form).entries());
+
+            // Honeypot check
+            if (data.company) return;
+
+            data.source = 'legal.neuera.app/contact';
+            data.timestamp = new Date().toISOString();
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending…';
+
+            try {
+                const res = await fetch(WEBHOOK_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data),
+                });
+                if (!res.ok) throw new Error('Bad response ' + res.status);
+
+                status.className = 'form-status is-success';
+                status.textContent = 'Thanks — your message is on its way. We typically reply within a few days.';
+                form.reset();
+            } catch (err) {
+                status.className = 'form-status is-error';
+                status.innerHTML = 'Something went wrong sending the form. Please email <a href="mailto:hello@neuera.app">hello@neuera.app</a> directly.';
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Send message';
+            }
+        });
+    </script>
+</body>
+</html>
