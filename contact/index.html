@@ -50,39 +50,40 @@
         <section class="section">
             <div class="container container--narrow">
                 <form id="contact-form" class="form" novalidate>
+                    <!-- Honeypot anti-spam: real users leave this blank -->
+                    <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" style="position: absolute; left: -9999px; height: 0; width: 0; opacity: 0;">
+
                     <div class="form-row">
                         <div class="field">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" autocomplete="name" required>
+                            <label for="name">Your name</label>
+                            <input type="text" id="name" name="name" autocomplete="name" maxlength="80" required>
                         </div>
                         <div class="field">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" autocomplete="email" required>
+                            <label for="email">Email address</label>
+                            <input type="email" id="email" name="email" autocomplete="email" maxlength="200" required>
+                            <span class="hint">We&rsquo;ll only use this to reply.</span>
                         </div>
                     </div>
 
                     <div class="field">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" placeholder="Briefly &mdash; what is this about?" required>
+                        <label for="message">Your message</label>
+                        <textarea id="message" name="message" rows="6" minlength="10" maxlength="5000" placeholder="Tell us what&rsquo;s going on." required></textarea>
                     </div>
 
-                    <div class="field">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="6" required></textarea>
-                    </div>
-
-                    <!-- Honeypot anti-spam: real users leave this blank -->
-                    <div style="position: absolute; left: -9999px;" aria-hidden="true">
-                        <label>Do not fill this out: <input type="text" name="company" tabindex="-1" autocomplete="off"></label>
+                    <div id="form-error" class="form-status" role="alert" hidden>
+                        Something went wrong sending the form. Please email <a href="mailto:hello@neuera.app">hello@neuera.app</a> directly.
                     </div>
 
                     <div class="form-actions">
                         <button type="submit" class="btn btn--primary">Send message</button>
                         <span class="form-note">Or email <a href="mailto:hello@neuera.app">hello@neuera.app</a></span>
                     </div>
-
-                    <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
                 </form>
+
+                <div id="form-success" class="form-status" hidden style="padding: var(--space-6); border-radius: var(--radius-xl);">
+                    <h3 style="margin: 0 0 var(--space-2);">Message received.</h3>
+                    <p style="margin: 0; color: var(--ink-2);">We&rsquo;ve got your message and will reply to the email you gave us. No need to do anything else &mdash; just keep an eye on your inbox.</p>
+                </div>
             </div>
         </section>
     </main>
@@ -131,54 +132,73 @@
     </footer>
 
     <script>
-        // Shared n8n support webhook (originally named for Play Lounge, now universal).
-        // CORS is open; the `source` field below tells the workflow which surface it came from.
+        // Shared NeuEra support endpoint — multi-app, identified by the `app` field.
+        // This payload shape mirrors Kalum's contract so the same n8n workflow handles it.
         const WEBHOOK_URL = 'https://n8n.neuera.app/webhook/support-playlounge';
 
         const form = document.getElementById('contact-form');
-        const status = document.getElementById('form-status');
-        const submitBtn = form.querySelector('button[type="submit"]');
+        const submitBtn = document.getElementById('form-error') ? form.querySelector('button[type="submit"]') : null;
+        const errorBox = document.getElementById('form-error');
+        const successBox = document.getElementById('form-success');
 
-        form.addEventListener('submit', async (e) => {
-            e.preventDefault();
-            status.className = 'form-status';
-            status.textContent = '';
+        function validEmail(s) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(s);
+        }
 
-            if (!form.checkValidity()) {
-                form.reportValidity();
-                return;
-            }
+        if (form && submitBtn && errorBox && successBox) {
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                errorBox.hidden = true;
 
-            const data = Object.fromEntries(new FormData(form).entries());
+                const data = new FormData(form);
+                const payload = {
+                    app: 'neuera-apps',
+                    category: 'general',
+                    name: (data.get('name') || '').toString().trim(),
+                    email: (data.get('email') || '').toString().trim(),
+                    message: (data.get('message') || '').toString().trim(),
+                    honeypot: (data.get('company') || '').toString(),
+                    userAgent: navigator.userAgent,
+                    timestamp: new Date().toISOString(),
+                };
 
-            // Honeypot check
-            if (data.company) return;
+                if (!payload.name || !payload.email || !payload.message) {
+                    errorBox.textContent = 'Please fill in every field.';
+                    errorBox.hidden = false;
+                    return;
+                }
+                if (!validEmail(payload.email)) {
+                    errorBox.textContent = 'That email address doesn’t look right.';
+                    errorBox.hidden = false;
+                    return;
+                }
 
-            data.source = 'legal.neuera.app/contact';
-            data.timestamp = new Date().toISOString();
+                submitBtn.disabled = true;
+                const originalLabel = submitBtn.textContent;
+                submitBtn.textContent = 'Sending…';
 
-            submitBtn.disabled = true;
-            submitBtn.textContent = 'Sending…';
+                try {
+                    const response = await fetch(WEBHOOK_URL, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload),
+                    });
 
-            try {
-                const res = await fetch(WEBHOOK_URL, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(data),
-                });
-                if (!res.ok) throw new Error('Bad response ' + res.status);
-
-                status.className = 'form-status is-success';
-                status.textContent = 'Thanks — your message is on its way. We typically reply within a few days.';
-                form.reset();
-            } catch (err) {
-                status.className = 'form-status is-error';
-                status.innerHTML = 'Something went wrong sending the form. Please email <a href="mailto:hello@neuera.app">hello@neuera.app</a> directly.';
-            } finally {
-                submitBtn.disabled = false;
-                submitBtn.textContent = 'Send message';
-            }
-        });
+                    if (response.ok) {
+                        form.hidden = true;
+                        successBox.hidden = false;
+                        successBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    } else {
+                        throw new Error('Webhook responded with ' + response.status);
+                    }
+                } catch (_err) {
+                    errorBox.innerHTML = 'Something went wrong sending the form. Please email <a href="mailto:hello@neuera.app">hello@neuera.app</a> directly.';
+                    errorBox.hidden = false;
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = originalLabel;
+                }
+            });
+        }
     </script>
 </body>
 </html>

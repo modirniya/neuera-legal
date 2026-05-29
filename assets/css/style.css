@@ -992,19 +992,30 @@ ul.commitments-list li { margin-bottom: var(--space-2); }
   font-size: var(--text-sm);
   padding: var(--space-3) var(--space-4);
   border-radius: var(--radius);
+  border: 1px solid transparent;
+}
+
+.form-status[hidden] {
   display: none;
 }
 
-.form-status.is-success {
-  display: block;
+.form-status.is-success,
+#form-success {
   background: var(--success-soft);
-  color: var(--success);
+  color: var(--ink);
+  border-color: #86efac;
 }
 
-.form-status.is-error {
-  display: block;
+.form-status.is-error,
+#form-error {
   background: #fee2e2;
   color: var(--danger);
+  border-color: #fca5a5;
+}
+
+.form-status a {
+  color: inherit;
+  text-decoration: underline;
 }
 
 /* --------------------------------------------------------------------------
