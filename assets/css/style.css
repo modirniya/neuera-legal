@@ -125,7 +125,11 @@ body {
   font-size: var(--text-base);
   line-height: 1.6;
   color: var(--ink);
-  background: var(--surface);
+  background:
+    radial-gradient(1200px 700px at 50% -200px, rgba(79, 70, 229, 0.08), transparent 60%),
+    linear-gradient(180deg, var(--surface) 0%, #faf9f5 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: 'cv11', 'ss01';
@@ -393,7 +397,7 @@ ul.commitments-list li { margin-bottom: var(--space-2); }
    -------------------------------------------------------------------------- */
 .site-footer {
   background:
-    linear-gradient(180deg, rgba(79, 70, 229, 0.05) 0%, var(--surface-alt) 35%);
+    linear-gradient(180deg, rgba(79, 70, 229, 0.10) 0%, var(--surface-alt) 40%);
   border-top: 1px solid var(--border);
   padding: var(--space-8) 0 var(--space-7);
   margin-top: var(--space-9);
@@ -571,8 +575,8 @@ ul.commitments-list li { margin-bottom: var(--space-2); }
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(900px 500px at 12% -10%, rgba(79, 70, 229, 0.12), transparent 55%),
-    radial-gradient(700px 400px at 92% 110%, rgba(79, 70, 229, 0.08), transparent 55%);
+    radial-gradient(900px 500px at 12% -10%, rgba(79, 70, 229, 0.22), transparent 55%),
+    radial-gradient(700px 400px at 92% 110%, rgba(244, 114, 182, 0.14), transparent 55%);
   pointer-events: none;
   z-index: -1;
 }
@@ -806,8 +810,8 @@ ul.commitments-list li { margin-bottom: var(--space-2); }
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(900px 500px at 12% -10%, color-mix(in srgb, var(--card-accent, var(--accent)) 14%, transparent), transparent 55%),
-    radial-gradient(700px 400px at 92% 110%, color-mix(in srgb, var(--card-accent, var(--accent)) 8%, transparent), transparent 55%);
+    radial-gradient(900px 500px at 12% -10%, color-mix(in srgb, var(--card-accent, var(--accent)) 26%, transparent), transparent 55%),
+    radial-gradient(700px 400px at 92% 110%, color-mix(in srgb, var(--card-accent, var(--accent)) 14%, transparent), transparent 55%);
   pointer-events: none;
   z-index: -1;
 }
