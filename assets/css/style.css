@@ -126,8 +126,10 @@ body {
   line-height: 1.6;
   color: var(--ink);
   background:
-    radial-gradient(1200px 700px at 50% -200px, rgba(79, 70, 229, 0.08), transparent 60%),
-    linear-gradient(180deg, var(--surface) 0%, #faf9f5 100%);
+    radial-gradient(1100px 700px at 8% -150px, rgba(79, 70, 229, 0.22), transparent 55%),
+    radial-gradient(900px 600px at 95% 12%, rgba(244, 114, 182, 0.18), transparent 55%),
+    radial-gradient(1000px 700px at 50% 95%, rgba(34, 197, 194, 0.12), transparent 55%),
+    linear-gradient(180deg, var(--surface) 0%, #f5f4ee 100%);
   background-attachment: fixed;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
@@ -253,7 +255,10 @@ ul.commitments-list li { margin-bottom: var(--space-2); }
 }
 
 .section--alt {
-  background: var(--surface-alt);
+  background:
+    linear-gradient(180deg, rgba(79, 70, 229, 0.06) 0%, rgba(244, 114, 182, 0.04) 100%),
+    var(--surface-alt);
+  position: relative;
 }
 
 /* --------------------------------------------------------------------------
@@ -397,7 +402,7 @@ ul.commitments-list li { margin-bottom: var(--space-2); }
    -------------------------------------------------------------------------- */
 .site-footer {
   background:
-    linear-gradient(180deg, rgba(79, 70, 229, 0.10) 0%, var(--surface-alt) 40%);
+    linear-gradient(180deg, rgba(79, 70, 229, 0.22) 0%, rgba(244, 114, 182, 0.10) 35%, var(--surface-alt) 70%);
   border-top: 1px solid var(--border);
   padding: var(--space-8) 0 var(--space-7);
   margin-top: var(--space-9);
@@ -575,8 +580,9 @@ ul.commitments-list li { margin-bottom: var(--space-2); }
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(900px 500px at 12% -10%, rgba(79, 70, 229, 0.22), transparent 55%),
-    radial-gradient(700px 400px at 92% 110%, rgba(244, 114, 182, 0.14), transparent 55%);
+    radial-gradient(900px 600px at 10% -20%, rgba(79, 70, 229, 0.45), transparent 55%),
+    radial-gradient(800px 500px at 95% 110%, rgba(244, 114, 182, 0.32), transparent 55%),
+    radial-gradient(600px 500px at 55% 50%, rgba(34, 197, 194, 0.16), transparent 60%);
   pointer-events: none;
   z-index: -1;
 }
@@ -657,8 +663,9 @@ ul.commitments-list li { margin-bottom: var(--space-2); }
   --card-accent: var(--accent);
   display: flex;
   flex-direction: column;
-  background: var(--surface);
-  border: 1px solid var(--border);
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--card-accent) 10%, var(--surface)) 0%, var(--surface) 55%);
+  border: 1px solid color-mix(in srgb, var(--card-accent) 35%, var(--border));
   border-radius: var(--radius-xl);
   padding: var(--space-6);
   text-decoration: none;
@@ -669,11 +676,11 @@ ul.commitments-list li { margin-bottom: var(--space-2); }
 }
 
 .app-card:hover {
-  transform: translateY(-2px);
-  border-color: var(--border-strong);
+  transform: translateY(-3px);
+  border-color: color-mix(in srgb, var(--card-accent) 70%, transparent);
   text-decoration: none;
   color: inherit;
-  box-shadow: 0 8px 24px -12px rgba(14, 17, 22, 0.12);
+  box-shadow: 0 16px 40px -16px color-mix(in srgb, var(--card-accent) 50%, transparent);
 }
 
 .app-card__head {
@@ -810,8 +817,8 @@ ul.commitments-list li { margin-bottom: var(--space-2); }
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(900px 500px at 12% -10%, color-mix(in srgb, var(--card-accent, var(--accent)) 26%, transparent), transparent 55%),
-    radial-gradient(700px 400px at 92% 110%, color-mix(in srgb, var(--card-accent, var(--accent)) 14%, transparent), transparent 55%);
+    radial-gradient(900px 600px at 10% -20%, color-mix(in srgb, var(--card-accent, var(--accent)) 50%, transparent), transparent 55%),
+    radial-gradient(800px 500px at 95% 110%, color-mix(in srgb, var(--card-accent, var(--accent)) 30%, transparent), transparent 55%);
   pointer-events: none;
   z-index: -1;
 }
