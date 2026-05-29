@@ -392,7 +392,8 @@ ul.commitments-list li { margin-bottom: var(--space-2); }
    Footer
    -------------------------------------------------------------------------- */
 .site-footer {
-  background: var(--surface-alt);
+  background:
+    linear-gradient(180deg, rgba(79, 70, 229, 0.05) 0%, var(--surface-alt) 35%);
   border-top: 1px solid var(--border);
   padding: var(--space-8) 0 var(--space-7);
   margin-top: var(--space-9);
@@ -560,6 +561,20 @@ ul.commitments-list li { margin-bottom: var(--space-2); }
 .hero {
   padding: var(--space-10) 0 var(--space-9);
   border-bottom: 1px solid var(--border);
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(900px 500px at 12% -10%, rgba(79, 70, 229, 0.12), transparent 55%),
+    radial-gradient(700px 400px at 92% 110%, rgba(79, 70, 229, 0.08), transparent 55%);
+  pointer-events: none;
+  z-index: -1;
 }
 
 .hero__eyebrow {
@@ -781,6 +796,20 @@ ul.commitments-list li { margin-bottom: var(--space-2); }
 .product-hero {
   padding: var(--space-9) 0;
   border-bottom: 1px solid var(--border);
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.product-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(900px 500px at 12% -10%, color-mix(in srgb, var(--card-accent, var(--accent)) 14%, transparent), transparent 55%),
+    radial-gradient(700px 400px at 92% 110%, color-mix(in srgb, var(--card-accent, var(--accent)) 8%, transparent), transparent 55%);
+  pointer-events: none;
+  z-index: -1;
 }
 
 .product-hero__head {
