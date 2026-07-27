@@ -46,8 +46,25 @@
     "name": "Play Lounge",
     "description": "Multiplayer board game platform for web and mobile",
     "privacy": {
-      "current_version": "2025-10-29",
+      "current_version": "2026-07-27",
       "versions": [
+        {
+          "version": "2026-07-27",
+          "effective_date": "July 27, 2026",
+          "summary": "Documents the addition of optional push-to-talk voice chat in private invite-link games. Adds a dedicated Voice Chat section covering availability, opt-in, what is processed, and user controls; corrects two now-inaccurate claims in the do-not-collect list (\"Microphone or audio recordings\" and \"no chat features\"); discloses the self-operated LiveKit voice relay; and states that voice is unavailable to children and unavailable in random matchmaking. No other privacy practices changed.",
+          "file": "2026-07-27.html",
+          "highlights": [
+            "New Section 8 \"Voice Chat\" — availability, opt-in, processing, and controls",
+            "Voice limited to private invite-link games; never offered in random matchmaking",
+            "Voice requires a 13+ age confirmation; children cannot enable the microphone",
+            "Audio is relayed live and never recorded, stored, transcribed, or listened to",
+            "Push-to-talk: the microphone is open only while the talk button is held",
+            "LiveKit voice relay (self-operated on Fly.io) disclosed as infrastructure",
+            "Google Play Data Safety entry added for audio: collected, not stored",
+            "Corrected \"no chat features\" to \"no text chat features\"",
+            "All other practices unchanged — no accounts, no tracking, no permanent storage"
+          ]
+        },
         {
           "version": "2025-10-29",
           "effective_date": "October 29, 2025",
@@ -67,8 +84,25 @@
       ]
     },
     "terms": {
-      "current_version": "2025-10-29",
+      "current_version": "2026-07-27",
       "versions": [
+        {
+          "version": "2026-07-27",
+          "effective_date": "July 27, 2026",
+          "summary": "Adds terms for optional push-to-talk voice chat in private invite-link games. Section 4.3 previously asserted that the Service has no communication features; it is rewritten to describe voice chat and to set conduct rules for it. Also clarifies that voice creates no retained user content (nothing is recorded), notes the 13+ age confirmation, and corrects the children's-use section to say \"no text chat\". All other terms unchanged.",
+          "file": "2026-07-27.html",
+          "highlights": [
+            "Section 4.3 retitled from \"No Communication Features\" to \"Communication Features\"",
+            "Voice conduct rules: no harassment, threats, hateful or explicit content, impersonation, or soliciting personal information",
+            "Recording or redistributing the other player's audio without consent is prohibited",
+            "Voice limited to private invite-link games; never in random matchmaking",
+            "Voice requires a 13+ age confirmation (Section 1.2)",
+            "Section 6.3 clarified — voice creates no retained user content",
+            "Section 14.1 corrected to \"no text chat\"; voice unavailable to children",
+            "Reporting path for voice misuse: hello@neuera.app",
+            "All other terms unchanged"
+          ]
+        },
         {
           "version": "2025-10-29",
           "effective_date": "October 29, 2025",
