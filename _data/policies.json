@@ -51,10 +51,11 @@
         {
           "version": "2026-07-27",
           "effective_date": "July 27, 2026",
-          "summary": "Documents the addition of optional push-to-talk voice chat in private invite-link games. Adds a dedicated Voice Chat section covering availability, opt-in, what is processed, and user controls; corrects two now-inaccurate claims in the do-not-collect list (\"Microphone or audio recordings\" and \"no chat features\"); discloses the self-operated LiveKit voice relay; and states that voice is unavailable to children and unavailable in random matchmaking. No other privacy practices changed.",
+          "summary": "Documents the addition of optional push-to-talk voice chat in private invite-link games. Adds a dedicated Voice Chat section covering availability, opt-in, what is processed, and user controls; corrects two now-inaccurate claims in the do-not-collect list (\"Microphone or audio recordings\" and \"no chat features\"); discloses the self-operated LiveKit voice relay; and states that voice is unavailable to children and unavailable in random matchmaking. No other privacy practices changed. Also corrects a pre-existing inaccuracy: the document described Google AdMob and AdSense advertising that the app does not contain. Play Lounge carries no third-party ad SDK and reads no advertising identifier; the only promotions are self-served listings for our own apps.",
           "file": "2026-07-27.html",
           "highlights": [
             "New Section 8 \"Voice Chat\" — availability, opt-in, processing, and controls",
+            "Removed inaccurate Google AdMob/AdSense advertising claims — the app has no ad networks",
             "Voice limited to private invite-link games; never offered in random matchmaking",
             "Voice requires a 13+ age confirmation; children cannot enable the microphone",
             "Audio is relayed live and never recorded, stored, transcribed, or listened to",
@@ -89,10 +90,11 @@
         {
           "version": "2026-07-27",
           "effective_date": "July 27, 2026",
-          "summary": "Adds terms for optional push-to-talk voice chat in private invite-link games. Section 4.3 previously asserted that the Service has no communication features; it is rewritten to describe voice chat and to set conduct rules for it. Also clarifies that voice creates no retained user content (nothing is recorded), notes the 13+ age confirmation, and corrects the children's-use section to say \"no text chat\". All other terms unchanged.",
+          "summary": "Adds terms for optional push-to-talk voice chat in private invite-link games. Section 4.3 previously asserted that the Service has no communication features; it is rewritten to describe voice chat and to set conduct rules for it. Also clarifies that voice creates no retained user content (nothing is recorded), notes the 13+ age confirmation, and corrects the children's-use section to say \"no text chat\". All other terms unchanged. Also corrects a pre-existing inaccuracy: the document described Google AdMob and AdSense advertising that the app does not contain. Play Lounge carries no third-party ad SDK and reads no advertising identifier; the only promotions are self-served listings for our own apps.",
           "file": "2026-07-27.html",
           "highlights": [
             "Section 4.3 retitled from \"No Communication Features\" to \"Communication Features\"",
+            "Removed inaccurate Google AdMob/AdSense advertising claims — the app has no ad networks",
             "Voice conduct rules: no harassment, threats, hateful or explicit content, impersonation, or soliciting personal information",
             "Recording or redistributing the other player's audio without consent is prohibited",
             "Voice limited to private invite-link games; never in random matchmaking",
