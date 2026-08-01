@@ -261,8 +261,22 @@
       ]
     },
     "terms": {
-      "current_version": "2026-05-24",
+      "current_version": "2026-07-31",
       "versions": [
+        {
+          "version": "2026-07-31",
+          "effective_date": "July 31, 2026",
+          "summary": "Updated credit-package pricing to the current prepaid packs ($4.99 / $9.99 / $24.99, identical on iOS and Android) and to reflect that calling credit is added 1:1 with the U.S.-dollar price paid — no bonus credits and no separate credit unit; the balance is shown in dollars. Replaced the earlier iOS-only tier table ($2.99 / $12.99 / $29.99 for 209 / 909 / 2,099 credits) and removed the claim that Android and web amounts differ. Summary pricing row updated to match. No other terms changed.",
+          "file": "2026-07-31.html",
+          "highlights": [
+            "Prepaid packs updated to $4.99 / $9.99 / $24.99, the same on iOS and Android",
+            "Calling credit added 1:1 with dollars paid — no bonus credits, no separate credit unit",
+            "Balance shown as a plain U.S.-dollar amount",
+            "Removed the prior iOS-only tier table and the 'Android/web may differ' wording",
+            "In-app price at the moment of purchase remains authoritative",
+            "All other terms (billing, refunds, fraud controls, arbitration) unchanged"
+          ]
+        },
         {
           "version": "2026-05-24",
           "effective_date": "May 24, 2026",
