@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NeuEra Apps Data Practices Charter version 2026-08-13 - Archived copy.">
+    <meta property="og:title" content="NeuEra Apps Data Practices Charter - Version 2026-08-13">
+    <meta property="og:description" content="Archived copy of the NeuEra Apps Data Practices Charter effective August 13, 2026.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://legal.neuera.app/data/versions/2026-08-13.html">
+    <title>Data Practices Charter v2026-08-13 - NeuEra Apps</title>
+    <link rel="stylesheet" href="/assets/css/style.css?v=3">
+    <link rel="stylesheet" href="/assets/css/print.css?v=3" media="print">
+    <link rel="canonical" href="https://legal.neuera.app/data/versions/2026-08-13.html">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="brand" aria-label="NeuEra Apps home">
+                <span class="brand-mark"><img src="/assets/img/neuera-icon.png" alt=""></span>
+                <span>NeuEra Apps</span>
+            </a>
+            <nav class="main-nav" aria-label="Main">
+                <a href="/apps/">Apps</a>
+                <a href="/about/">About</a>
+                <a href="/legal/" class="active">Legal</a>
+                <a href="/contact/" class="btn btn--outline btn--sm">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <div class="container">
+            <a href="/">Home</a>
+            <span class="breadcrumb-sep">/</span>
+            <a href="/legal/">Legal</a>
+            <span class="breadcrumb-sep">/</span>
+            <a href="/data/archive.html">Data Practices Charter</a>
+            <span class="breadcrumb-sep">/</span>
+            <span aria-current="page">v2026-08-13</span>
+        </div>
+    </nav>
+
+    <main id="main" class="main-content">
+        <div class="container">
+            <div class="policy-header">
+                <div class="policy-meta">
+                    <span class="archived-badge">Archived Version</span>
+                    <div class="version-info">
+                        <span class="version-number">Version 2026-08-13</span>
+                        <span class="effective-date">Effective: August 13, 2026</span>
+                    </div>
+                </div>
+                <div class="policy-actions">
+                    <a href="../archive.html" class="btn btn-secondary">View Version History</a>
+                    <button onclick="window.print()" class="btn btn-outline">Print Charter</button>
+                </div>
+            </div>
+
+            <article class="legal-document archived-document" data-version="2026-08-13" data-product="neuera">
+                <header class="document-header">
+                    <h2>NeuEra Apps Data Practices Charter</h2>
+                    <div class="document-meta">
+                        <span class="version-badge">Version: <time datetime="2026-08-13">2026-08-13</time></span>
+                        <span class="effective-date">Effective Date: <time datetime="2026-08-13">August 13, 2026</time></span>
+                    </div>
+                </header>
+
+                <nav class="table-of-contents" id="toc" aria-label="Table of Contents">
+                    <h3>Table of Contents</h3>
+                    <ol>
+                        <li><a href="#scope">What This Is, and What It Is Not</a></li>
+                        <li><a href="#the-test">The Test We Apply</a></li>
+                        <li><a href="#rules">The Five Rules</a></li>
+                        <li><a href="#by-app">What This Means in Each App Today</a></li>
+                        <li><a href="#third-parties">Where Third Parties Do Not Follow This Charter</a></li>
+                        <li><a href="#use">What We Use Measurements For</a></li>
+                        <li><a href="#rights">Your Rights</a></li>
+                        <li><a href="#changes">How This Charter Changes</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#summary">Summary</a></li>
+                    </ol>
+                </nav>
+
+                <section id="introduction">
+                    <p>Every app we build eventually raises the same question: what should we measure about the people who use it? This document is our answer, written down in advance and applied to every NeuEra Apps product.</p>
+                    <p>We publish it because a data practice that only exists inside a company is not a commitment. It is an intention, and intentions drift.</p>
+                </section>
+
+                <section id="scope">
+                    <h3>1. What This Is, and What It Is Not</h3>
+                    <p>This Charter applies to <strong>NetCloak VPN</strong>, <strong>Play Lounge</strong>, <strong>Odo</strong>, and <strong>Kalum</strong>, and to every app NeuEra Apps releases after the effective date above.</p>
+                    <p><strong>It is not a Privacy Policy and does not replace one.</strong> Each app has its own Privacy Policy, and that policy is the operative legal disclosure for that app: it lists the specific data, the sub-processors, the retention periods, and your rights. This Charter sits above those documents and explains the rule we apply <em>before</em> any of it gets written — the reasoning that decides whether a field exists at all.</p>
+                    <p>If this Charter and an app's Privacy Policy ever conflict, the app's Privacy Policy governs, and we will treat the conflict as a defect in this Charter and correct it.</p>
+                </section>
+
+                <section id="the-test">
+                    <h3>2. The Test We Apply</h3>
+
+                    <h4>2.1 Why "no personal information" is not our test</h4>
+                    <p>The common industry standard is to promise that no "personally identifiable information" is collected. We do not use that standard, for two reasons.</p>
+                    <p>First, it is not the standard the law applies. Under the GDPR and comparable frameworks, the protected category is <strong>personal data</strong>, which is considerably broader: a record carrying no name at all is still personal data if it can be linked back to a person or a device. A row reading <em>"device 4f2a looked up rates to Mexico at 19:41"</em> contains no name, no phone number and no email, and is unambiguously personal data.</p>
+                    <p>Second, and more practically, it is not a standard that protects you. "No PII" permits detailed, timestamped, per-device behavioural records — the exact material from which a profile is built.</p>
+
+                    <h4>2.2 The test we use instead</h4>
+                    <p>We classify every measurement into one of two tiers before we build it.</p>
+                    <ul>
+                        <li><strong>Tier A — counted, not recorded.</strong> No identifier, no timestamp, no row per event. Only running totals. A Tier A measurement can tell us <em>"1,204 rate lookups were for Mexico."</em> It cannot tell us who, when, in what order, or even whether two of those lookups came from the same person — not because we promise not to look, but because the information does not exist in what we hold. It cannot be un-aggregated by us, by a future employee, by a buyer, or by someone who steals it.</li>
+                        <li><strong>Tier B — everything else.</strong> Any measurement that keeps an identifier, a time, or a row per event. Tier B is sometimes genuinely necessary: Kalum cannot bill you for a call without recording that the call happened, when, and for how long. But Tier B is never casual. It requires a lawful basis, a specific disclosure in that app's Privacy Policy, and a matching declaration in the app store listing — <em>before</em> the first row is written, not after.</li>
+                    </ul>
+                    <p><strong>Tier A is the default.</strong> Our working rule is that a product question must be attempted in Tier A first, and may only move to Tier B when we can state plainly why the aggregate cannot answer it. In practice most product questions — what do people want, what are we failing to offer, which feature earns its keep — turn out to be Tier A questions that the industry habitually answers with Tier B data out of convenience.</p>
+                </section>
+
+                <section id="rules">
+                    <h3>3. The Five Rules</h3>
+
+                    <h4>3.1 Purpose before collection</h4>
+                    <p>We write down the question before we collect the data that answers it. We do not collect data speculatively, store it against a future use, or keep a field because it might one day be interesting. If we cannot name the decision a measurement will inform, we do not build the measurement.</p>
+
+                    <h4>3.2 Aggregate by default</h4>
+                    <p>Tier A unless Tier B is argued for and disclosed. See Section 2.2.</p>
+
+                    <h4>3.3 Count what we could not serve</h4>
+                    <p>We deliberately count our own failures: the search that returned nothing, the destination we do not cover, the feature someone looked for and did not find. This is the most useful measurement we take and, not coincidentally, one of the least intrusive — a record that <em>something was unavailable</em> says far more about our product than about you.</p>
+                    <p>It also guards against a specific failure. A product that only measures what it already does successfully will keep getting better at what it already does and never discover what it is missing.</p>
+
+                    <h4>3.4 Caveats travel with the number</h4>
+                    <p>Every measurement is distorted by how it was taken. We record the known distortion of a measurement <em>alongside the measurement itself</em>, permanently, so that it cannot be quoted without it.</p>
+                    <p>This is an engineering rule with a privacy consequence. A metric whose bias has been forgotten gets treated as more precise than it is, and the standard response to an untrustworthy metric is to collect more granular data about individuals until confidence returns. Honest error bars remove the pressure to over-collect.</p>
+
+                    <h4>3.5 We do not join data across our apps</h4>
+                    <p>Our apps do not share an account system, an analytics identifier, or any other key that would let one app's records be lined up against another's. Using Kalum tells us nothing about your use of Play Lounge, and we have not built — and commit here not to build — the means to connect them.</p>
+                    <p>What is shared across NeuEra Apps is this method, not the data. Two separately harmless collections become something else entirely once they can be joined, and that transformation is easy to perform by accident.</p>
+                </section>
+
+                <section id="by-app">
+                    <h3>4. What This Means in Each App Today</h3>
+                    <p>A summary. The linked Privacy Policy for each app is the complete and operative disclosure.</p>
+                    <ul>
+                        <li><strong>Odo</strong> — no collection of any kind. The app operates entirely offline and your mileage records never leave your device. There is no server to send them to. <a href="/odometer/privacy/">Privacy Policy</a></li>
+                        <li><strong>Play Lounge</strong> — no accounts and no personal information required to play. Game sessions are transient. Optional push-to-talk voice in private games is relayed live and never recorded, stored, or transcribed. <a href="/playlounge/privacy/">Privacy Policy</a></li>
+                        <li><strong>NetCloak VPN</strong> — a no-logs VPN: we do not log the sites you visit or the contents of your traffic. The service is free and supported by advertising, which is the one place in our portfolio where a third party measures you on its own terms — see Section 5. <a href="/netcloak/privacy/">Privacy Policy</a></li>
+                        <li><strong>Kalum</strong> — necessarily the most data-collecting app we operate, because it is a paid telephony service. Call metadata (destination, duration, outcome, timestamps) and transaction records are Tier B: they are required to bill you accurately, to comply with financial record-keeping obligations, and to detect fraud, and they are disclosed in detail in the Privacy Policy. Separately, we measure which destinations people look up prices for — including the ones they price and then decide not to call — in order to negotiate better rates on the routes people actually want. <strong>That measurement is Tier A: a running count per destination, carrying no identifier, no timestamp and no per-event record.</strong> It cannot be connected to your account or to any call you placed. <a href="/kalum/privacy/">Privacy Policy</a></li>
+                    </ul>
+                </section>
+
+                <section id="third-parties">
+                    <h3>5. Where Third Parties Do Not Follow This Charter</h3>
+                    <p>This Charter binds us. It does not bind companies whose software we include, and we will not imply otherwise.</p>
+                    <p><strong>NetCloak VPN is free and supported by advertising through Google AdMob.</strong> AdMob operates its own advertising identifier and its own data practices, which are set by Google, not by us, and which do not follow this Charter. NetCloak requests the advertising ID permission for this reason. This is disclosed in the <a href="/netcloak/privacy/">NetCloak Privacy Policy</a>, and if you would prefer not to be measured by an advertising network, that is the honest thing to know before installing it.</p>
+                    <p><strong>Play Lounge, Odo, and Kalum contain no third-party advertising SDK and read no advertising identifier.</strong> In Kalum the Android <code>AD_ID</code> permission is explicitly removed from the app.</p>
+                    <p>Our paid and infrastructure providers — payment processors, telephony carriers, authentication and hosting providers — receive only what they need to perform their function, are bound by contract, and are listed by name in each app's Privacy Policy.</p>
+                </section>
+
+                <section id="use">
+                    <h3>6. What We Use Measurements For</h3>
+                    <p>We use what we measure to decide what to build and what to improve: which destinations to negotiate better rates for, which features are worth keeping, where the product is failing to offer something people are looking for.</p>
+                    <p>We do not use it to build a profile of you, to target advertising at you, or to make automated decisions that affect you.</p>
+                    <p>We have never sold personal information for money, and we do not intend to. For completeness rather than comfort: the advertising in NetCloak described in Section 5 may constitute "sharing" for cross-context behavioural advertising as that term is defined under California law, and the NetCloak Privacy Policy is the operative disclosure for it.</p>
+                </section>
+
+                <section id="rights">
+                    <h3>7. Your Rights</h3>
+                    <p>Your rights over your personal data — access, correction, deletion, portability, objection, and complaint to a supervisory authority — are set out in each app's Privacy Policy, together with the lawful basis we rely on and how to exercise them. Contact <a href="mailto:hello@neuera.app">hello@neuera.app</a> for any request.</p>
+                    <p>One clarification specific to this Charter: <strong>Tier A measurements cannot be delivered or deleted on request, because they contain nothing that identifies you.</strong> There is no record of your activity within them to find, extract, or remove — only totals to which many people contributed. This is a consequence of the design rather than a limitation of our willingness, and it is the reason we prefer Tier A wherever a question can be answered there.</p>
+                </section>
+
+                <section id="changes">
+                    <h3>8. How This Charter Changes</h3>
+                    <p>Every version of this Charter is dated, published, and permanently archived alongside every prior version, so that any change to what we have promised is visible and comparable. We will not quietly weaken it.</p>
+                    <p>Where a change to this Charter is accompanied by a change in what an app actually collects, the corresponding Privacy Policy is updated at the same time and the app store listing is updated to match.</p>
+                </section>
+
+                <section id="contact">
+                    <h3>9. Contact</h3>
+                    <p><strong>NeuEra Apps LLC</strong>, United States of America.</p>
+                    <p>Privacy and data practices: <a href="mailto:hello@neuera.app">hello@neuera.app</a></p>
+                    <p>If you believe an app of ours is collecting something this Charter says it should not, we want to hear it at that address — that is a bug report, and we will treat it as one.</p>
+                </section>
+
+                <section id="summary">
+                    <h3>Summary</h3>
+                    <ul>
+                        <li>We do not use "no personal information" as our test, because it is neither the legal standard nor a protective one.</li>
+                        <li><strong>Tier A</strong> — totals with no identifier, no timestamp and no per-event row — is our default, and most product questions are answered there.</li>
+                        <li><strong>Tier B</strong> — anything that keeps an identity, a time, or an event — requires a stated purpose, a lawful basis, a Privacy Policy disclosure and a store declaration, before the first row is written.</li>
+                        <li>We state the question before collecting the answer; we count what we failed to offer; we keep each measurement's known distortion attached to it.</li>
+                        <li>We do not join data across our apps, and have not built the means to.</li>
+                        <li>NetCloak is ad-supported and its ad network follows its own rules, not ours. Our other apps carry no advertising SDK.</li>
+                        <li>Each app's Privacy Policy remains the complete and operative disclosure for that app.</li>
+                    </ul>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <a href="/" class="brand" style="margin-bottom: var(--space-3);">
+                        <span class="brand-mark"><img src="/assets/img/neuera-icon.png" alt=""></span>
+                        <span>NeuEra Apps</span>
+                    </a>
+                    <p>An independent app studio based in the United States.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Apps</h4>
+                    <ul>
+                        <li><a href="/netcloak/">NetCloak VPN</a></li>
+                        <li><a href="/playlounge/">Play Lounge</a></li>
+                        <li><a href="/odometer/">Odo</a></li>
+                        <li><a href="/kalum/">Kalum</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Studio</h4>
+                    <ul>
+                        <li><a href="/about/">About</a></li>
+                        <li><a href="/contact/">Contact</a></li>
+                        <li><a href="/legal/">Legal</a></li>
+                        <li><a href="/data/">Data Practices</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Elsewhere</h4>
+                    <ul>
+                        <li><a href="https://apps.apple.com/us/developer/neuera-apps/id1895216844" rel="noopener" target="_blank">App Store</a></li>
+                        <li><a href="https://play.google.com/store/apps/developer?id=NeuEra+Apps" rel="noopener" target="_blank">Google Play</a></li>
+                        <li><a href="mailto:hello@neuera.app">hello@neuera.app</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 NeuEra Apps LLC. All rights reserved.</span>
+                <span>Built independently in the United States.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/toc.js" defer></script>
+</body>
+</html>

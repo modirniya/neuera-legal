@@ -49,3 +49,5 @@ _site/
 # Temporary files
 tmp/
 temp/
+# Internal working notes — never publish (this repo is public)
+RELEASE-*.md
