@@ -3,13 +3,13 @@
     "name": "NeuEra Apps",
     "description": "Studio-wide commitments that apply across every NeuEra Apps product",
     "data_charter": {
-      "current_version": "2026-08-13",
+      "current_version": "2026-08-16",
       "versions": [
         {
-          "version": "2026-08-13",
-          "effective_date": "August 13, 2026",
-          "summary": "Initial Data Practices Charter. Establishes a studio-wide, published test for what may be collected, replacing the common \"no personally identifiable information\" standard with a two-tier rule: Tier A measurements carry no identifier, no timestamp and no per-event row and are the default; Tier B measurements require a stated purpose, a lawful basis, a Privacy Policy disclosure and an app store declaration before the first row is written. Adds five operating rules, a per-app summary of what is collected today, and an explicit disclosure that the advertising network in NetCloak VPN operates under Google's practices rather than this Charter. Does not replace any app's Privacy Policy, which remains the operative legal disclosure and governs on conflict.",
-          "file": "2026-08-13.html",
+          "version": "2026-08-16",
+          "effective_date": "August 16, 2026",
+          "summary": "Initial Data Practices Charter. Establishes a studio-wide, published test for what may be collected, replacing the common \"no personally identifiable information\" standard with a two-tier rule: Tier A measurements carry no identifier, no timestamp and no per-event row and are the default; Tier B measurements require a stated purpose, a lawful basis, a Privacy Policy disclosure and an app store declaration before the first row is written. Adds five operating rules, a per-app summary of what is collected today, and an explicit disclosure that the advertising network in NetCloak VPN — and the Google Ads conversion tag on one page of the Kalum marketing site — operate under Google's practices rather than this Charter. Does not replace any app's Privacy Policy, which remains the operative legal disclosure and governs on conflict.",
+          "file": "2026-08-16.html",
           "highlights": [
             "\"No PII\" rejected as the collection test — personal data is broader, and the PII standard permits per-device behavioural records",
             "Tier A defined: totals only, no identifier, no timestamp, no per-event row — the default for product questions",
@@ -21,6 +21,7 @@
             "Per-app position recorded for NetCloak VPN, Play Lounge, Odo and Kalum",
             "Kalum rate-demand measurement documented as Tier A; call and transaction records remain Tier B and disclosed",
             "NetCloak's Google AdMob advertising disclosed as outside this Charter; Play Lounge, Odo and Kalum confirmed free of any advertising SDK",
+            "Google Ads conversion tag on kalum.app/call-mexico/ disclosed as outside this Charter — one page of one marketing site, not the apps",
             "States plainly that Tier A data cannot be produced or deleted on request, because it identifies no one",
             "Each app's Privacy Policy remains the operative legal disclosure and governs on conflict"
           ]
