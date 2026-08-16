@@ -238,8 +238,24 @@
     "name": "Kalum",
     "description": "Prepaid VoIP international calling app",
     "privacy": {
-      "current_version": "2026-05-24",
+      "current_version": "2026-08-16",
       "versions": [
+        {
+          "version": "2026-08-16",
+          "effective_date": "August 16, 2026",
+          "summary": "Documents the aggregate demand measurement added in 2026-08. New §2.6 records that a destination rate lookup increments a per-destination counter holding the country calling code and at most three national digits, with no identifier, no timestamp and no per-event row — and states plainly that because it identifies no one, there is nothing within it to retrieve or delete on request. Also discloses the separate, country-level-only counter for lookups made on kalum.app. Links the NeuEra Apps Data Practices Charter as the governing standard. No other privacy practices changed.",
+          "file": "2026-08-16.html",
+          "highlights": [
+            "New §2.6 \"Aggregate Demand Measurement\" — what is counted, and what is deliberately not",
+            "Country calling code plus at most 3 national digits; none at all where the calling code is 4+ digits",
+            "No identifier, no timestamp, no per-event row — the counts cannot be separated back out",
+            "States that an access or erasure request has nothing to act on, because the data identifies no one",
+            "Purpose stated: negotiating better rates on the routes people actually price, including abandoned lookups",
+            "Website lookups counted separately, at country level only, never combined with the app's counts",
+            "Links to the NeuEra Apps Data Practices Charter (Tier A) as the governing standard",
+            "No change to call metadata, transaction data, sub-processors, retention or rights"
+          ]
+        },
         {
           "version": "2026-05-24",
           "effective_date": "May 24, 2026",

@@ -52,12 +52,40 @@
 
                 <article class="version-card current">
                     <div class="version-header">
-                        <h4>Version 2026-05-24</h4>
+                        <h4>Version 2026-08-16</h4>
                         <span class="current-badge">Current Version</span>
                     </div>
                     <div class="version-meta">
-                        <p><strong>Effective Date:</strong> May 24, 2026</p>
+                        <p><strong>Effective Date:</strong> August 16, 2026</p>
                         <p><strong>Status:</strong> Active</p>
+                    </div>
+                    <div class="version-summary">
+                        <p><strong>Summary:</strong> Documents the aggregate demand measurement added in 2026-08. New §2.6 records that a destination rate lookup increments a per-destination counter holding the country calling code and at most three national digits, with no identifier, no timestamp and no per-event row — and states plainly that because it identifies no one, there is nothing within it to retrieve or delete on request. Also discloses the separate, country-level-only counter for lookups made on kalum.app. Links the NeuEra Apps Data Practices Charter as the governing standard. No other privacy practices changed.</p>
+                        <h5>Key Points:</h5>
+                        <ul>
+                            <li>New §2.6 "Aggregate Demand Measurement" — what is counted, and what is deliberately not</li>
+                            <li>Country calling code plus at most 3 national digits; none at all where the calling code is 4+ digits</li>
+                            <li>No identifier, no timestamp, no per-event row — the counts cannot be separated back out</li>
+                            <li>States that an access or erasure request has nothing to act on, because the data identifies no one</li>
+                            <li>Purpose stated: negotiating better rates on the routes people actually price, including abandoned lookups</li>
+                            <li>Website lookups counted separately, at country level only, never combined with the app's counts</li>
+                            <li>Links to the NeuEra Apps Data Practices Charter (Tier A) as the governing standard</li>
+                            <li>No change to call metadata, transaction data, sub-processors, retention or rights</li>
+                        </ul>
+                    </div>
+                    <div class="version-actions">
+                        <a href="./index.html" class="btn btn-primary">View Current Version</a>
+                    </div>
+                </article>
+
+                <article class="version-card">
+                    <div class="version-header">
+                        <h4>Version 2026-05-24</h4>
+                        <span class="archived-badge">Archived</span>
+                    </div>
+                    <div class="version-meta">
+                        <p><strong>Effective Date:</strong> May 24, 2026</p>
+                        <p><strong>Status:</strong> Superseded by 2026-08-16</p>
                     </div>
                     <div class="version-summary">
                         <p><strong>Summary:</strong> Updated to reflect the rollout of Apple in-app purchases on iOS and additional opt-in flows. Added Apple Inc. as a sub-processor for App Store payment processing, restructured the iOS/Android permissions section to list optional permissions invoked by the Stripe SDK (camera, photo library, biometrics, approximate location) and the new opt-in contact-import flow (iOS Contacts / Android <code>READ_CONTACTS</code>), removed absolute "does not collect" claims that no longer fit the optional flows, and noted that account deletion is now available in-app at Settings → Delete Account.</p>
@@ -74,7 +102,7 @@
                         </ul>
                     </div>
                     <div class="version-actions">
-                        <a href="./index.html" class="btn btn-primary">View Current Version</a>
+                        <a href="./versions/2026-05-24.html" class="btn btn-secondary">View Archived Copy</a>
                     </div>
                 </article>
 
