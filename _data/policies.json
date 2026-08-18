@@ -3,8 +3,20 @@
     "name": "NeuEra Apps",
     "description": "Studio-wide commitments that apply across every NeuEra Apps product",
     "data_charter": {
-      "current_version": "2026-08-16",
+      "current_version": "2026-08-17",
       "versions": [
+        {
+          "version": "2026-08-17",
+          "effective_date": "August 17, 2026",
+          "summary": "One wording correction, no change of substance. The clarification on why Tier A measurements cannot be produced or deleted on request described them as \"totals to which many people contributed\" — which is not true of a total that happens to stand at one. The claim it supports is unchanged and does not depend on the total being large: a count of one still records nothing about who was counted or when. No tier definition, operating rule or per-app position changed.",
+          "file": "2026-08-17.html",
+          "highlights": [
+            "Tier A \"cannot be produced or deleted on request\" clarification reworded to hold true of a total of one",
+            "No change to the Tier A / Tier B definitions or to the test applied before collection",
+            "No change to the five operating rules or to any per-app position",
+            "No change to the advertising disclosures for NetCloak VPN or kalum.app"
+          ]
+        },
         {
           "version": "2026-08-16",
           "effective_date": "August 16, 2026",
@@ -238,8 +250,21 @@
     "name": "Kalum",
     "description": "Prepaid VoIP international calling app",
     "privacy": {
-      "current_version": "2026-08-16",
+      "current_version": "2026-08-17",
       "versions": [
+        {
+          "version": "2026-08-17",
+          "effective_date": "August 17, 2026",
+          "summary": "Corrects and narrows §2.6. The separate website counter described in 2026-08-16 was retired, so the paragraph describing it is removed — no destination lookups are counted on kalum.app at all. §2.6 now also names the three non-identifying dimensions each count carries besides the destination (whether the request came from a verified copy of the app, whether a sign-in token was attached, and whether the device was iOS or Android), states that a small total may reflect a single lookup rather than many contributors, and discloses that one date is kept for the measurement as a whole — when the current counting period began — while no count carries a timestamp. No other privacy practices changed, and nothing new is collected.",
+          "file": "2026-08-17.html",
+          "highlights": [
+            "Website destination counting withdrawn entirely; the paragraph describing it is removed",
+            "§2.6 now names every dimension a count carries, not only the destination",
+            "\"No timestamp\" scoped precisely: no count carries one; one counting-period start date is kept for the measurement as a whole",
+            "Wording corrected so it remains true of a destination looked up only once",
+            "No new collection, no new sharing, no change to retention, sub-processors or rights"
+          ]
+        },
         {
           "version": "2026-08-16",
           "effective_date": "August 16, 2026",
