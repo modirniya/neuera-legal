@@ -75,8 +75,15 @@
 
         collectHeadings() {
             const headingElements = this.contentContainer.querySelectorAll(CONFIG.headingSelector);
-            
+
             headingElements.forEach((heading, index) => {
+                // Skip the document's own title and the "Table of Contents" heading itself.
+                // Both sit inside .legal-document, so an unfiltered scan listed the document in
+                // its own contents and then listed the contents as a section of the document.
+                if (heading.closest(CONFIG.tocSelector) ||
+                    heading.closest('.document-header')) {
+                    return;
+                }
                 // Ensure heading has an ID
                 if (!heading.id) {
                     const text = heading.textContent || heading.innerText;

@@ -3,8 +3,22 @@
     "name": "NeuEra Apps",
     "description": "Studio-wide commitments that apply across every NeuEra Apps product",
     "data_charter": {
-      "current_version": "2026-08-17",
+      "current_version": "2026-09-07",
       "versions": [
+        {
+          "version": "2026-09-07",
+          "effective_date": "September 7, 2026",
+          "summary": "RPS Mafia joins the Charter. Section 1 names it among the covered apps and Section 4 states its position: it is the one game we operate that keeps records between sessions, because a scheduled game night has to know who reserved a seat and who actually arrived. Those attendance records, the reliability standing derived from them, and the reports and blocks moderation depends on are disclosed as Tier B, with the reason each exists. No tier definition, operating rule, or existing per-app position changed, and no wording elsewhere in the Charter was altered.",
+          "file": "2026-09-07.html",
+          "highlights": [
+            "RPS Mafia added to the covered apps in Section 1",
+            "Section 4 entry added, stating which RPS Mafia fields are Tier B and why",
+            "Confirms RPS Mafia carries no analytics SDK, no advertising SDK and no advertising identifier",
+            "Confirms voice is relayed through our own server and never recorded, stored or transcribed",
+            "No change to the Tier A / Tier B definitions or to the five operating rules",
+            "No change to any existing app's position, or to the advertising disclosures"
+          ]
+        },
         {
           "version": "2026-08-17",
           "effective_date": "August 17, 2026",
@@ -396,6 +410,52 @@
             "Prohibited uses including robocalls and harassment",
             "Binding arbitration for disputes",
             "California law governance"
+          ]
+        }
+      ]
+    }
+  },
+  "rpsmafia": {
+    "name": "RPS Mafia",
+    "description": "Free browser social deduction game with voice, for 5 to 12 players",
+    "privacy": {
+      "current_version": "2026-09-07",
+      "versions": [
+        {
+          "version": "2026-09-07",
+          "effective_date": "September 7, 2026",
+          "summary": "Initial Privacy Policy for RPS Mafia, published before the game leaves early access. Documents the account system (anonymous by default, with optional Google or Apple sign-in), the scheduling records that game nights require, the reliability counters derived from them, optional push reminders, and the player reports and blocks that moderation depends on. States plainly that voice is relayed live through a server we operate ourselves and is never recorded, stored or transcribed, and that game state exists only in memory and is destroyed when the game ends. Lists every sub-processor by name. Confirms the app carries no analytics SDK, no advertising SDK, no crash reporter and no advertising identifier.",
+          "file": "2026-09-07.html",
+          "highlights": [
+            "Accounts are anonymous by default; Google or Apple sign-in is optional and exists only to carry progress between devices",
+            "Voice is relayed live through our own server and is never recorded, stored or transcribed",
+            "Game state lives in memory only and is destroyed when the game ends",
+            "Game-night attendance and reliability counters disclosed as Tier B under the NeuEra Data Practices Charter, with the reason each field exists",
+            "Player reports store the report text and both player identifiers, because moderation cannot work without them",
+            "Push reminder tokens are stored only while reminders are on and deleted when they are turned off",
+            "No analytics SDK, no advertising SDK, no advertising identifier, no crash reporting",
+            "Sub-processors named: Google (Firebase Authentication and Cloud Messaging) and Fly.io (application, database and voice hosting)",
+            "Account deletion available on request today; in-app deletion is being built"
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "current_version": "2026-09-07",
+      "versions": [
+        {
+          "version": "2026-09-07",
+          "effective_date": "September 7, 2026",
+          "summary": "Initial Terms of Use for RPS Mafia. Sets a minimum age of 13, describes what the service is and what it is not, and sets out the conduct rules for a game played by live voice between people who may be strangers. Covers accounts, game nights and the fact that a night can be cancelled when too few players arrive, the reporting and blocking system and how enforcement works, and states that the service is free with nothing to buy and no advertising. Notes that the game is in early access and is offered as-is.",
+          "file": "2026-09-07.html",
+          "highlights": [
+            "Minimum age 13, and higher where local law requires it",
+            "Conduct rules written for live voice between strangers, not generic boilerplate",
+            "Reporting, blocking and enforcement described, including what a report contains",
+            "Game nights may be cancelled when too few players arrive; replacements offered",
+            "Free with no purchases, no advertising and nothing that can be paid for",
+            "Early access stated plainly: games may end, data may be reset, features may change",
+            "Deliberate disruption of other players' games is grounds for removal"
           ]
         }
       ]

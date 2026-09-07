@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Page not found.">
-    <title>Not found — NeuEra Apps</title>
+    <meta name="description" content="Privacy Policy and Terms of Use for RPS Mafia, the free browser Mafia game with voice built in.">
+    <meta property="og:title" content="RPS Mafia — Legal Documents">
+    <meta property="og:description" content="Privacy Policy and Terms of Use for RPS Mafia, the free browser Mafia game with voice built in.">
+    <title>RPS Mafia — Legal Documents</title>
     <link rel="stylesheet" href="/assets/css/style.css?v=3">
-    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="/assets/css/print.css?v=3" media="print">
+    <link rel="canonical" href="https://legal.neuera.app/rpsmafia/">
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to content</a>
@@ -20,51 +23,51 @@
             <nav class="main-nav" aria-label="Main">
                 <a href="/apps/">Apps</a>
                 <a href="/about/">About</a>
-                <a href="/legal/">Legal</a>
+                <a href="/legal/" class="active">Legal</a>
                 <a href="/contact/" class="btn btn--outline btn--sm">Contact</a>
             </nav>
         </div>
     </header>
 
-    <main id="main">
-        <section class="hero">
-            <div class="container">
-                <span class="hero__eyebrow">404</span>
-                <h1>Page not found.</h1>
-                <p>The page you were after isn&rsquo;t here &mdash; the link may have moved or never existed. The sections below cover everything on the site.</p>
-                <div class="hero__actions">
-                    <a href="/" class="btn btn--primary">Back to home</a>
-                    <a href="/legal/" class="btn btn--ghost">Browse legal documents &rarr;</a>
-                </div>
-            </div>
-        </section>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <div class="container">
+            <a href="/">Home</a>
+            <span class="breadcrumb-sep">/</span>
+            <span aria-current="page">RPS Mafia</span>
+        </div>
+    </nav>
 
-        <section class="section">
-            <div class="container container--narrow">
-                <ul class="legal-list">
-                    <li><a href="/apps/">
-                        <span class="doc-title">Apps</span>
-                        <span class="doc-meta">All four products &rarr;</span>
-                    </a></li>
-                    <li><a href="/about/">
-                        <span class="doc-title">About the studio</span>
-                        <span class="doc-meta">Founded, location, contact &rarr;</span>
-                    </a></li>
-                    <li><a href="/legal/">
-                        <span class="doc-title">Legal documents</span>
-                        <span class="doc-meta">Privacy, terms, version history &rarr;</span>
-                    </a></li>
-                    <li><a href="/contact/">
-                        <span class="doc-title">Contact</span>
-                        <span class="doc-meta">Get in touch &rarr;</span>
-                    </a></li>
-                </ul>
+    <main class="main-content" id="main">
+        <div class="container">
+            <h1>RPS Mafia</h1>
+            <p>A free social deduction game played by voice in the browser, for five to twelve
+            players. Reserve a seat at a scheduled game night or start a private table with a code.
+            Available at <a href="https://rpsociety.app" rel="noopener">rpsociety.app</a>.</p>
 
-                <p style="margin-top: var(--space-6); color: var(--ink-3); font-size: var(--text-sm);">
-                    If you were looking for a specific legal document, email <a href="mailto:hello@neuera.app">hello@neuera.app</a> with the URL.
-                </p>
+            <div class="policy-cards">
+                <article class="policy-card">
+                    <h2><a href="./privacy/">Privacy Policy</a></h2>
+                    <p class="effective-date">Version 2026-09-07 &middot; Effective September 7, 2026</p>
+                    <p>What the game records, what it does not, and why. Voice is relayed live and
+                    never recorded. Game state is destroyed when the game ends.</p>
+                    <p><a href="./privacy/">Read</a> &middot;
+                       <a href="./privacy/archive.html">Version history</a></p>
+                </article>
+                <article class="policy-card">
+                    <h2><a href="./terms/">Terms of Use</a></h2>
+                    <p class="effective-date">Version 2026-09-07 &middot; Effective September 7, 2026</p>
+                    <p>The rules for playing, the conduct expected in a game played out loud with
+                    strangers, and how reports and blocks work.</p>
+                    <p><a href="./terms/">Read</a> &middot;
+                       <a href="./terms/archive.html">Version history</a></p>
+                </article>
             </div>
-        </section>
+
+            <p>RPS Mafia is covered by the studio-wide
+            <a href="/data/">NeuEra Data Practices Charter</a>, which explains the test we apply
+            before any measurement is built. Where the Charter and this app's Privacy Policy
+            differ, the Privacy Policy governs.</p>
+        </div>
     </main>
 
     <footer class="site-footer">
@@ -111,5 +114,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="/assets/js/toc.js?v=2" defer></script>
 </body>
 </html>
