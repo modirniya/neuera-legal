@@ -147,8 +147,8 @@ def head(title: str, description: str, canonical: str | None) -> str:
     <meta property="og:title" content="{html.escape(title, quote=True)}">
     <meta property="og:description" content="{html.escape(description, quote=True)}">
     <title>{html.escape(title)}</title>
-    <link rel="stylesheet" href="/assets/css/style.css?v=3">
-    <link rel="stylesheet" href="/assets/css/print.css?v=3" media="print">{canon}
+    <link rel="stylesheet" href="/assets/css/style.css?v=5">
+    <link rel="stylesheet" href="/assets/css/print.css?v=5" media="print">{canon}
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to content</a>
@@ -160,8 +160,8 @@ def head(title: str, description: str, canonical: str | None) -> str:
                 <span>NeuEra Apps</span>
             </a>
             <nav class="main-nav" aria-label="Main">
-                <a href="/apps/">Apps</a>
-                <a href="/about/">About</a>
+                <a href="/apps/" class="nav-hide-sm">Apps</a>
+                <a href="/about/" class="nav-hide-sm">About</a>
                 <a href="/legal/" class="active">Legal</a>
                 <a href="/contact/" class="btn btn--outline btn--sm">Contact</a>
             </nav>
@@ -254,12 +254,13 @@ def toc(sections: list[tuple[str, str, str]]) -> str:
 
 def article(kind: str, sections: list[tuple[str, str, str]], version: str) -> str:
     doc_title = f"{APP_NAME} {'Privacy Policy' if kind == 'privacy' else 'Terms of Use'}"
-    # House style on this site: numbered <h3> section headings, <h2> reserved for the document
-    # title. The privacy sections carry no numbers of their own, so they are numbered here.
+    # The document title is <h1>, so its sections are <h2> — the site's own stylesheet sizes
+    # `.legal-document h2` for exactly this. The privacy sections carry no numbers of their
+    # own, so they are numbered here.
     numbered = kind == "privacy"
     body = "\n".join(
         f"""                <section id="{sid}">
-                    <h3>{str(i) + ". " if numbered else ""}{html.escape(title)}</h3>
+                    <h2>{str(i) + ". " if numbered else ""}{html.escape(title)}</h2>
 {content}
                 </section>
 """
@@ -267,7 +268,7 @@ def article(kind: str, sections: list[tuple[str, str, str]], version: str) -> st
     )
     return f"""            <article class="legal-document current-document" data-version="{version}" data-product="{APP}">
                 <header class="document-header">
-                    <h2>{doc_title}</h2>
+                    <h1>{doc_title}</h1>
                     <div class="document-meta">
                         <span class="version-badge">Version: <time datetime="{version}">{version}</time></span>
                         <span class="effective-date">Effective Date: <time datetime="{version}">{EFFECTIVE}</time></span>
@@ -313,7 +314,8 @@ def current_page(kind: str, sections, title, description) -> str:
 def version_page(kind: str, sections, title, description, version: str) -> str:
     label = "Privacy Policy" if kind == "privacy" else "Terms of Use"
     return (
-        head(f"{title} - Version {version}", description, None)
+        head(f"{title} - Version {version}", description,
+             f"{SITE}/{APP}/{kind}/versions/{version}.html")
         + breadcrumb(f"{label} {version}")
         + f"""
     <main class="main-content" id="main">
@@ -351,7 +353,7 @@ def archive_page(kind: str) -> str:
         )
         entries += f"""                <li class="version-entry">
                     <div class="version-entry__header">
-                        <h3><a href="./versions/{v['file']}">Version {v['version']}</a></h3>
+                        <h2><a href="./versions/{v['file']}">Version {v['version']}</a></h2>
                         {badge}
                     </div>
                     <p class="effective-date">Effective: {v['effective_date']}</p>
@@ -384,6 +386,13 @@ def archive_page(kind: str) -> str:
 
 
 def app_index() -> str:
+    """The app's landing page on the legal site.
+
+    Uses the same product-hero / legal-callout markup every other app page uses. An earlier version
+    of this invented `policy-cards` and `policy-card`, which exist in no stylesheet, so the page
+    rendered as unstyled text — a reminder that matching a hand-built site means using its classes,
+    not plausible-sounding ones.
+    """
     return (
         head(f"{APP_NAME} — Legal Documents",
              f"Privacy Policy and Terms of Use for {APP_NAME}, the free browser Mafia game with "
@@ -398,36 +407,50 @@ def app_index() -> str:
     </nav>
 
     <main class="main-content" id="main">
-        <div class="container">
-            <h1>{APP_NAME}</h1>
-            <p>A free social deduction game played by voice in the browser, for five to twelve
-            players. Reserve a seat at a scheduled game night or start a private table with a code.
-            Available at <a href="https://rpsociety.app" rel="noopener">rpsociety.app</a>.</p>
-
-            <div class="policy-cards">
-                <article class="policy-card">
-                    <h2><a href="./privacy/">Privacy Policy</a></h2>
-                    <p class="effective-date">Version {CURRENT} &middot; Effective {EFFECTIVE}</p>
-                    <p>What the game records, what it does not, and why. Voice is relayed live and
-                    never recorded. Game state is destroyed when the game ends.</p>
-                    <p><a href="./privacy/">Read</a> &middot;
-                       <a href="./privacy/archive.html">Version history</a></p>
-                </article>
-                <article class="policy-card">
-                    <h2><a href="./terms/">Terms of Use</a></h2>
-                    <p class="effective-date">Version {CURRENT} &middot; Effective {EFFECTIVE}</p>
-                    <p>The rules for playing, the conduct expected in a game played out loud with
-                    strangers, and how reports and blocks work.</p>
-                    <p><a href="./terms/">Read</a> &middot;
-                       <a href="./terms/archive.html">Version history</a></p>
-                </article>
+        <section class="product-hero">
+            <div class="container">
+                <div class="product-hero__head">
+                    <span class="product-hero__icon" aria-hidden="true"><img src="/assets/img/rpsmafia-icon.png" alt=""></span>
+                    <div>
+                        <h1>{APP_NAME}</h1>
+                        <p class="product-hero__tagline">Mafia, played out loud. Five to twelve players.</p>
+                    </div>
+                </div>
+                <div class="product-hero__body">
+                    <p>A free social deduction game played by voice in the browser. Reserve a seat at
+                    a scheduled game night or start a private table with a code. Voice is relayed
+                    live and never recorded, and the state of a game exists only while it is being
+                    played. 13+.</p>
+                    <div>
+                        <span class="feature-tag">Web</span>
+                        <span class="feature-tag">Free</span>
+                        <span class="feature-tag">Voice</span>
+                        <span class="feature-tag">13+</span>
+                    </div>
+                </div>
+                <div class="product-hero__actions">
+                    <a href="https://rpsociety.app" class="btn btn--primary" rel="noopener" target="_blank">Play the game</a>
+                    <a href="/data/" class="btn btn--outline">Data Practices Charter</a>
+                </div>
             </div>
+        </section>
 
-            <p>{APP_NAME} is covered by the studio-wide
-            <a href="/data/">NeuEra Data Practices Charter</a>, which explains the test we apply
-            before any measurement is built. Where the Charter and this app's Privacy Policy
-            differ, the Privacy Policy governs.</p>
-        </div>
+        <section class="section section--alt">
+            <div class="container container--narrow">
+                <div class="legal-callout">
+                    <div>
+                        <h2>Legal documents</h2>
+                        <p>Current Privacy Policy and Terms of Use, version {CURRENT}, effective
+                        {EFFECTIVE} — with the full version history of both.</p>
+                    </div>
+                    <div class="legal-callout__links">
+                        <a href="/{APP}/privacy/" class="btn btn--outline btn--sm">Privacy policy</a>
+                        <a href="/{APP}/terms/" class="btn btn--outline btn--sm">Terms of use</a>
+                        <a href="/{APP}/privacy/archive.html" class="btn btn--ghost btn--sm">Version history &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 """
         + FOOTER

@@ -1112,6 +1112,41 @@ ul.commitments-list li { margin-bottom: var(--space-2); }
   color: var(--ink);
 }
 
+/* Policies cite long URLs in full, and a URL is one unbreakable word. On a narrow phone those
+   pushed the document wider than the viewport and the whole page scrolled sideways. Let them
+   break; nothing else here needs to. */
+.legal-document a,
+.legal-document code {
+  overflow-wrap: anywhere;
+}
+
+/* A breadcrumb trail ending in a long version label had nowhere to break on the narrowest
+   phones. */
+.breadcrumb .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: var(--space-1);
+}
+
+/* Some policies carry wide tables. Without a scroll container of their own they pushed the whole
+   document sideways, so give them one at phone widths rather than editing published documents. */
+@media (max-width: 640px) {
+  .legal-document table {
+    display: block;
+    overflow-x: auto;
+    max-width: 100%;
+  }
+}
+
+/* Version badges sit beside a heading and could not wrap away from it, putting the row a few
+   pixels over the edge at the smallest widths. */
+.version-entry .version-header,
+.version-entry__header,
+.policy-header .policy-meta {
+  flex-wrap: wrap;
+}
+
 .legal-document .toc {
   background: var(--surface-alt);
   border: 1px solid var(--border);
