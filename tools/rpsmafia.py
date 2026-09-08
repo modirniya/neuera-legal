@@ -26,11 +26,34 @@ APP = "rpsmafia"
 APP_NAME = "RPS Mafia"
 SITE = "https://legal.neuera.app"
 
-CURRENT = "2026-09-07"
-EFFECTIVE = "September 7, 2026"
+CURRENT = "2026-09-08"
+EFFECTIVE = "September 8, 2026"
 
 VERSIONS = {
     "privacy": [
+        {
+            "version": "2026-09-08",
+            "effective_date": "September 8, 2026",
+            "summary": "Documents the age check the app now shows before anything else. A new "
+                       "\"How we check your age\" section describes what is asked, what happens "
+                       "to the answer, and what happens if it is below the minimum age. The "
+                       "important detail is what is NOT done: the date of birth is used once to "
+                       "work out an age and is then discarded, is never stored, and never leaves "
+                       "the device — only the outcome is kept, and only locally. The Children "
+                       "section is rewritten to describe the check rather than only the "
+                       "prohibition, and the do-not-collect list now says explicitly that a date "
+                       "of birth is not among the things we hold. No other practice changed, and "
+                       "nothing new is collected by this release.",
+            "file": "2026-09-08.html",
+            "highlights": [
+                "New section: how the age check works and what happens to the answer",
+                "The date of birth is discarded after the check — not stored, never transmitted",
+                "Only the outcome is remembered, on the device, and a refusal is permanent",
+                "Children section rewritten around the check rather than the prohibition alone",
+                "Do-not-collect list now names date of birth explicitly",
+                "No new collection of any kind in this release",
+            ],
+        },
         {
             "version": "2026-09-07",
             "effective_date": EFFECTIVE,
@@ -67,6 +90,22 @@ VERSIONS = {
         },
     ],
     "terms": [
+        {
+            "version": "2026-09-08",
+            "effective_date": "September 8, 2026",
+            "summary": "The age section now describes the check rather than only stating the "
+                       "requirement. It sets out that the app asks for a date of birth before "
+                       "anything else, that an answer below the minimum age ends access on that "
+                       "device and is not asked again, and that misstating your age is a breach "
+                       "of these terms. No other term changed.",
+            "file": "2026-09-08.html",
+            "highlights": [
+                "Age section describes the check, not just the requirement",
+                "An answer below the minimum age is final on that device",
+                "Misstating your age is stated as a breach",
+                "No other term changed",
+            ],
+        },
         {
             "version": "2026-09-07",
             "effective_date": EFFECTIVE,
@@ -459,6 +498,8 @@ PRIVACY = [
         "you marketing.",
         "<strong>No chat transcripts.</strong> The game is played by voice; there is no text chat "
         "to keep.",
+        "<strong>No date of birth.</strong> You are asked for one once, to check your age. It is "
+        "used for that and discarded — see below.",
     )),
 
     ("charter", "How This Fits Our Data Charter", P(
@@ -572,6 +613,23 @@ PRIVACY = [
         "Kalum, Odo or NetCloak, and we have not built the means to connect them.",
     )),
 
+    ("age-check", "How We Check Your Age", P(
+        "The first time you open the game it asks for your date of birth, before anything else "
+        "happens.",
+        "<strong>The answer is used once and then discarded.</strong> The game works out how old "
+        "you are, keeps the answer to that question — old enough, or not — and forgets the date. "
+        "The date of birth is never written to storage, never sent to our servers, and never seen "
+        "by us. What is remembered is a single word on your own device, and nothing else.",
+        "If the date puts you below the minimum age, the game says so and stops there. That "
+        "outcome is remembered on that device and you are not asked again, because a check you can "
+        "retry until it passes is not a check.",
+        "We should be plain about what this is and is not. It is a declared-age check: it asks, and "
+        "it believes you. Anyone determined to type a different year will get through, and no "
+        "self-declared check has ever prevented that. What it does is keep the game closed to a "
+        "child who answered honestly, which is the case that actually happens, and it means we are "
+        "not quietly relying on never having asked.",
+    )),
+
     ("children", "Children", P(
         "RPS Mafia is not for children under 13, and you must be at least 13 to use it. In parts "
         "of the European Economic Area the minimum age for consent to online services is higher, "
@@ -579,9 +637,11 @@ PRIVACY = [
         "The reason is specific rather than legalistic: this is a live voice game played with "
         "people you have not met, in which lying convincingly is the object. That is not a "
         "suitable environment for a child.",
-        "We do not knowingly collect information from anyone under 13. If you believe a child has "
-        "created an account, write to <a href=\"mailto:hello@neuera.app\">hello@neuera.app</a> and "
-        "we will delete it.",
+        "This is enforced by the age check described above, which every player passes before "
+        "reaching the game. We do not knowingly collect information from anyone under 13, and a "
+        "player whose answer puts them below that age never gets as far as an account. If you "
+        "believe a child is using the game anyway, write to "
+        "<a href=\"mailto:hello@neuera.app\">hello@neuera.app</a> and we will delete the account.",
     )),
 
     ("security", "Security", P(
@@ -679,6 +739,11 @@ TERMS = [
         "This is a live voice game played with people you have not met, in which convincing "
         "deception is the object. We would rather state a real reason than a legal formula: it is "
         "not a suitable place for a child.",
+        "<strong>The game asks for your date of birth before anything else.</strong> If your answer "
+        "puts you below the minimum age, that is the end of it on that device — the game says so, "
+        "remembers it, and does not ask again. The date itself is not kept; see the "
+        "<a href=\"/rpsmafia/privacy/#age-check\">Privacy Policy</a>.",
+        "Giving a false date of birth to get past that check is a breach of these terms.",
     )),
 
     ("service", "3. What the Service Is", P(

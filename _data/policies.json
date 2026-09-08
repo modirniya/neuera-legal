@@ -419,11 +419,25 @@
     "name": "RPS Mafia",
     "description": "Free browser social deduction game with voice, for 5 to 12 players",
     "privacy": {
-      "current_version": "2026-09-07",
+      "current_version": "2026-09-08",
       "versions": [
         {
+          "version": "2026-09-08",
+          "effective_date": "September 8, 2026",
+          "summary": "Documents the age check the app now shows before anything else. A new \"How we check your age\" section describes what is asked, what happens to the answer, and what happens if it is below the minimum age. The important detail is what is NOT done: the date of birth is used once to work out an age and is then discarded, is never stored, and never leaves the device — only the outcome is kept, and only locally. The Children section is rewritten to describe the check rather than only the prohibition, and the do-not-collect list now says explicitly that a date of birth is not among the things we hold. No other practice changed, and nothing new is collected by this release.",
+          "file": "2026-09-08.html",
+          "highlights": [
+            "New section: how the age check works and what happens to the answer",
+            "The date of birth is discarded after the check — not stored, never transmitted",
+            "Only the outcome is remembered, on the device, and a refusal is permanent",
+            "Children section rewritten around the check rather than the prohibition alone",
+            "Do-not-collect list now names date of birth explicitly",
+            "No new collection of any kind in this release"
+          ]
+        },
+        {
           "version": "2026-09-07",
-          "effective_date": "September 7, 2026",
+          "effective_date": "September 8, 2026",
           "summary": "Initial Privacy Policy for RPS Mafia, published before the game leaves early access. Documents the account system (anonymous by default, with optional Google or Apple sign-in), the scheduling records that game nights require, the reliability counters derived from them, optional push reminders, and the player reports and blocks that moderation depends on. States plainly that voice is relayed live through a server we operate ourselves and is never recorded, stored or transcribed, and that game state exists only in memory and is destroyed when the game ends. Lists every sub-processor by name. Confirms the app carries no analytics SDK, no advertising SDK, no crash reporter and no advertising identifier.",
           "file": "2026-09-07.html",
           "highlights": [
@@ -441,11 +455,23 @@
       ]
     },
     "terms": {
-      "current_version": "2026-09-07",
+      "current_version": "2026-09-08",
       "versions": [
         {
+          "version": "2026-09-08",
+          "effective_date": "September 8, 2026",
+          "summary": "The age section now describes the check rather than only stating the requirement. It sets out that the app asks for a date of birth before anything else, that an answer below the minimum age ends access on that device and is not asked again, and that misstating your age is a breach of these terms. No other term changed.",
+          "file": "2026-09-08.html",
+          "highlights": [
+            "Age section describes the check, not just the requirement",
+            "An answer below the minimum age is final on that device",
+            "Misstating your age is stated as a breach",
+            "No other term changed"
+          ]
+        },
+        {
           "version": "2026-09-07",
-          "effective_date": "September 7, 2026",
+          "effective_date": "September 8, 2026",
           "summary": "Initial Terms of Use for RPS Mafia. Sets a minimum age of 13, describes what the service is and what it is not, and sets out the conduct rules for a game played by live voice between people who may be strangers. Covers accounts, game nights and the fact that a night can be cancelled when too few players arrive, the reporting and blocking system and how enforcement works, and states that the service is free with nothing to buy and no advertising. Notes that the game is in early access and is offered as-is.",
           "file": "2026-09-07.html",
           "highlights": [
