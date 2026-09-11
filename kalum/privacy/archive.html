@@ -52,12 +52,38 @@
 
                 <article class="version-card current">
                     <div class="version-header">
-                        <h4>Version 2026-08-17</h4>
+                        <h4>Version 2026-09-10</h4>
                         <span class="current-badge">Current Version</span>
                     </div>
                     <div class="version-meta">
-                        <p><strong>Effective Date:</strong> August 17, 2026</p>
+                        <p><strong>Effective Date:</strong> September 10, 2026</p>
                         <p><strong>Status:</strong> Active</p>
+                    </div>
+                    <div class="version-summary">
+                        <p><strong>Summary:</strong> Documents the optional after-call rating added in 2026-09. &sect;2.2 names the one-tap rating and issue tag as call metadata you may choose to give. New &sect;2.7 &ldquo;Aggregate Call-Quality Measurement&rdquo; records that answers are counted per destination country code, platform, answer and issue &mdash; no identifier, no timestamp on any count, no per-answer row and no free-text field &mdash; and states the purpose: turning a pattern of dropped or one-way calls to one destination into a routing decision. &sect;4.1 discloses that an answered rating is also attached to that call&rsquo;s record at Twilio so it can be compared against Twilio&rsquo;s network measurements, and &sect;9 records that Twilio holds it for 30 days. &sect;3 and &sect;14 updated to match. No other privacy practices changed.</p>
+                        <h5>Key Points:</h5>
+                        <ul>
+                            <li>Optional one-tap rating after some calls; skipping is always available and records only that it was skipped</li>
+                            <li>New &sect;2.7: answers are counted, not recorded &mdash; no identifier, no timestamp, no per-answer row, no free text</li>
+                            <li>Asked more often after calls that appear to have gone wrong; never a question about the app and never a route into an app-store review</li>
+                            <li>Answered ratings are additionally attached to the call record at Twilio for comparison with its jitter, packet-loss and delay measurements; kept there 30 days</li>
+                            <li>New purpose row in &sect;3 (legitimate interest), new retention row in &sect;9, new summary row in &sect;14</li>
+                            <li>No new identifier, no change to sub-processors, and no change to your rights</li>
+                        </ul>
+                    </div>
+                    <div class="version-actions">
+                        <a href="./index.html" class="btn btn-primary">View Current Version</a>
+                    </div>
+                </article>
+
+                <article class="version-card">
+                    <div class="version-header">
+                        <h4>Version 2026-08-17</h4>
+                        <span class="archived-badge">Archived</span>
+                    </div>
+                    <div class="version-meta">
+                        <p><strong>Effective Date:</strong> August 17, 2026</p>
+                        <p><strong>Status:</strong> Superseded by 2026-09-10</p>
                     </div>
                     <div class="version-summary">
                         <p><strong>Summary:</strong> Corrects and narrows &sect;2.6. The separate website counter described in 2026-08-16 was retired, so the paragraph describing it is removed &mdash; no destination lookups are counted on kalum.app at all. &sect;2.6 now also names the three non-identifying dimensions each count carries besides the destination (whether the request came from a verified copy of the app, whether a sign-in token was attached, and whether the device was iOS or Android), states that a small total may reflect a single lookup rather than many contributors, and discloses that one date is kept for the measurement as a whole &mdash; when the current counting period began &mdash; while no count carries a timestamp. No other privacy practices changed, and nothing new is collected.</p>
@@ -71,7 +97,7 @@
                         </ul>
                     </div>
                     <div class="version-actions">
-                        <a href="./index.html" class="btn btn-primary">View Current Version</a>
+                        <a href="./versions/2026-08-17.html" class="btn btn-secondary">View Archived Copy</a>
                     </div>
                 </article>
 
