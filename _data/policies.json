@@ -59,8 +59,38 @@
     "name": "NetCloak VPN",
     "description": "Privacy-focused VPN service for mobile devices",
     "privacy": {
-      "current_version": "2025-08-05",
+      "current_version": "2026-09-15",
       "versions": [
+        {
+          "version": "2026-09-15",
+          "effective_date": "September 15, 2026",
+          "summary": "Rewritten against what the app actually does. The session model is time-bounded rather than data-metered, so the data quota, the megabyte extension, the grace period and the client-side usage polling are all gone. Several disclosures that were simply wrong are corrected: the hosting provider is Contabo GmbH, operational logs are kept for no more than two days rather than thirty, and the claim that no connection times were collected is replaced by a field-by-field list of the session record, which does hold creation, activity and expiry times. All references to the former third-party authentication and analytics backend are removed, along with references to a second mobile platform. New disclosures cover consent through Google's User Messaging Platform, ad reward verification, the remotely set ad frequency that is currently zero, and on-device dead-tunnel detection that transmits nothing.",
+          "file": "2026-09-15.html",
+          "highlights": [
+            "Time-bounded Marathon, Balanced and Sprint sessions replace the data quota model",
+            "Session record listed field by field, including the times an earlier version wrongly denied collecting",
+            "Log retention corrected from 30 days to no more than two days",
+            "Hosting provider corrected to Contabo GmbH",
+            "No third-party authentication backend, no analytics SDK and no crash-reporting SDK",
+            "Advertising: UMP consent, advertising ID, reward verification, frequency currently set to zero",
+            "On-device dead-tunnel detection disclosed as local-only processing",
+            "Android only; references to a second platform removed"
+          ]
+        },
+        {
+          "version": "2025-11-12",
+          "effective_date": "November 12, 2025",
+          "summary": "Updated for the Free Tier model with data quota tracking. Added the device permissions section, client-side and server-side usage monitoring, DNS-over-HTTPS server discovery via Cloudflare, a quota-based session model with ad-funded data extensions, a grace period after the limit was exceeded, and proactive low and critical warnings.",
+          "file": "2025-11-12.html",
+          "highlights": [
+            "Device permissions section added (Internet, VPN service, Foreground service, Notifications, Advertising ID)",
+            "Client-side and server-side usage monitoring disclosed",
+            "DNS-over-HTTPS via Cloudflare 1.1.1.1 for server discovery",
+            "Quota-based session model with ad-funded data extensions",
+            "Grace period after the data limit was exceeded",
+            "Proactive warning system at 15% and 5% remaining"
+          ]
+        },
         {
           "version": "2025-08-05",
           "effective_date": "August 5, 2025",
@@ -77,8 +107,41 @@
       ]
     },
     "terms": {
-      "current_version": "2025-08-20",
+      "current_version": "2026-09-15",
       "versions": [
+        {
+          "version": "2026-09-15",
+          "effective_date": "September 15, 2026",
+          "summary": "The Terms now describe the service that exists. The single data-quota tier is replaced by three time-bounded connection modes, Marathon, Balanced and Sprint, with extensions capped at 180 minutes of remaining time. The 10 GB per session limit is stated as an anti-abuse ceiling rather than an allowance to spend. A new section sets out the six operational reasons a session can end before its time is up, and the app's own detection of a tunnel that has stopped responding. Authentication is an anonymous token from our own backend, the fixed minimum ad viewing time is dropped in favour of Google's own reward threshold, consent and reward verification are described, the third-party list is corrected, and an inaccurate per-server user figure is removed. The legal framework is unchanged.",
+          "file": "2026-09-15.html",
+          "highlights": [
+            "Marathon, Balanced and Sprint modes replace the single quota-based tier",
+            "Extensions capped at 180 minutes of remaining time",
+            "10 GB per session stated as an anti-abuse fair-use ceiling, not an allowance",
+            "New section on the six reasons a session can be ended early",
+            "Anonymous token from our own backend replaces third-party authentication",
+            "Fixed 8-second ad requirement dropped; consent and reward verification described",
+            "Third-party list corrected, including the hosting provider",
+            "Inaccurate per-server concurrent user figure removed",
+            "Definitions rewritten around modes, extensions and the fair-use ceiling",
+            "Age requirement, acceptable use, disclaimers, liability and arbitration unchanged"
+          ]
+        },
+        {
+          "version": "2025-11-12",
+          "effective_date": "November 12, 2025",
+          "summary": "Replaced the three-tier system with a single Free Tier defined by a data quota, added ad-funded data extensions, a grace period after the limit was exceeded, proactive low and critical warnings, updated technical requirements and DNS-over-HTTPS server discovery, and revised the definitions to match that service model.",
+          "file": "2025-11-12.html",
+          "highlights": [
+            "Single Free Tier with a per-session data limit replaced the three tiers",
+            "Ad-funded data extensions",
+            "Grace period after the data limit was exceeded",
+            "Proactive warning system at 15% and 5% remaining",
+            "Technical requirements updated (Android API 26+, specific permissions)",
+            "DNS-over-HTTPS for server discovery",
+            "Definitions revised to match the quota model"
+          ]
+        },
         {
           "version": "2025-08-20",
           "effective_date": "August 20, 2025",

@@ -56,8 +56,48 @@
                 <article class="version-entry current">
                     <div class="version-header">
                         <div class="version-info">
-                            <h4>Version 2025-11-12</h4>
+                            <h4>Version 2026-09-15</h4>
                             <span class="current-badge">Current Version</span>
+                        </div>
+                        <time class="version-date" datetime="2026-09-15">September 15, 2026</time>
+                    </div>
+                    <div class="version-content">
+                        <div class="version-summary">
+                            <h5>Changes in this version:</h5>
+                            <p><strong>Rewritten against what the app actually does.</strong> The previous version described a data-quota service authenticated through a third-party backend, on two platforms. None of that had been true for some time. Sessions are now bounded by time, the app is Android only, and several disclosures that were simply wrong &mdash; the hosting provider, the log retention period, and a claim that no connection times were recorded &mdash; are corrected here.</p>
+                        </div>
+                        <div class="version-highlights">
+                            <h5>Key Changes:</h5>
+                            <ul>
+                                <li>Session model replaced: time-bounded Marathon, Balanced and Sprint modes, with no data allowance, no extension in megabytes and no grace period</li>
+                                <li>&sect;2 now lists the session record field by field, including the creation, activity and expiry times that an earlier version wrongly said were not collected</li>
+                                <li>Log retention corrected from thirty days to no more than two days, which is what the service actually runs with</li>
+                                <li>Hosting provider corrected: Contabo GmbH, not the provider previously named</li>
+                                <li>All references to the former third-party authentication and analytics backend removed &mdash; authentication is an anonymous token from our own server, and the app carries no analytics or crash-reporting SDK</li>
+                                <li>Advertising section rewritten: consent through Google&rsquo;s User Messaging Platform, the advertising ID, remotely set ad frequency currently at zero, and how reward verification works</li>
+                                <li>New disclosure of on-device dead-tunnel detection, which reads the tunnel&rsquo;s handshake and network state locally and transmits nothing</li>
+                                <li>Client-side usage polling disclosure removed, because that polling no longer exists</li>
+                                <li>Privacy rights section now states plainly why an anonymous service usually has nothing to produce or delete</li>
+                                <li>References to a second mobile platform removed; NetCloak is an Android application</li>
+                            </ul>
+                        </div>
+                        <div class="version-metadata">
+                            <p><strong>Effective Date:</strong> <time datetime="2026-09-15">September 15, 2026</time></p>
+                            <p><strong>Document Type:</strong> Privacy Policy</p>
+                            <p><strong>Sections:</strong> 15 main sections</p>
+                        </div>
+                        <div class="version-actions">
+                            <a href="./index.html" class="btn btn-primary">View Current Version</a>
+                            <a href="./versions/2026-09-15.html" class="btn btn-secondary">View This Version</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="version-entry archived">
+                    <div class="version-header">
+                        <div class="version-info">
+                            <h4>Version 2025-11-12</h4>
+                            <span class="archived-badge">Archived</span>
                         </div>
                         <time class="version-date" datetime="2025-11-12">November 12, 2025</time>
                     </div>
@@ -82,11 +122,10 @@
                         <div class="version-metadata">
                             <p><strong>Effective Date:</strong> <time datetime="2025-11-12">November 12, 2025</time></p>
                             <p><strong>Document Type:</strong> Privacy Policy</p>
-                            <p><strong>Sections:</strong> 15 main sections</p>
+                            <p><strong>Superseded By:</strong> Version 2026-09-15</p>
                         </div>
                         <div class="version-actions">
-                            <a href="./index.html" class="btn btn-primary">View Current Version</a>
-                            <a href="./versions/2025-11-12.html" class="btn btn-secondary">View This Version</a>
+                            <a href="./versions/2025-11-12.html" class="btn btn-secondary">View Archived Version</a>
                         </div>
                     </div>
                 </article>

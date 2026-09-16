@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="NetCloak VPN Terms of Use - Current version effective November 12, 2025. Terms and conditions for using NetCloak VPN service.">
+    <meta name="description" content="NetCloak VPN Terms of Use - Current version effective September 15, 2026. Terms and conditions for using NetCloak VPN service.">
     <meta property="og:title" content="NetCloak VPN Terms of Use">
     <meta property="og:description" content="Terms and conditions for using NetCloak VPN service.">
-    <title>NetCloak VPN Terms of Use - NeuEra Apps</title>
+    <title>NetCloak VPN Terms of Use v2026-09-15 - NeuEra Apps</title>
     <link rel="stylesheet" href="/assets/css/style.css?v=5">
     <link rel="stylesheet" href="/assets/css/print.css?v=5" media="print">
-    <link rel="canonical" href="https://legal.neuera.app/netcloak/terms/">
+    <link rel="canonical" href="https://legal.neuera.app/netcloak/terms/versions/2026-09-15.html">
 </head>
 <body>
     <header class="site-header">
@@ -37,7 +37,7 @@
             <span class="breadcrumb-sep">/</span>
             <a href="/netcloak/terms/archive.html">Terms of Use</a>
             <span class="breadcrumb-sep">/</span>
-            <span aria-current="page">v2025-11-12</span>
+            <span aria-current="page">v2026-09-15</span>
         </div>
     </nav>
 
@@ -47,8 +47,8 @@
                 <div class="policy-meta">
                     <span class="archived-badge">Archived Version</span>
                     <div class="version-info">
-                        <span class="version-number">Version 2025-11-12</span>
-                        <span class="effective-date">Effective: November 12, 2025</span>
+                        <span class="version-number">Version 2026-09-15</span>
+                        <span class="effective-date">Effective: September 15, 2026</span>
                     </div>
                 </div>
                 <div class="policy-actions">
@@ -65,17 +65,17 @@
                     <ol>
                         <li><a href="#section-1">Acceptance of Terms</a></li>
                         <li><a href="#section-2">Service Description</a></li>
-                        <li><a href="#section-3">Account & Access</a></li>
+                        <li><a href="#section-3">Account &amp; Access</a></li>
                         <li><a href="#section-4">Acceptable Use Policy</a></li>
                         <li><a href="#section-5">Advertisements</a></li>
-                        <li><a href="#section-6">Privacy & Data</a></li>
+                        <li><a href="#section-6">Privacy &amp; Data</a></li>
                         <li><a href="#section-7">Service Limitations</a></li>
                         <li><a href="#section-8">Technical Requirements</a></li>
-                        <li><a href="#section-9">Disclaimers & Warranties</a></li>
+                        <li><a href="#section-9">Disclaimers &amp; Warranties</a></li>
                         <li><a href="#section-10">Limitation of Liability</a></li>
                         <li><a href="#section-11">Indemnification</a></li>
                         <li><a href="#section-12">Termination</a></li>
-                        <li><a href="#section-13">Governing Law & Disputes</a></li>
+                        <li><a href="#section-13">Governing Law &amp; Disputes</a></li>
                         <li><a href="#section-14">General Provisions</a></li>
                         <li><a href="#section-15">Contact Information</a></li>
                         <li><a href="#section-16">Specific Provisions</a></li>
@@ -87,7 +87,7 @@
                     <h2>1. ACCEPTANCE OF TERMS</h2>
 
                     <h3>1.1 Agreement</h3>
-                    <p>By accessing or using the NetCloak VPN service ("Service"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree to these Terms, do not use the Service.</p>
+                    <p>By accessing or using the NetCloak VPN service (&ldquo;Service&rdquo;), you agree to be bound by these Terms of Use (&ldquo;Terms&rdquo;). If you do not agree to these Terms, do not use the Service.</p>
 
                     <h3>1.2 Age Requirement</h3>
                     <p>You must be at least 18 years old to use this Service. If you are under 18, you may only use the Service with parental or guardian consent and supervision.</p>
@@ -100,49 +100,64 @@
                     <h2>2. SERVICE DESCRIPTION</h2>
 
                     <h3>2.1 What We Provide</h3>
-                    <p>NetCloak is a free, ad-supported VPN service using the WireGuard protocol. The Service provides encrypted internet connections through our server infrastructure.</p>
+                    <p>NetCloak is a free VPN service for Android, using the WireGuard protocol. It provides an encrypted connection through servers we operate. It is supported by advertising, although how often an advertisement appears is a setting we control remotely and can set to zero.</p>
 
-                    <h3>2.2 Service Tier</h3>
-                    <p>The Service offers a single free tier with data quota limits:</p>
+                    <h3>2.2 Connection Modes</h3>
+                    <p>Sessions are bounded by <strong>time</strong>, not by a data allowance. Before connecting you pick a mode, which trades speed against how long the session lasts:</p>
                     <ul>
-                        <li><strong>Free Tier:</strong> 20 Mbps download/upload, 24-hour sessions, 1.05GB data limit per session</li>
-                        <li><strong>Data Extension:</strong> Watch advertisements to add 500MB data quota to your session</li>
-                        <li><strong>Grace Period:</strong> 5 minutes of continued access after data limit is exceeded</li>
-                        <li><strong>Warning System:</strong> Proactive alerts at 15% (Low) and 5% (Critical) remaining data/time</li>
+                        <li><strong>Marathon:</strong> 80 minutes at the base speed</li>
+                        <li><strong>Balanced:</strong> 40 minutes at twice the base speed &mdash; the default</li>
+                        <li><strong>Sprint:</strong> 20 minutes at four times the base speed</li>
                     </ul>
+                    <p>Watching a rewarded advertisement adds another block of your mode&rsquo;s length to whatever time is left. Remaining time is capped at 180 minutes, so an extension may add less than a full block, or nothing at all, and the app will tell you when that happens.</p>
+                    <p>The app warns you as a session runs low: our server marks it &ldquo;low&rdquo; between 5% and 15% of the window remaining and &ldquo;critical&rdquo; at 5% or less. Those warnings prompt you to extend; they do not end the session.</p>
 
-                    <h3>2.3 Ad-Supported Model</h3>
-                    <p>Access to the Service requires viewing video advertisements (minimum 8 seconds) through Google AdMob. This is how we keep the Service free.</p>
+                    <h3>2.3 Fair Use</h3>
+                    <p>There is no data allowance to spend and none is shown in the app. Transfer volume is measured only against an anti-abuse ceiling of 10 GB per session, which exists so a single session cannot exhaust a shared server.</p>
 
-                    <h3>2.4 Server Infrastructure</h3>
+                    <h3>2.4 Ad-Supported Model</h3>
+                    <p>Extending a session may require watching a rewarded video advertisement served by Google AdMob. The reward is granted at Google&rsquo;s own threshold for the advertisement. How often an advertisement is required is set remotely and can be zero, in which case extensions are granted without one.</p>
+
+                    <h3>2.5 Server Infrastructure</h3>
                     <ul>
-                        <li>Automatic server selection based on availability and capacity</li>
-                        <li>No manual server selection available</li>
-                        <li>Servers may reach capacity (100 concurrent users per server)</li>
-                        <li>Service availability depends on server capacity</li>
+                        <li>Servers are selected automatically by availability and capacity</li>
+                        <li>Manual server selection is not offered</li>
+                        <li>Server capacity is finite, and a connection attempt can be refused when a server is full</li>
+                        <li>Service availability depends on that capacity</li>
                     </ul>
                 </section>
 
                 <section id="section-3">
-                    <h2>3. ACCOUNT & ACCESS</h2>
+                    <h2>3. ACCOUNT &amp; ACCESS</h2>
 
                     <h3>3.1 Anonymous Authentication</h3>
                     <ul>
-                        <li>No registration or personal account required</li>
-                        <li>Firebase anonymous authentication used for session management</li>
-                        <li>No account recovery possible (anonymous system)</li>
-                        <li>Each device generates unique anonymous identifiers</li>
+                        <li>No registration, account, email address or password is required</li>
+                        <li>Our own backend issues an access token, which the app stores in Android Keystore-backed encrypted storage</li>
+                        <li>The identifier inside that token is anonymous and is not tied to your identity</li>
+                        <li>There is no account recovery, because there is no account</li>
                     </ul>
 
                     <h3>3.2 Session Management</h3>
                     <ul>
-                        <li>VPN sessions last 24 hours with 1.05GB data quota</li>
-                        <li>Sessions can be extended by watching advertisements (adds 24 hours + 500MB data)</li>
-                        <li>Extensions are cumulative - time and data add to your remaining balance</li>
-                        <li>One active session per user at a time</li>
-                        <li>Sessions automatically terminate when time expires or data limit is exceeded (after 5-minute grace period)</li>
-                        <li>Real-time monitoring: Client-side tracking every 10 seconds, server-side verification every 30 seconds</li>
+                        <li>A session lasts for the length of the mode you chose, and our server decides when it expires</li>
+                        <li>Sessions can be extended, subject to the 180-minute cap in &sect;2.2</li>
+                        <li>One session per user is active at a time</li>
+                        <li>The app checks the remaining time about every 30 seconds, and disconnects roughly 30 seconds before expiry so you are not cut off mid-transfer</li>
+                        <li>If the tunnel stops responding, the app ends the session and tells you, rather than continuing to show a connection that carries nothing</li>
                     </ul>
+
+                    <h3>3.3 When We End a Session Early</h3>
+                    <p>Your session may be ended before its time is up if:</p>
+                    <ul>
+                        <li>its time has run out</li>
+                        <li>the tunnel has gone idle, with no WireGuard handshake for five minutes</li>
+                        <li>the session was created but never connected within three minutes</li>
+                        <li>you started a newer session, which supersedes the older one</li>
+                        <li>the server is under capacity pressure and is reclaiming space</li>
+                        <li>a peer has been left behind by a failure and is no longer attached to a live session</li>
+                    </ul>
+                    <p>Reconnecting after any of these starts a new session.</p>
                 </section>
 
                 <section id="section-4">
@@ -158,7 +173,7 @@
                         <li>Engage in piracy or unauthorized content distribution</li>
                         <li>Send spam, phishing attempts, or conduct fraudulent activities</li>
                         <li>Attempt to circumvent service limitations or restrictions</li>
-                        <li>Block, skip, or manipulate advertisement viewing</li>
+                        <li>Block, skip, or manipulate advertisement viewing, or claim a reward for an advertisement that was not watched</li>
                         <li>Share, resell, or commercialize the Service</li>
                         <li>Violate the privacy or rights of others</li>
                         <li>Use the Service for commercial or business purposes</li>
@@ -166,9 +181,10 @@
 
                     <h3>4.2 Rate Limiting</h3>
                     <ul>
-                        <li>API requests limited to 5 per minute per user for session operations</li>
+                        <li>Creating or extending a session is limited to 5 requests a minute per address</li>
+                        <li>Checking session status is limited to 30 requests a minute per address</li>
                         <li>Excessive requests may result in temporary blocks</li>
-                        <li>Fair use policy applies to prevent system abuse</li>
+                        <li>The fair-use ceiling in &sect;2.3 applies to prevent system abuse</li>
                     </ul>
 
                     <h3>4.3 Enforcement</h3>
@@ -183,14 +199,21 @@
                 <section id="section-5">
                     <h2>5. ADVERTISEMENTS</h2>
 
-                    <h3>5.1 Required Viewing</h3>
+                    <h3>5.1 Rewarded Video</h3>
                     <ul>
-                        <li>Complete advertisement viewing (minimum 8 seconds) required for service access</li>
-                        <li>Advertisements provided by Google AdMob (third-party service)</li>
+                        <li>Advertisements are rewarded videos provided by Google AdMob, a third-party service</li>
+                        <li>The reward that extends your session is granted at Google&rsquo;s threshold for that advertisement</li>
                         <li>We do not control advertisement content</li>
+                        <li>How often an advertisement is required is set remotely and may be zero</li>
                     </ul>
 
-                    <h3>5.2 Ad Interaction</h3>
+                    <h3>5.2 Consent</h3>
+                    <p>Before personalised advertising, the app asks for your consent through Google&rsquo;s User Messaging Platform. You can change or withdraw that choice from the app&rsquo;s privacy options at any time.</p>
+
+                    <h3>5.3 Reward Verification</h3>
+                    <p>When a verified reward is requested, the app attaches a random single-use number and the anonymous identifier from your access token to the advertisement, and Google confirms to our server that the reward was earned. This exists so that an extension cannot be granted to an automated request. Server-side enforcement is currently switched off.</p>
+
+                    <h3>5.4 Ad Interaction</h3>
                     <ul>
                         <li>Do not use ad-blocking software or techniques</li>
                         <li>Do not engage in fraudulent ad interactions</li>
@@ -199,21 +222,23 @@
                 </section>
 
                 <section id="section-6">
-                    <h2>6. PRIVACY & DATA</h2>
+                    <h2>6. PRIVACY &amp; DATA</h2>
 
                     <h3>6.1 Data Collection</h3>
                     <ul>
-                        <li>Minimal operational data collected for service functionality</li>
-                        <li>No browsing activity or traffic content logged</li>
-                        <li>Session metadata (creation, extension, expiration) stored temporarily</li>
-                        <li>Anonymous Firebase authentication tokens used</li>
+                        <li>Only the operational data needed to run a session is collected</li>
+                        <li>No browsing activity, DNS queries or traffic content is logged</li>
+                        <li>Session metadata, including when a session was created, extended and due to expire, is stored while the session exists and deleted when it ends</li>
+                        <li>Authentication uses an anonymous token issued by our own backend</li>
                     </ul>
 
                     <h3>6.2 Third-Party Services</h3>
                     <ul>
-                        <li>Google AdMob for advertisement delivery</li>
-                        <li>Firebase for anonymous authentication</li>
-                        <li>These services have their own privacy policies</li>
+                        <li>Google AdMob, for advertisements, and Google&rsquo;s User Messaging Platform, for consent</li>
+                        <li>Contabo GmbH, a German hosting company, for the VPN servers</li>
+                        <li>Cloudflare, for the DNS-over-HTTPS resolver the app queries</li>
+                        <li>Google Play, for distribution</li>
+                        <li>Each of these has its own privacy policy</li>
                     </ul>
 
                     <h3>6.3 Full Privacy Details</h3>
@@ -225,14 +250,14 @@
 
                     <h3>7.1 Availability</h3>
                     <ul>
-                        <li>Service provided "as available" with no uptime guarantees</li>
-                        <li>Server capacity limited to 100 concurrent users per server</li>
+                        <li>Service provided &ldquo;as available&rdquo; with no uptime guarantees</li>
+                        <li>Server capacity is finite and connections may be refused, or sessions reclaimed, when a server is under pressure</li>
                         <li>Maintenance may occur without notice</li>
                         <li>Service may be discontinued at any time</li>
                     </ul>
 
                     <h3>7.2 Performance</h3>
-                    <p>Actual speeds may vary based on:</p>
+                    <p>The speed of your mode is a ceiling we apply, not a guarantee. Actual speeds may vary based on:</p>
                     <ul>
                         <li>Network conditions</li>
                         <li>Server load</li>
@@ -255,23 +280,23 @@
 
                     <h3>8.1 Client Requirements</h3>
                     <ul>
-                        <li>Android device with minimum API level 26 (Android 8.0+)</li>
+                        <li>An Android device running API level 26 (Android 8.0) or later</li>
                         <li>Stable internet connection</li>
                         <li>Sufficient device resources</li>
-                        <li>Required permissions: Internet access, Network state, VPN service, Foreground service, Notifications (Android 13+), Advertising ID</li>
+                        <li>Required permissions: internet access, network state, VPN service, foreground service, notifications (Android 13+), advertising ID</li>
                     </ul>
 
                     <h3>8.2 Network Compatibility</h3>
                     <ul>
-                        <li>HTTPS connection on port 8443 required</li>
-                        <li>User responsible for ensuring network compatibility</li>
-                        <li>Some networks may block VPN protocols</li>
-                        <li>DNS-over-HTTPS (DoH) used for server discovery and configuration</li>
+                        <li>An HTTPS connection to our API is required, in addition to the WireGuard tunnel itself</li>
+                        <li>You are responsible for ensuring your network permits them</li>
+                        <li>Some networks block VPN protocols</li>
+                        <li>DNS-over-HTTPS is used for server discovery and configuration</li>
                     </ul>
                 </section>
 
                 <section id="section-9">
-                    <h2>9. DISCLAIMERS & WARRANTIES</h2>
+                    <h2>9. DISCLAIMERS &amp; WARRANTIES</h2>
 
                     <h3>9.1 "AS IS" Service</h3>
                     <p class="disclaimer">THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.</p>
@@ -324,6 +349,7 @@
                         <li>Service discontinuation</li>
                         <li>Technical or security reasons</li>
                     </ul>
+                    <p>Ending an individual session for one of the operational reasons in &sect;3.3 is not a termination of your access, and you may reconnect.</p>
 
                     <h3>12.3 Effect of Termination</h3>
                     <p>Upon termination:</p>
@@ -335,7 +361,7 @@
                 </section>
 
                 <section id="section-13">
-                    <h2>13. GOVERNING LAW & DISPUTES</h2>
+                    <h2>13. GOVERNING LAW &amp; DISPUTES</h2>
 
                     <h3>13.1 Governing Law</h3>
                     <p>These Terms are governed by the laws of California, United States, without regard to conflict of law principles.</p>
@@ -396,20 +422,20 @@
                 <section id="section-17">
                     <h2>17. DEFINITIONS</h2>
                     <ul>
-                        <li><strong>"Service":</strong> The NetCloak VPN application and associated backend infrastructure</li>
-                        <li><strong>"Session":</strong> A VPN connection with 24-hour duration and 1.05GB data quota, established after ad viewing</li>
-                        <li><strong>"Free Tier":</strong> The single service tier offering 20 Mbps bandwidth, 24-hour sessions, and 1.05GB data limit</li>
-                        <li><strong>"Data Extension":</strong> Additional 500MB data quota added to session by watching an advertisement</li>
-                        <li><strong>"Grace Period":</strong> 5-minute period of continued access after data limit is exceeded</li>
-                        <li><strong>"Warning Level":</strong> Proactive alerts (Low at 15% remaining, Critical at 5% remaining)</li>
-                        <li><strong>"User":</strong> Any person using the Service</li>
-                        <li><strong>"Ad":</strong> Video advertisement from Google AdMob (minimum 8 seconds viewing required)</li>
+                        <li><strong>&ldquo;Service&rdquo;:</strong> the NetCloak VPN application and the backend infrastructure behind it</li>
+                        <li><strong>&ldquo;Session&rdquo;:</strong> one VPN connection, lasting for the length of the mode it was created with</li>
+                        <li><strong>&ldquo;Connection Mode&rdquo;:</strong> Marathon, Balanced or Sprint, each trading speed against session length as described in &sect;2.2</li>
+                        <li><strong>&ldquo;Extension&rdquo;:</strong> additional time added to a session, subject to the 180-minute cap on remaining time</li>
+                        <li><strong>&ldquo;Fair-Use Ceiling&rdquo;:</strong> the 10 GB per session anti-abuse limit described in &sect;2.3</li>
+                        <li><strong>&ldquo;Warning Level&rdquo;:</strong> the server&rsquo;s signal that a session is running low &mdash; low at 5&ndash;15% of the window remaining, critical at 5% or less</li>
+                        <li><strong>&ldquo;User&rdquo;:</strong> any person using the Service</li>
+                        <li><strong>&ldquo;Ad&rdquo;:</strong> a rewarded video advertisement from Google AdMob</li>
                     </ul>
                 </section>
 
                 <div class="acknowledgment">
                     <p><strong>BY USING NETCLOAK, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY THESE TERMS OF USE.</strong></p>
-                    <p class="last-updated">Last Updated: November 12, 2025</p>
+                    <p class="last-updated">Last Updated: September 15, 2026</p>
                 </div>
             </article>
         </div>
