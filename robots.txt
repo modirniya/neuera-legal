@@ -10,7 +10,6 @@ Allow: /netcloak/privacy/archive.html
 Allow: /netcloak/privacy/versions/
 
 # Disallow future terms page until ready
-Disallow: /netcloak/terms/
 
 # Crawl delay (optional)
 Crawl-delay: 1
