@@ -52,12 +52,38 @@
 
                 <article class="version-card current">
                     <div class="version-header">
-                        <h4>Version 2026-09-11</h4>
+                        <h4>Version 2026-09-20</h4>
                         <span class="current-badge">Current Version</span>
                     </div>
                     <div class="version-meta">
-                        <p><strong>Effective Date:</strong> September 11, 2026</p>
+                        <p><strong>Effective Date:</strong> September 20, 2026</p>
                         <p><strong>Status:</strong> Active</p>
+                    </div>
+                    <div class="version-summary">
+                        <p><strong>Summary:</strong> Discloses two aggregate measurements that were already running and had no section. New &sect;2.9 &ldquo;Aggregate Setup Measurement&rdquo; covers the counts kept as someone sets the app up for the first time &mdash; the step reached, the destination&rsquo;s country calling code where there is one, the platform and the app version &mdash; and states that two versions of the first-run experience are tried, with the choice made by a coin flip on the device and recorded only as a single letter. New &sect;2.10 &ldquo;Aggregate Refused-Call Measurement&rdquo; covers the counts kept when a call to a destination we do not connect is refused: the country calling code and the reason, never the number dialled. Both carry no identifier, no timestamp on any count and no per-event record, and both add matching rows to &sect;3 and &sect;14. No new data is collected by this version; it describes collection that was already in place.</p>
+                        <h5>Key Points:</h5>
+                        <ul>
+                            <li>New &sect;2.9: setup steps are counted per step, destination code, platform and app version &mdash; totals only</li>
+                            <li>Which of two first-run experiences a device sees is decided on the device; only the letter is counted, and no server learns which device drew what</li>
+                            <li>Counts that mean something only once &mdash; first open, first purchase, first call &mdash; are sent at most once per device, so a total is devices and not taps</li>
+                            <li>New &sect;2.10: refused calls are counted per destination code and reason; the number dialled is not recorded and a refused call is not charged</li>
+                            <li>Nothing to retrieve or delete per person in either, because neither identifies anyone</li>
+                            <li>No change to call metadata, transactions, sub-processors, retention or rights</li>
+                        </ul>
+                    </div>
+                    <div class="version-actions">
+                        <a href="./index.html" class="btn btn-primary">View Current Version</a>
+                    </div>
+                </article>
+
+                <article class="version-card">
+                    <div class="version-header">
+                        <h4>Version 2026-09-11</h4>
+                        <span class="archived-badge">Archived</span>
+                    </div>
+                    <div class="version-meta">
+                        <p><strong>Effective Date:</strong> September 11, 2026</p>
+                        <p><strong>Status:</strong> Superseded by 2026-09-20</p>
                     </div>
                     <div class="version-summary">
                         <p><strong>Summary:</strong> Adds &sect;2.8 &ldquo;Campaign Landing Pages&rdquo;. Links to Kalum from video descriptions, creator pages or printed QR codes may open a short landing page before the app store; opening it and tapping a store button each add one to a daily count for that campaign. The section states the whole record &mdash; campaign name, day, total &mdash; and that no visit is recorded on its own and no identifier, IP address, browser detail or referring page is kept. It also states that app-store install figures per campaign reach us only in aggregate under the stores&rsquo; own terms. &sect;14 gains the matching summary row. No other privacy practices changed.</p>
@@ -71,7 +97,7 @@
                         </ul>
                     </div>
                     <div class="version-actions">
-                        <a href="./index.html" class="btn btn-primary">View Current Version</a>
+                        <a href="./versions/2026-09-11.html" class="btn btn-secondary">View This Version</a>
                     </div>
                 </article>
 
