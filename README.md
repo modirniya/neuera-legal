@@ -15,8 +15,8 @@ This static website hosts versioned legal documents with full revision history f
 ## Contact
 
 - Technical Support: hello@neuera.app
-- Company: NeuEra Apps
+- Company: NeuEra Apps LLC
 
 ## License
 
-© 2025 NeuEra Apps. All rights reserved.
+Â© 2026 NeuEra Apps LLC. All rights reserved.
