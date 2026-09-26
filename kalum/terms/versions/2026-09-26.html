@@ -216,8 +216,8 @@
                     <ul>
                         <li>Connected calls are billed in <strong>one-minute increments, rounded up to the next whole minute</strong>. A 1-second call is billed at one minute; a 121-second call is billed at three minutes.</li>
                         <li>A <strong>minimum of one minute</strong> is charged for any connected call.</li>
-                        <li>Credits are deducted after the call ends; we do not reserve credits during the call.</li>
-                        <li><strong>All call attempts are billed</strong>, including unanswered, busy, and failed attempts, because our underlying carrier (Twilio) charges us per attempt regardless of answer state. The amount billed for an unanswered call is the one-minute minimum at the destination's rate.</li>
+                        <li>While a call is in progress we may reserve credit for its next minute or two. When the call ends we charge only for the minutes actually billed under this Section and release the rest of the reservation.</li>
+                        <li><strong>Only connected calls are billed.</strong> A call that is not answered, is busy, or fails to connect is not charged.</li>
                         <li>Calls to destinations not listed in our rate table are billed at a fallback rate of $0.50 per minute. If you encounter this rate for a destination you believe should be listed, please contact <a href="mailto:hello@neuera.app">hello@neuera.app</a>.</li>
                     </ul>
 
@@ -553,7 +553,7 @@
                             </tr>
                             <tr>
                                 <td><strong>Billing</strong></td>
-                                <td>Per-minute, rounded up; 1-minute minimum; <strong>all attempts billed</strong></td>
+                                <td>Per-minute, rounded up; 1-minute minimum; <strong>only connected calls are billed</strong></td>
                             </tr>
                             <tr>
                                 <td><strong>Minimum balance</strong></td>
