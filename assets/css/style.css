@@ -51,6 +51,7 @@
   --app-rpsmafia: #d9552c;
   --app-odo: #10b981;
   --app-kalum: #f59e0b;
+  --app-salonledger: #c0396b;
 
   /* Feedback */
   --success: #15803d;
@@ -772,6 +773,7 @@ ul.commitments-list li { margin-bottom: var(--space-2); }
 .icon-shelf__item:nth-child(3) { transform: translateY(16px); }
 .icon-shelf__item:nth-child(4) { transform: translateY(-4px) translateX(44px); }
 .icon-shelf__item:nth-child(5) { transform: translateY(-28px) translateX(44px); }
+.icon-shelf__item:nth-child(6) { transform: translateY(-12px) translateX(44px); }
 
 .icon-shelf__item:hover { transform: translateY(-6px) scale(1.04); }
 
@@ -780,6 +782,7 @@ ul.commitments-list li { margin-bottom: var(--space-2); }
 .icon-shelf__item--rpsmafia   { --tile-accent: var(--app-rpsmafia); }
 .icon-shelf__item--odo        { --tile-accent: var(--app-odo); }
 .icon-shelf__item--kalum      { --tile-accent: var(--app-kalum); }
+.icon-shelf__item--salonledger { --tile-accent: var(--app-salonledger); }
 
 @media (max-width: 880px) {
   .hero__grid {
@@ -955,6 +958,7 @@ ul.commitments-list li { margin-bottom: var(--space-2); }
 .app-card--rpsmafia   { --card-accent: var(--app-rpsmafia); }
 .app-card--odo        { --card-accent: var(--app-odo); }
 .app-card--kalum      { --card-accent: var(--app-kalum); }
+.app-card--salonledger { --card-accent: var(--app-salonledger); }
 
 /* Placeholder tile (kept for compatibility; no longer used on the apps page) */
 .app-card--placeholder {
@@ -1135,6 +1139,7 @@ ul.commitments-list li { margin-bottom: var(--space-2); }
 .product--rpsmafia   { --card-accent: var(--app-rpsmafia); }
 .product--odo        { --card-accent: var(--app-odo); }
 .product--kalum      { --card-accent: var(--app-kalum); }
+.product--salonledger { --card-accent: var(--app-salonledger); }
 
 .feature-tag {
   display: inline-block;
@@ -1408,6 +1413,7 @@ ul.commitments-list li { margin-bottom: var(--space-2); }
 .legal-group--rpsmafia   { --card-accent: var(--app-rpsmafia); }
 .legal-group--odo        { --card-accent: var(--app-odo); }
 .legal-group--kalum      { --card-accent: var(--app-kalum); }
+.legal-group--salonledger { --card-accent: var(--app-salonledger); }
 
 .legal-list {
   list-style: none;

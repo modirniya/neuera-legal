@@ -3,8 +3,37 @@
     "name": "NeuEra Apps",
     "description": "Studio-wide commitments that apply across every NeuEra Apps product",
     "data_charter": {
-      "current_version": "2026-09-07",
+      "current_version": "2026-09-29",
       "versions": [
+        {
+          "version": "2026-09-29",
+          "effective_date": "September 29, 2026",
+          "summary": "Salon Ledger joins the Charter. Section 1 names it among the covered apps and Section 4 states its position: it is a business tool that replaces the paper service-ticket pad in a nail salon, and most of what it holds is Tier B by nature, because a payday total is only worth something if it can be checked against the tickets behind it. The tickets and their full change history, techs' names and codes, linked-phone identifiers and the owner's sign-in email are disclosed as Tier B with the reason each exists, and so is one field that exists only for the pilot: the time it took to enter each ticket. It confirms that nothing is collected about the salon's customers, that no payments are processed, and that the app carries no analytics or advertising SDK, and it discloses that on Android the QR scanner, Google's ML Kit, sends Google its own metrics under Google's practices rather than this Charter. No tier definition, operating rule, or existing per-app position changed, and no wording elsewhere in the Charter was altered.",
+          "file": "2026-09-29.html",
+          "highlights": [
+            "Salon Ledger added to the covered apps in Section 1",
+            "Section 4 entry added, stating which Salon Ledger fields are Tier B and why",
+            "Pilot-only per-ticket entry time disclosed as Tier B",
+            "Confirms nothing is collected about the salon's customers and no payments are processed",
+            "Confirms Salon Ledger carries no analytics SDK, no advertising SDK and no advertising identifier",
+            "Discloses that ML Kit, the Android QR scanner, sends Google its own metrics, outside this Charter",
+            "No change to the Tier A / Tier B definitions or to the five operating rules",
+            "No change to any existing app's position, or to the advertising disclosures"
+          ]
+        },
+        {
+          "version": "2026-09-20",
+          "effective_date": "September 20, 2026",
+          "summary": "Corrects the Kalum entry in Section 4, which named only one Tier A measurement when five were running. It now names all five — destination price lookups, the optional after-call rating, campaign landing page views, the steps reached during first-time setup, and refused calls to destinations that exist mainly to generate charges — and states that every one of them is a running count with no identifier, no timestamp and no per-event record. Two of the five had been live without a Charter mention, which is the gap this closes. No tier definition, operating rule, or other app's position changed.",
+          "file": "2026-09-20.html",
+          "highlights": [
+            "Kalum entry in Section 4 now lists all five Tier A measurements instead of one",
+            "Closes a gap where the setup and refused-call counts were running without a Charter mention",
+            "Records that the first-run experiment's arm is chosen on the device and counted only as a letter",
+            "No change to the Tier A / Tier B definitions or to the operating rules",
+            "No change to any other app's position, or to the advertising disclosures"
+          ]
+        },
         {
           "version": "2026-09-07",
           "effective_date": "September 7, 2026",
@@ -545,6 +574,55 @@
             "Free with no purchases, no advertising and nothing that can be paid for",
             "Early access stated plainly: games may end, data may be reset, features may change",
             "Deliberate disruption of other players' games is grounds for removal"
+          ]
+        }
+      ]
+    }
+  },
+  "salonledger": {
+    "name": "Salon Ledger",
+    "description": "Service tickets for nail salons: techs log tickets on their own phones, owners get payday totals",
+    "privacy": {
+      "current_version": "2026-09-29",
+      "versions": [
+        {
+          "version": "2026-09-29",
+          "effective_date": "September 29, 2026",
+          "summary": "Initial Privacy Policy for Salon Ledger, published during its closed pilot. Salon Ledger replaces the paper service-ticket pad in a nail salon: the salon owner signs in with an email address, adds techs by name, links each tech's phone with a one-time QR code, and techs log their tickets on those phones. The policy lists every field the service holds about the owner, the techs, the linked phones and the tickets, including the full change history kept on every ticket and a per-ticket entry-time measurement that exists only for the pilot. It states that nothing is collected about the salon's own customers, that no payments are processed, and that the app carries no analytics, advertising or crash-reporting SDK. It discloses that on Android the QR code is read by Google's ML Kit, which processes the camera image on the phone but sends Google its own usage and performance metrics. It says plainly that deletion is by email request and that pilot sign-in is not yet the production authentication system.",
+          "file": "2026-09-29.html",
+          "highlights": [
+            "Business tool: the salon owner is the customer; techs use it at the owner's invitation and need no account",
+            "Every field listed for the owner, techs, linked phones and tickets",
+            "Nothing collected about the salon's customers — a ticket has no customer name or contact",
+            "No payments processed; tips are recorded, not handled",
+            "Tickets are never deleted by design, and every change is kept with who made it and when",
+            "Per-ticket entry time disclosed as a pilot-only measurement, Tier B under the NeuEra Data Practices Charter",
+            "Camera used only to scan the linking QR code; frames are not stored or sent by us",
+            "Google ML Kit on Android disclosed, including the metrics it sends to Google",
+            "No analytics SDK, no advertising SDK, no crash reporting, no advertising identifier",
+            "Hosting named: Fly.io, United States (Chicago)",
+            "Deletion by email request today; pilot sign-in stated as not yet production authentication"
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "current_version": "2026-09-29",
+      "versions": [
+        {
+          "version": "2026-09-29",
+          "effective_date": "September 29, 2026",
+          "summary": "Initial Terms of Use for Salon Ledger, covering its closed pilot. The agreement is with the salon owner, who invites techs to use it. The service is provided as-is during the pilot, features may change, and there is no fee. The owner is responsible for the accuracy of tickets and totals, for how techs are paid, and for having the right to enter techs' names and work records. Totals are a record-keeping aid, not payroll, tax or legal advice, and no payments or tips are processed. Owner corrections take precedence over tech edits, and every change is kept in the ticket's history.",
+          "file": "2026-09-29.html",
+          "highlights": [
+            "Agreement is with the salon owner; techs use the app at the owner's invitation",
+            "Closed pilot, provided as-is, features may change, no fee during the pilot",
+            "Owner responsible for ticket accuracy, totals, and how techs are paid",
+            "Owner must have the right to enter techs' names and work records",
+            "Totals are a record-keeping aid — not payroll, tax or legal advice",
+            "No payments or tips are processed",
+            "Owner edits take precedence over tech edits; every change stays in the history",
+            "California law, as in the studio's other terms"
           ]
         }
       ]

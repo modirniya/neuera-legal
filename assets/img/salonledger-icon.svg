@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Salon Ledger">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d9467a"/>
+      <stop offset="1" stop-color="#9c2a58"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#g)"/>
+  <path d="M148 104h216v304l-27-18-27 18-27-18-27 18-27-18-27 18-27-18-27 18z" fill="#fff"/>
+  <rect x="184" y="160" width="144" height="18" rx="9" fill="#9c2a58"/>
+  <rect x="184" y="212" width="104" height="14" rx="7" fill="#e7a6bf"/>
+  <rect x="184" y="248" width="120" height="14" rx="7" fill="#e7a6bf"/>
+  <rect x="184" y="284" width="88" height="14" rx="7" fill="#e7a6bf"/>
+  <rect x="184" y="330" width="144" height="4" rx="2" fill="#9c2a58"/>
+</svg>
