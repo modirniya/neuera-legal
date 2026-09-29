@@ -31,13 +31,13 @@ APP = "salonledger"
 APP_NAME = "Salon Ledger"
 SITE = "https://legal.neuera.app"
 
-CURRENT = "2026-09-28"
-EFFECTIVE = "September 28, 2026"
+CURRENT = "2026-09-29"
+EFFECTIVE = "September 29, 2026"
 
 VERSIONS = {
     "privacy": [
         {
-            "version": "2026-09-28",
+            "version": "2026-09-29",
             "effective_date": EFFECTIVE,
             "summary": "Initial Privacy Policy for Salon Ledger, published during its closed "
                        "pilot. Salon Ledger replaces the paper service-ticket pad in a nail salon: "
@@ -77,7 +77,7 @@ VERSIONS = {
     ],
     "terms": [
         {
-            "version": "2026-09-28",
+            "version": "2026-09-29",
             "effective_date": EFFECTIVE,
             "summary": "Initial Terms of Use for Salon Ledger, covering its closed pilot. The "
                        "agreement is with the salon owner, who invites techs to use it. The "
