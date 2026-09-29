@@ -1138,6 +1138,11 @@ ul.commitments-list li { margin-bottom: var(--space-2); }
 .product--playlounge { --card-accent: var(--app-playlounge); }
 .product--rpsmafia   { --card-accent: var(--app-rpsmafia); }
 .product--odo        { --card-accent: var(--app-odo); }
+
+/* Odo's icon is a blue body on a transparent margin. The accent fill would show through that
+   margin as a green frame, so the frame is white instead, behind the body. */
+.app-card--odo .app-card__icon,
+.product--odo .product-hero__icon { background: var(--surface); }
 .product--kalum      { --card-accent: var(--app-kalum); }
 .product--salonledger { --card-accent: var(--app-salonledger); }
 
