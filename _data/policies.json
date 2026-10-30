@@ -8,9 +8,10 @@
         {
           "version": "2026-10-30",
           "effective_date": "October 30, 2026",
-          "summary": "Two Section 4 entries brought in line with the apps. Play Lounge: voice chat has been removed from the app and its server, so the sentence describing optional push-to-talk voice is deleted. RPS Mafia: game nights, which seat strangers together by voice, are now for adults only, so the entry adds the one new Tier B record that requires: whether a player has declared they are 18 or over, a yes or no made on the player's device and kept with their player identity, with the date of birth never sent or stored. No tier definition, operating rule, other app's position or advertising disclosure changed.",
+          "summary": "Three Section 4 entries brought in line with the apps. Odo: the entry now says your records never leave your device through the app, and that your phone's own Google or iCloud device backup may include them. Play Lounge: voice chat has been removed from the app and its server, so the sentence describing optional push-to-talk voice is deleted. RPS Mafia: game nights, which seat strangers together by voice, are now for adults only, so the entry adds the one new Tier B record that requires: whether a player has declared they are 18 or over, a yes or no made on the player's device and kept with their player identity, with the date of birth never sent or stored. No tier definition, operating rule, other app's position or advertising disclosure changed.",
           "file": "2026-10-30.html",
           "highlights": [
+            "Odo entry in Section 4 notes that the phone's own device backup may include Odo's records",
             "Play Lounge entry in Section 4 no longer mentions voice, which has been removed from the app",
             "RPS Mafia entry in Section 4 adds the adult declaration as Tier B: a yes or no, never the date of birth",
             "No change to the Tier A / Tier B definitions or to the five operating rules",
