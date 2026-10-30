@@ -207,8 +207,49 @@
     "name": "Play Lounge",
     "description": "Multiplayer board game platform for web and mobile",
     "privacy": {
-      "current_version": "2026-07-27",
+      "current_version": "2026-11-01",
       "versions": [
+        {
+          "version": "2026-11-01",
+          "effective_date": "November 1, 2026",
+          "summary": "This version brings the policy in line with Play Lounge as it works today. It names the iOS app alongside Android and the website, and replaces the earlier description of data being “deleted when you close the app” with what actually happens: the random player ID and session token last up to 24 hours so you can reconnect, a game interrupted by a server restart is saved to disk until it ends or for 24 hours, and connection logs with your IP address and user agent are kept by our host for up to 30 days. It discloses daily usage totals per platform, the support form and where support messages go (our own support server, and Telegram), and that the website’s banner for our other apps reports daily show and tap totals. Section 5 now has a retention table, Children’s Privacy describes how COPPA applies to the technical data the game uses, and the Google Play data safety summary is updated to match. There is still no account, no advertising and no profile.",
+          "file": "2026-11-01.html",
+          "highlights": [
+            "Covers the iOS app (live.playlounge.ios) as well as Android and the website",
+            "Section 2 lists everything collected: player ID, session token, room codes, connection data, daily usage counts and support messages",
+            "Section 2 lists exactly what is kept in your browser or app storage; still no cookies",
+            "Section 3: the banner for our other apps is website-only and reports daily show and tap totals, with no advertising ID or profile",
+            "Section 5 retention table replaces “deleted when you close the app”; connection logs kept up to 30 days",
+            "Section 6 adds our support server, Telegram and our email provider, and a Support form paragraph",
+            "Section 7 restates COPPA in terms of the data the game actually uses and how a child’s support message is handled",
+            "Sections 14 and 15 updated to match; no third-party advertising, still"
+          ]
+        },
+        {
+          "version": "2026-10-30",
+          "effective_date": "October 30, 2026",
+          "summary": "Voice chat has been removed from Play Lounge permanently; it is no longer in the app or on our server. This version removes every passage that described it: Section 8 “Voice Chat” and its table-of-contents entry, the voice audio item in Section 2, the LiveKit voice relay in Section 6 and in International Data Transfers, the voice paragraphs in Section 7 “Children’s Privacy”, the voice clause in Our Privacy Commitments, and the audio entry in the Google Play data safety summary. Audio recordings stay on the list of things we do not collect. The sections that followed Section 8 are renumbered 8 to 16. No other privacy practice changed.",
+          "file": "2026-10-30.html",
+          "highlights": [
+            "Voice chat is no longer part of Play Lounge, so no audio is collected or relayed",
+            "Section 8 “Voice Chat” removed; the sections after it are renumbered 8 to 16",
+            "LiveKit voice relay removed from third-party services and international transfers",
+            "Children’s Privacy no longer describes a 13+ voice feature",
+            "Google Play data safety summary no longer lists audio",
+            "No other change to what is collected, storage or your rights"
+          ]
+        },
+        {
+          "version": "2026-09-23",
+          "effective_date": "September 23, 2026",
+          "summary": "Names NeuEra Apps LLC as the operator of Play Lounge. Earlier versions named the operator as “NeuEra Apps” and listed an individual by name in the contact section. This version names the legal entity, NeuEra Apps LLC, instead. The introduction and Section 17 “Contact Us” are updated to match. No privacy practices changed.",
+          "file": "2026-09-23.html",
+          "highlights": [
+            "Play Lounge is operated by NeuEra Apps LLC",
+            "No individual is named as operator in the contact section",
+            "No change to what is collected, voice chat, storage or your rights"
+          ]
+        },
         {
           "version": "2026-07-27",
           "effective_date": "July 27, 2026",
@@ -246,8 +287,49 @@
       ]
     },
     "terms": {
-      "current_version": "2026-07-27",
+      "current_version": "2026-11-01",
       "versions": [
+        {
+          "version": "2026-11-01",
+          "effective_date": "November 1, 2026",
+          "summary": "This version brings the terms in line with Play Lounge as it works today and with the Privacy Policy published the same day. It names the iOS app alongside Android and the website, adds iOS 15 or later to the technical requirements, and replaces every statement that data is “deleted when you close the app” with a pointer to the Privacy Policy’s retention table. Section 7.2 adds our support server and Telegram for support messages, Section 9.3 drops references to third-party advertisements, Section 14 replaces “family-friendly advertisements” with “no third-party advertising” and restates COPPA, and Sections 2.3 and 5.3 now say the banner for our other apps is website-only and reports daily totals. Governing law stays California.",
+          "file": "2026-11-01.html",
+          "highlights": [
+            "Covers the iOS app as well as Android and the website (Sections 1.1, 2.1, 3.4, 6.2, 8.4, 12.1)",
+            "Section 8.4 adds iOS 15 or later",
+            "Sections 2.2, 3.1, 7.1 and 12.3: session data is short-lived, per the Privacy Policy, rather than deleted on app close",
+            "Section 7.2 adds our support server and Telegram (support messages only)",
+            "Sections 2.3 and 5.3: the banner for our other apps is website-only and reports daily show and tap totals",
+            "Sections 9.3 and 14.1: no third-party advertising references remain",
+            "Section 14.2 restates COPPA in line with the Privacy Policy",
+            "No change to conduct rules, age rating or governing law"
+          ]
+        },
+        {
+          "version": "2026-10-30",
+          "effective_date": "October 30, 2026",
+          "summary": "Voice chat has been removed from Play Lounge permanently; it is no longer in the app or on our server. This version removes the terms that applied to it: the 13+ voice paragraph in Section 1.2, the voice item in Section 2.1, the voice description and “Voice Conduct” rules in Section 4.3, the voice sentence in Section 6.3, the LiveKit entry in Section 7.2 and the voice clause in Section 14.1. Section 4.3 now states only that Play Lounge has no text chat, messaging, profiles or user-generated content. No other terms changed.",
+          "file": "2026-10-30.html",
+          "highlights": [
+            "Voice chat is no longer part of Play Lounge",
+            "Section 1.2: the voice age restriction is removed; the Service remains rated PEGI 3 / Everyone",
+            "Section 4.3: voice description and Voice Conduct rules removed",
+            "Sections 2.1, 6.3, 7.2 and 14.1: voice references removed",
+            "No change to other conduct rules, age rating or governing law"
+          ]
+        },
+        {
+          "version": "2026-09-23",
+          "effective_date": "September 23, 2026",
+          "summary": "Names NeuEra Apps LLC as the company that operates Play Lounge and the party to these Terms. Earlier versions named the operator as “NeuEra Apps” and listed an individual by name in the contact section. This version names the legal entity, NeuEra Apps LLC, instead. The opening paragraph, the intellectual-property section, the entire-agreement clause and Section 16.4 “Service Operator” are updated to match. No other terms changed.",
+          "file": "2026-09-23.html",
+          "highlights": [
+            "These Terms are an agreement between you and NeuEra Apps LLC",
+            "Play Lounge’s content and software are owned by NeuEra Apps LLC or its licensors",
+            "No individual is named as operator",
+            "No change to conduct rules, voice chat, age rules or governing law"
+          ]
+        },
         {
           "version": "2026-07-27",
           "effective_date": "July 27, 2026",
