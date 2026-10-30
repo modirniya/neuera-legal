@@ -118,7 +118,7 @@
                         <li><strong>Not Tracking:</strong> We do NOT track your movements, routes, or location history. Just a single point per entry.</li>
                         <li><strong>Completely Optional:</strong> You can deny location permission and the app works perfectly without it</li>
                         <li><strong>Local Storage:</strong> Location coordinates are stored only in the local database on your device</li>
-                        <li><strong>No Transmission:</strong> Location data is never sent to our servers or any third party</li>
+                        <li><strong>No Transmission:</strong> Odo never sends your location data to our servers or to any third party. The one exception is the map: when Odo shows a map, your phone requests map tiles from OpenStreetMap&rsquo;s tile servers, and those requests reveal the approximate area being displayed (the tile coordinates) and your device&rsquo;s IP address to OpenStreetMap (see Section 6)</li>
                         <li><strong>User Control:</strong> Location data is included in CSV exports so you have full access to it</li>
                     </ul>
 
@@ -177,7 +177,7 @@
                     <h4>OpenStreetMap (Map Display)</h4>
                     <ul>
                         <li><strong>Purpose:</strong> Display map tiles when viewing location snapshots</li>
-                        <li><strong>What's Sent:</strong> Only the map tile coordinates needed to display the map view (not your personal data)</li>
+                        <li><strong>What's Sent:</strong> When a map is shown, your phone requests map tiles directly from OpenStreetMap&rsquo;s tile servers. Each request reveals the tile coordinates (the approximate area being displayed) and your device&rsquo;s IP address. Your trip, expense and vehicle records are not sent</li>
                         <li><strong>No Tracking:</strong> OpenStreetMap does not track users and has no advertising</li>
                         <li><strong>Privacy Policy:</strong> <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">OpenStreetMap Foundation Privacy Policy</a></li>
                     </ul>
@@ -192,7 +192,7 @@
                         <li>No authentication providers</li>
                         <li>No payment processors</li>
                     </ul>
-                    <p>Your trip data, expense data, and personal information are never sent to any third party. OpenStreetMap only receives the coordinates needed to render map tiles.</p>
+                    <p>Your trip data, expense data, and personal information are never sent to any third party. OpenStreetMap receives only what any map tile request carries: the tile coordinates of the area being displayed and your device&rsquo;s IP address.</p>
                 </section>
 
                 <section id="data-security">
