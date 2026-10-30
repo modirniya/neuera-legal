@@ -26,11 +26,38 @@ APP = "rpsmafia"
 APP_NAME = "RPS Mafia"
 SITE = "https://legal.neuera.app"
 
-CURRENT = "2026-09-08"
-EFFECTIVE = "September 8, 2026"
+CURRENT = "2026-10-30"
+EFFECTIVE = "October 30, 2026"
 
 VERSIONS = {
     "privacy": [
+        {
+            "version": "2026-10-30",
+            "effective_date": EFFECTIVE,
+            "summary": "Game nights — the scheduled games that seat strangers together by voice — "
+                       "are now for adults only, and this version says how that is enforced. "
+                       "Reserving, moving or checking in to a game night needs an adult "
+                       "declaration made on your device: the device asks for your date of birth "
+                       "and sends our server only whether you are 18 or over, never the date. The "
+                       "first answer stands. The server refuses game-night seats to anyone "
+                       "without that declaration. Private games that a host invites people to "
+                       "stay open from 13. The policy now also describes muting, says that "
+                       "reporting a player also blocks them, and that reports reach a human "
+                       "moderator who can ban. Voice is still relayed live and never recorded. "
+                       "The only new thing held is the adult yes-or-no answer.",
+            "file": "2026-10-30.html",
+            "highlights": [
+                "Game nights are 18+, enforced by the server",
+                "Your device sends only whether you are an adult; the date of birth never "
+                "leaves it",
+                "The first answer stands and cannot be changed by answering again",
+                "Private games a host invites you to stay 13+",
+                "Report, block and mute are available in every game; a report also blocks and "
+                "reaches a human moderator, who can ban",
+                "Voice is still relayed live and never recorded",
+                "New record disclosed: the adult yes-or-no answer, kept with your account",
+            ],
+        },
         {
             "version": "2026-09-08",
             "effective_date": "September 8, 2026",
@@ -56,7 +83,7 @@ VERSIONS = {
         },
         {
             "version": "2026-09-07",
-            "effective_date": EFFECTIVE,
+            "effective_date": "September 7, 2026",
             "summary": "Initial Privacy Policy for RPS Mafia, published before the game leaves "
                        "early access. Documents the account system (anonymous by default, with "
                        "optional Google or Apple sign-in), the scheduling records that game "
@@ -91,6 +118,29 @@ VERSIONS = {
     ],
     "terms": [
         {
+            "version": "2026-10-30",
+            "effective_date": EFFECTIVE,
+            "summary": "Game nights are now for adults only. The age section and the game-night "
+                       "section say that reserving, moving or checking in to a game night needs "
+                       "an adult declaration made on your device, that the server enforces it, "
+                       "and that the first answer stands. Private games that a host invites "
+                       "people to stay open from 13. The reports section now covers muting, says "
+                       "that a report also blocks the player and is read by a human moderator, "
+                       "and that moderators can ban. Section 3 makes clear that \"no game master\" "
+                       "is about who runs the game, not about those moderators. No other term "
+                       "changed.",
+            "file": "2026-10-30.html",
+            "highlights": [
+                "Game nights are 18+, enforced by the server",
+                "Private games a host invites you to stay 13+",
+                "The first age answer stands; misstating your age remains a breach",
+                "Report, block and mute available in every game",
+                "A report also blocks, and is read by a human moderator who can ban",
+                "Section 3: no game master runs the game; human moderators review reports",
+                "No other term changed",
+            ],
+        },
+        {
             "version": "2026-09-08",
             "effective_date": "September 8, 2026",
             "summary": "The age section now describes the check rather than only stating the "
@@ -108,7 +158,7 @@ VERSIONS = {
         },
         {
             "version": "2026-09-07",
-            "effective_date": EFFECTIVE,
+            "effective_date": "September 7, 2026",
             "summary": "Initial Terms of Use for RPS Mafia. Sets a minimum age of 13, describes "
                        "what the service is and what it is not, and sets out the conduct rules "
                        "for a game played by live voice between people who may be strangers. "
@@ -136,18 +186,21 @@ VERSIONS = {
 # Shared chrome — matches the hand-written pages elsewhere on this site.
 # ==================================================================================================
 
-def head(title: str, description: str, canonical: str | None) -> str:
+def head(title: str, description: str, canonical: str | None, noindex: bool = False) -> str:
     canon = f'\n    <link rel="canonical" href="{canonical}">' if canonical else ""
+    robots = '\n    <meta name="robots" content="noindex">' if noindex else ""
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">{robots}
     <meta name="description" content="{html.escape(description, quote=True)}">
     <meta property="og:title" content="{html.escape(title, quote=True)}">
     <meta property="og:description" content="{html.escape(description, quote=True)}">
     <title>{html.escape(title)}</title>
-    <link rel="stylesheet" href="/assets/css/style.css?v=5">
+    <link rel="icon" href="/assets/img/neuera-icon.png" type="image/png">
+    <link rel="apple-touch-icon" href="/assets/img/neuera-icon.png">
+    <link rel="stylesheet" href="/assets/css/style.css?v=6">
     <link rel="stylesheet" href="/assets/css/print.css?v=5" media="print">{canon}
 </head>
 <body>
@@ -316,7 +369,7 @@ def version_page(kind: str, sections, title, description, version: str) -> str:
     label = "Privacy Policy" if kind == "privacy" else "Terms of Use"
     return (
         head(f"{title} - Version {version}", description,
-             f"{SITE}/{APP}/{kind}/versions/{version}.html")
+             f"{SITE}/{APP}/{kind}/versions/{version}.html", noindex=True)
         + breadcrumb(f"{label} {version}")
         + f"""
     <main class="main-content" id="main">
@@ -421,12 +474,13 @@ def app_index() -> str:
                     <p>A free social deduction game played by voice in the browser. Reserve a seat at
                     a scheduled game night or start a private table with a code. Voice is relayed
                     live and never recorded, and the state of a game exists only while it is being
-                    played. 13+.</p>
+                    played. Private games 13+; game nights 18+.</p>
                     <div>
                         <span class="feature-tag">Web</span>
                         <span class="feature-tag">Free</span>
                         <span class="feature-tag">Voice</span>
                         <span class="feature-tag">13+</span>
+                        <span class="feature-tag">18+ game nights</span>
                     </div>
                 </div>
                 <div class="product-hero__actions">
@@ -492,12 +546,16 @@ PRIVACY = [
         "slot you reserved, whether you were present when it opened, and whether you were seated "
         "at a table. From those we keep two running counts — games you were seated in, and times "
         "you showed up — and a reliability standing derived from them.",
+        "<strong>Your adult declaration.</strong> Game nights are for players 18 and over. To "
+        "reserve, move or check in to one, your device tells our server whether you are an adult "
+        "— yes or no, and nothing more. We keep that answer with your account. Your date of "
+        "birth is not sent. See <a href=\"#age-check\">How We Check Your Age</a>.",
         "<strong>Reminders.</strong> If you ask to be reminded before a game night starts, we "
         "store the notification token your device issues and which platform it came from. That is "
         "what a reminder is delivered to. Turn reminders off and the token is deleted.",
         "<strong>Reports and blocks.</strong> If you report another player, we store who reported, "
-        "who was reported, and the reason you wrote. If you block someone, we store that pair so "
-        "the two of you are not seated together again.",
+        "who was reported, and the reason you wrote. A report also blocks that player. If you "
+        "block someone, we store that pair so the two of you are not seated together again.",
         "<strong>Voice.</strong> While you are in a game your microphone audio is relayed live "
         "through a server we operate. It is not recorded, not stored, not transcribed and not "
         "listened to. See <a href=\"#voice\">Voice</a> below.",
@@ -522,8 +580,8 @@ PRIVACY = [
         "you marketing.",
         "<strong>No chat transcripts.</strong> The game is played by voice; there is no text chat "
         "to keep.",
-        "<strong>No date of birth.</strong> You are asked for one once, to check your age. It is "
-        "used for that and discarded — see below.",
+        "<strong>No date of birth.</strong> You are asked for one to check your age. It is used "
+        "for that on your device and discarded — see below.",
     )),
 
     ("charter", "How This Fits Our Data Charter", P(
@@ -545,6 +603,9 @@ PRIVACY = [
         "apart.",
         "<strong>Reminder tokens</strong> are Tier B for the plainest reason there is: a "
         "notification has to be delivered to a particular device.",
+        "<strong>Your adult declaration</strong> is Tier B because game nights seat strangers "
+        "together by voice and are for adults only. The server can keep a seat from someone who "
+        "has not declared they are an adult only if it knows the answer for that account.",
     ) + "\n" + P(
         "We do not keep per-event behavioural records beyond these. There is no log of which "
         "screens you visited, how long you looked at them, or what you did inside a game.",
@@ -558,6 +619,7 @@ PRIVACY = [
         "To hold your reservation for a game night, and to build full tables from the players who "
         "actually arrived.",
         "To send the reminder you asked for, and to tell you when your table is ready.",
+        "To keep game nights to players who have declared they are 18 or over.",
         "To act on reports, to keep blocked players apart, and to remove people who make the game "
         "unpleasant for everyone else.",
         "To keep the service running, diagnose faults, and prevent abuse.",
@@ -575,7 +637,8 @@ PRIVACY = [
         "for cannot be delivered.",
         "<strong>Consent</strong> for push reminders and for the microphone. Both are optional, "
         "both are asked for, and both can be withdrawn at any time.",
-        "<strong>Legitimate interests</strong> for reports, blocks, reliability standing, server "
+        "<strong>Legitimate interests</strong> for your adult declaration, reports, blocks, "
+        "reliability standing, server "
         "logs and abuse prevention — our interest, and every other player's, in a game that is not "
         "ruined by a few people. You may object to processing on this basis; see "
         "<a href=\"#your-rights\">Your Rights</a>.",
@@ -608,6 +671,8 @@ PRIVACY = [
         "token stops working, whichever comes first.",
         "<strong>Game-night reservations and attendance</strong> — kept while your account exists, "
         "because your reliability standing is derived from them.",
+        "<strong>Your adult declaration</strong> — kept while your account exists, because the "
+        "first answer is the one that stands.",
         "<strong>Reports and blocks</strong> — kept while your account exists. A block that expired "
         "would defeat its purpose, and a report we deleted could not inform a decision later.",
         "<strong>Server logs</strong> — short-lived operational retention.",
@@ -647,6 +712,15 @@ PRIVACY = [
         "If the date puts you below the minimum age, the game says so and stops there. That "
         "outcome is remembered on that device and you are not asked again, because a check you can "
         "retry until it passes is not a check.",
+        "<strong>Game nights are for adults.</strong> A game night seats you by voice with "
+        "strangers, so it is for players 18 and over. Before you can reserve, move or check in to "
+        "one, you declare on your device that you are an adult: the device asks for your date of "
+        "birth, works out whether you are 18 or over, and sends our server only that yes-or-no "
+        "answer — never the date. The first answer stands; answering again does not change it. "
+        "Our server checks that declaration and will not reserve, move or check in a seat "
+        "without it.",
+        "<strong>Private games stay 13+.</strong> A private game that a host invites people to "
+        "needs no adult declaration. The minimum age of 13 applies.",
         "We should be plain about what this is and is not. It is a declared-age check: it asks, and "
         "it believes you. Anyone determined to type a different year will get through, and no "
         "self-declared check has ever prevented that. What it does is keep the game closed to a "
@@ -661,6 +735,9 @@ PRIVACY = [
         "The reason is specific rather than legalistic: this is a live voice game played with "
         "people you have not met, in which lying convincingly is the object. That is not a "
         "suitable environment for a child.",
+        "Game nights, which seat strangers together, are for adults only: they need an adult "
+        "declaration, which our server checks, as described above. Players aged 13 to 17 can "
+        "play only in private games that a host invites them to.",
         "This is enforced by the age check described above, which every player passes before "
         "reaching the game. We do not knowingly collect information from anyone under 13, and a "
         "player whose answer puts them below that age never gets as far as an account. If you "
@@ -685,7 +762,9 @@ PRIVACY = [
         "<strong>Refuse the microphone.</strong> Your browser will ask, and you can say no or "
         "change your mind later in browser or device settings.",
         "<strong>Turn reminders off.</strong> The stored token is deleted when you do.",
-        "<strong>Block someone.</strong> You will not be seated with them again.",
+        "<strong>Mute, block or report someone.</strong> You can do all three in every game. "
+        "Muting a player silences them for you, on your device. Blocking means you will not be seated with them "
+        "again. Reporting also blocks them and sends the report to a human moderator.",
         "<strong>Delete your account.</strong> See below.",
     )),
 
@@ -716,8 +795,8 @@ PRIVACY = [
     ("store-disclosures", "App Store Disclosures", P(
         "For the Google Play Data Safety form and Apple's privacy labels, the data types "
         "associated with you are: an account identifier, the nickname you choose, your game-night "
-        "attendance records, the reports and blocks you create, and a notification token if you "
-        "enable reminders. Audio is collected in the sense that it passes through our server, and "
+        "attendance records, your adult declaration (yes or no, not your date of birth), the "
+        "reports and blocks you create, and a notification token if you enable reminders. Audio is collected in the sense that it passes through our server, and "
         "is <strong>not stored</strong>. No data is used for advertising or for tracking across "
         "other companies' apps and websites.",
     )),
@@ -767,14 +846,22 @@ TERMS = [
         "puts you below the minimum age, that is the end of it on that device — the game says so, "
         "remembers it, and does not ask again. The date itself is not kept; see the "
         "<a href=\"/rpsmafia/privacy/#age-check\">Privacy Policy</a>.",
-        "Giving a false date of birth to get past that check is a breach of these terms.",
+        "<strong>Game nights are for adults only.</strong> A game night seats you by voice with "
+        "people you have not met, so you must be 18 or over to reserve, move or check in to one. "
+        "Before you do, you declare on your device that you are an adult; the device asks for "
+        "your date of birth and tells us only whether you are 18 or over. The first answer "
+        "stands. Our server enforces this and will not seat anyone at a game night without that "
+        "declaration.",
+        "Private games that a host invites people to are open to everyone aged 13 or over.",
+        "Giving a false date of birth to get past either check is a breach of these terms.",
     )),
 
     ("service", "3. What the Service Is", P(
         "RPS Mafia is a free social deduction game for five to twelve players, played in a browser "
         "with live voice. A server runs the game: it deals the roles, runs the night, resolves "
-        "every action and decides who may speak and when. There is no human narrator and no "
-        "moderator sitting out of the game.",
+        "every action and decides who may speak and when. There is no human narrator or game "
+        "master sitting out of the game. That is separate from the human moderators who review "
+        "player reports; see <a href=\"#reports\">Section 8</a>.",
         "You can play in two ways. Start a private table and share its code with people you "
         "already know, or reserve a seat at a scheduled game night and be matched with other "
         "players who did the same.",
@@ -836,13 +923,17 @@ TERMS = [
     )),
 
     ("reports", "8. Reports, Blocks and Enforcement", P(
+        "You can report, block and mute other players in every game, whether it is a game night "
+        "or a private game.",
         "If a player behaves badly you can report them. A report records who was reported, who "
-        "reported them, and the reason you wrote. Reports are read by a person.",
-        "You can also block a player, which is separate from reporting and needs no justification. "
-        "Blocked players are not seated at the same table as you again.",
+        "reported them, and the reason you wrote. Reporting a player also blocks them. Reports "
+        "are read by a human moderator.",
+        "You can also block a player without reporting them; it needs no justification. "
+        "Blocked players are not seated at the same table as you again. Muting a player "
+        "silences them for you, on your device.",
         "Do not file false reports. A report is a call on somebody else's time and standing, and "
         "using it to punish a player for beating you is itself a breach of these terms.",
-        "Where a breach is established we may warn, suspend or permanently remove an account, and "
+        "Where a breach is established our moderators may warn, suspend or ban an account, and "
         "may do so without notice where the behaviour is serious. If your account is removed for "
         "abuse, we may keep the minimum record needed to enforce that removal, as explained in the "
         "<a href=\"/rpsmafia/privacy/#your-rights\">Privacy Policy</a>.",
@@ -851,6 +942,8 @@ TERMS = [
     ("game-nights", "9. Game Nights", P(
         "A game night is a scheduled table you reserve a seat at. Reserving is a commitment to "
         "turn up, because seven other people are relying on it.",
+        "Game nights are for players 18 and over. Reserving, moving and checking in all need the "
+        "adult declaration described in <a href=\"#age\">Section 2</a>.",
         "You are seated only if you are present when the table opens. A night that too few players "
         "attend is cancelled rather than run badly, and you will be offered the next slots with "
         "room in them. We do not guarantee that any particular night will run, or that you will be "
