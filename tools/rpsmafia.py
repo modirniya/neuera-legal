@@ -126,7 +126,9 @@ VERSIONS = {
                        "and that the first answer stands. Private games that a host invites "
                        "people to stay open from 13. The reports section now covers muting, says "
                        "that a report also blocks the player and is read by a human moderator, "
-                       "and that moderators can ban. No other term changed.",
+                       "and that moderators can ban. Section 3 makes clear that \"no game master\" "
+                       "is about who runs the game, not about those moderators. No other term "
+                       "changed.",
             "file": "2026-10-30.html",
             "highlights": [
                 "Game nights are 18+, enforced by the server",
@@ -134,6 +136,7 @@ VERSIONS = {
                 "The first age answer stands; misstating your age remains a breach",
                 "Report, block and mute available in every game",
                 "A report also blocks, and is read by a human moderator who can ban",
+                "Section 3: no game master runs the game; human moderators review reports",
                 "No other term changed",
             ],
         },
@@ -471,12 +474,13 @@ def app_index() -> str:
                     <p>A free social deduction game played by voice in the browser. Reserve a seat at
                     a scheduled game night or start a private table with a code. Voice is relayed
                     live and never recorded, and the state of a game exists only while it is being
-                    played. 13+.</p>
+                    played. Private games 13+; game nights 18+.</p>
                     <div>
                         <span class="feature-tag">Web</span>
                         <span class="feature-tag">Free</span>
                         <span class="feature-tag">Voice</span>
                         <span class="feature-tag">13+</span>
+                        <span class="feature-tag">18+ game nights</span>
                     </div>
                 </div>
                 <div class="product-hero__actions">
@@ -759,7 +763,7 @@ PRIVACY = [
         "change your mind later in browser or device settings.",
         "<strong>Turn reminders off.</strong> The stored token is deleted when you do.",
         "<strong>Mute, block or report someone.</strong> You can do all three in every game. "
-        "Muting a player silences them for you. Blocking means you will not be seated with them "
+        "Muting a player silences them for you, on your device. Blocking means you will not be seated with them "
         "again. Reporting also blocks them and sends the report to a human moderator.",
         "<strong>Delete your account.</strong> See below.",
     )),
@@ -855,8 +859,9 @@ TERMS = [
     ("service", "3. What the Service Is", P(
         "RPS Mafia is a free social deduction game for five to twelve players, played in a browser "
         "with live voice. A server runs the game: it deals the roles, runs the night, resolves "
-        "every action and decides who may speak and when. There is no human narrator and no "
-        "moderator sitting out of the game.",
+        "every action and decides who may speak and when. There is no human narrator or game "
+        "master sitting out of the game. That is separate from the human moderators who review "
+        "player reports; see <a href=\"#reports\">Section 8</a>.",
         "You can play in two ways. Start a private table and share its code with people you "
         "already know, or reserve a seat at a scheduled game night and be matched with other "
         "players who did the same.",
@@ -925,7 +930,7 @@ TERMS = [
         "are read by a human moderator.",
         "You can also block a player without reporting them; it needs no justification. "
         "Blocked players are not seated at the same table as you again. Muting a player "
-        "silences them for you.",
+        "silences them for you, on your device.",
         "Do not file false reports. A report is a call on somebody else's time and standing, and "
         "using it to punish a player for beating you is itself a breach of these terms.",
         "Where a breach is established our moderators may warn, suspend or ban an account, and "
