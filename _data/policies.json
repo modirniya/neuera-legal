@@ -3,8 +3,21 @@
     "name": "NeuEra Apps",
     "description": "Studio-wide commitments that apply across every NeuEra Apps product",
     "data_charter": {
-      "current_version": "2026-10-30",
+      "current_version": "2026-11-03",
       "versions": [
+        {
+          "version": "2026-11-03",
+          "effective_date": "November 3, 2026",
+          "summary": "The Tier A definition in Section 2.2 is widened by one thing. Until now a Tier A measurement could keep running totals only, with no time of any kind. It may now also keep a daily total, but a daily total carries nothing except the day, the kind of event and the number: no destination, no country, no device type, nothing that could be lined up against the other totals to place one kind of person on one day. The day is assigned by our server when the event arrives, never sent by the app, and totals are written in batches, never one event at a time. Nothing finer than a day, no identifier and no row per event is allowed, as before. The Summary is updated to match. Kalum's entry in Section 4 now describes its five measurements in these terms, says its landing pages are counted per campaign but never by day, and describes the refused-call measurement as covering the calls Kalum's server declines to connect for any reason, not only routes that exist to generate charges. Section 5 now discloses that Kalum's Android app includes Google Analytics for Firebase, which the previous version did not mention; that measurement is Google's, follows Google's practices rather than this Charter, and is not Tier A. No Tier B rule, operating rule or other app's position changed.",
+          "file": "2026-11-03.html",
+          "highlights": [
+            "Tier A (Section 2.2) may now keep a daily total that records only the day, the kind of event and the number, with the day set by our server and totals written in batches",
+            "Still no identifier, no time finer than a day and no row per event in Tier A",
+            "Kalum entry in Section 4: all five measurements are Tier A under the new definition; landing pages counted per campaign but never by day; refused calls counted for every reason the server declines a call",
+            "Section 5 discloses Google Analytics for Firebase in Kalum's Android app, outside this Charter and not Tier A",
+            "No change to Tier B, to the five operating rules, or to any other app's position"
+          ]
+        },
         {
           "version": "2026-10-30",
           "effective_date": "October 30, 2026",
@@ -452,8 +465,22 @@
     "name": "Kalum",
     "description": "Prepaid VoIP international calling app",
     "privacy": {
-      "current_version": "2026-08-17",
+      "current_version": "2026-11-03",
       "versions": [
+        {
+          "version": "2026-11-03",
+          "effective_date": "November 3, 2026",
+          "summary": "A new §2.12 explains how we keep the anonymous measurements in §2.6 to §2.10. Besides running totals, which carry no date at all, we now keep one total per day for each kind of event, recording only the day, the kind of event and the number — no destination, country, platform or campaign. Our server sets the day and writes the totals in batches at most once an hour. §2.12 also says what is never kept or logged, that test accounts are left out, that daily totals are kept for 13 months and then combined by month, and that small counts are shown as “fewer than 3”. §2.8: landing-page visits are now counted per campaign with no date, where the previous version kept a count per campaign per day. This version also corrects two things the previous one got wrong. §2.10 said we count only calls refused because the destination exists mainly to generate charges; in fact our server counts every call it declines to connect, for any of several reasons such as a balance too low for the call or a safety limit, and records up to the first three digits of the national number and, when the refusal was about cost, how many digits matched our cost list and a broad cost band. §4.1 said Kalum uses no analytics SDK, but the Android app includes Google Analytics for Firebase; §2.13, §4.1 and §9 now disclose it. §2.13 also lists the other records that this measurement standard does not cover.",
+          "file": "2026-11-03.html",
+          "highlights": [
+            "§2.12 (new): running totals with no date, plus daily totals that record only the day, the kind of event and the number",
+            "§2.8: landing-page counts are kept per campaign with no date",
+            "§2.10 corrected: refused calls are counted for every reason the server declines a call, not only charge-generating routes, with up to three national digits and, for cost refusals, the matched prefix length and a cost band",
+            "§2.13 (new), §4.1 and §9 corrected: the Android app includes Google Analytics for Firebase; the iOS app does not",
+            "§9: retention of running totals, daily totals and Google Analytics data stated separately",
+            "No change to what you provide, to payment or call records, or to your rights"
+          ]
+        },
         {
           "version": "2026-08-17",
           "effective_date": "August 17, 2026",
