@@ -61,7 +61,7 @@
                 <header class="document-header">
                     <h2>Kalum Privacy Policy</h2>
                     <div class="document-meta">
-                        <span class="version-badge">Version: <time datetime="2026-10-06">2026-10-06</time></span>
+                        <span class="version-badge">Version: DRAFT (set the publication date before publishing)</span>
                         <span class="effective-date">Effective Date: <time datetime="2026-10-06">October 6, 2026</time></span>
                     </div>
                 </header>
@@ -151,13 +151,13 @@
 
                     <h4>2.6 Aggregate Demand Measurement</h4>
                     <p>When you look up the price of calling a destination, we add one to a running count for that destination. The count records the destination's country calling code and at most the first three digits of the national number &mdash; never the full number you entered, and never who entered it. Where a country's calling code is four digits or longer, no national digits are recorded at all. Alongside those, each count records whether the request came from a verified copy of the app, whether it arrived with a sign-in token attached, and whether the device was iOS or Android. Nothing in that identifies the device or the person using it.</p>
-                    <p>This measurement carries <strong>no identifier, no timestamp on any count and no record of individual events</strong>. It cannot be connected to your account, to a call you placed, or to any other lookup. What we hold is a total per destination, and it cannot be separated back out &mdash; by us or by anyone else. A small total may reflect a single lookup; even then it records nothing about who made it or when. We keep one date for the measurement as a whole &mdash; when the current counting period began &mdash; which says nothing about any individual lookup.</p>
+                    <p>This measurement carries <strong>no identifier, no time on any per-destination count and no record of individual events</strong>. It cannot be connected to your account, to a call you placed, or to any other lookup. What we hold is a total per destination, and it cannot be separated back out &mdash; by us or by anyone else. A small total may reflect a single lookup; even then it records nothing about who made it or when. Besides these totals we keep a single daily total of all lookups, with no destination or other detail, as Section 2.12 describes, and one date for the measurement as a whole &mdash; the day the current counting period began &mdash; which says nothing about any individual lookup.</p>
                     <p>We use it to learn which destinations people actually want to call, including the ones they price and then decide against, so that we can negotiate better rates on those routes. It is not used to build a profile of you, to target advertising, or for any automated decision affecting you.</p>
                     <p>Because this data identifies no one, <strong>there is no record within it that we can retrieve or delete in response to an access or erasure request</strong>. That is a consequence of the design rather than a limit on our willingness. See the <a href="https://legal.neuera.app/data/">NeuEra Apps Data Practices Charter</a> for the standard we apply to measurements of this kind.</p>
 
                     <h4>2.7 Aggregate Call-Quality Measurement</h4>
                     <p>After some calls the app asks, with a single tap, how the call was. It asks more often after a call that appears to have gone wrong &mdash; one that dropped, reconnected, or ended within seconds of connecting &mdash; and only occasionally after a call that went well. You can skip it, and it disappears on its own after ten seconds. It is never a question about the app, and it never leads to a request to rate the app in an app store.</p>
-                    <p>Your answer is <strong>counted, not recorded</strong>. We add one to a running count for the destination's country calling code, the device platform (iOS or Android), the answer (up, down or skipped) and, for a thumbs-down, each issue you tagged. As in Section 2.6, this carries no identifier, no timestamp on any count and no record of individual answers. It cannot be connected to your account or to the call you rated, and it cannot be separated back out. There is deliberately no free-text field: a fixed list of issues is what keeps this measurement anonymous.</p>
+                    <p>Your answer is <strong>counted, not recorded</strong>. We add one to a running count for the destination's country calling code, the device platform (iOS or Android), the answer (up, down or skipped) and, for a thumbs-down, each issue you tagged. As in Section 2.6, this carries no identifier, no time on any per-destination count and no record of individual answers; the only dated figures are the daily totals described in Section 2.12, which record no destination or platform. It cannot be connected to your account or to the call you rated, and it cannot be separated back out. There is deliberately no free-text field: a fixed list of issues is what keeps this measurement anonymous.</p>
                     <p>We use it to see which routes have quality problems and of what kind, so that a pattern of dropped or one-way calls to one destination becomes a routing or carrier decision rather than a complaint we never heard. Because this data identifies no one, there is no record within it that we can retrieve or delete in response to an access or erasure request.</p>
                     <p>Separately from this count, and only if you answer, the same rating and the first issue you tagged are attached to the record of that call held by Twilio, our voice carrier, so that your experience can be compared against Twilio's own network measurements for that call. Section 4.1 describes this sharing and Section 9 its retention.</p>
 
@@ -167,13 +167,13 @@
 
                     <h4>2.9 Aggregate Setup Measurement</h4>
                     <p>As you set the app up for the first time, we add one to a running count at each step you reach: opening the app for the first time, looking at a destination's rate, creating an account, looking at the credit packs, starting a purchase, completing one, and placing a first call. Each count records the step, the destination's country calling code where the step has one, the device platform (iOS or Android) and the app version. If your phone is set to a country where we cannot open accounts yet, the app also counts that, recording that country's calling code in place of a destination's; this is the only count here that says where a phone is set rather than where a call would go. We also try two versions of the first-run experience; which one a device sees is decided by a coin flip made on the device itself, stored only there, and the counts record which of the two it was as a single letter. No server chooses it and no server learns which device drew what.</p>
-                    <p>As in Section 2.6, this carries <strong>no identifier, no timestamp on any count and no record of individual events</strong>. It cannot be connected to your account, to a call you placed, or to any other step you took &mdash; including the other steps in your own setup, which is why this measurement can say how many people reached a step but never that any particular person did. Opening the app for the first time, and a phone set to a country where we cannot open accounts yet, are each sent at most once from a device. A first purchase and a first call are sent at most once for an account created on that device, and never for an existing account that signs in there. So each of those totals is a number of devices or of new accounts, not a number of taps. We keep one date for the measurement as a whole, when the current counting period began, which says nothing about any individual step.</p>
+                    <p>As in Section 2.6, this carries <strong>no identifier, no time on any detailed count and no record of individual events</strong>; the only dated figures are the daily totals described in Section 2.12, which record the step and nothing else. It cannot be connected to your account, to a call you placed, or to any other step you took &mdash; including the other steps in your own setup, which is why this measurement can say how many people reached a step but never that any particular person did. Opening the app for the first time, and a phone set to a country where we cannot open accounts yet, are each sent at most once from a device. A first purchase and a first call are sent at most once for an account created on that device, and never for an existing account that signs in there. So each of those totals is a number of devices or of new accounts, not a number of taps. We keep one date for the measurement as a whole, the day the current counting period began, which says nothing about any individual step.</p>
                     <p>We use it to find where setting the app up goes wrong &mdash; the step where people stop &mdash; and to tell whether a change to the first-run experience actually helps. It is not used to build a profile of you, to target advertising, or for any automated decision affecting you.</p>
                     <p>Because this data identifies no one, there is no record within it that we can retrieve or delete in response to an access or erasure request.</p>
 
                     <h4>2.10 Aggregate Refused-Call Measurement</h4>
-                    <p>A small number of destinations are ones we do not connect calls to, because they are routes that exist mainly to generate charges rather than to carry conversations. When a call is refused for that reason, we add one to a running count for the destination's country calling code and the reason it was refused. The number you dialled is not recorded, and neither is the fact that it was you who dialled it.</p>
-                    <p>As in Section 2.6, this carries <strong>no identifier, no timestamp on any count and no record of individual refusals</strong>. It cannot be connected to your account or to any call attempt, and it cannot be separated back out. A refused call is not charged to you, and a refusal is not a judgement about you &mdash; the same destination is refused for everyone.</p>
+                    <p>Sometimes our server declines to connect a call before dialling it. The most common reasons are that the destination is one we do not connect calls to (because it is a route that exists mainly to generate charges, a destination we cannot lawfully serve, or one we do not sell), that the balance does not cover the call, or that a safety limit applies, such as too many calls started too quickly or too many at once. When that happens, we add one to a running count recording the reason, the destination's country calling code and, as in Section 2.6, at most the first three digits of the national number. Where the refusal was about the route's cost, the count also records how many digits of the destination matched our cost list and, in broad bands, how far that cost exceeded our limit. The full number you dialled is not recorded, and neither is the fact that it was you who dialled it.</p>
+                    <p>As in Section 2.6, this carries <strong>no identifier, no time on any detailed count and no record of individual refusals</strong>; the only dated figures are the daily totals described in Section 2.12, which record the reason and nothing else. It cannot be connected to your account or to any call attempt, and it cannot be separated back out. A refused call is not charged to you. A refusal because of the destination is not a judgement about you: the same destination is refused for everyone.</p>
                     <p>We use it to see which routes are being probed and how often, so that the list of refused destinations stays as short as the problem allows rather than growing by guesswork. It is not used to build a profile of you, to target advertising, or for any automated decision affecting you.</p>
                     <p>Because this data identifies no one, there is no record within it that we can retrieve or delete in response to an access or erasure request.</p>
 
@@ -183,6 +183,29 @@
                     <p>What each side sees: the owner sees each member's phone number reduced to its last four digits and how much that member has spent from the family wallet this month. A member sees the owner's last four digits and how much they have left to spend. <strong>No one sees the numbers or countries anyone else called.</strong> A member is shown this before accepting an invitation.</p>
                     <p>We use this information to run the feature and to prevent its abuse: a family wallet is frozen if a payment by its owner is disputed. It is not used to build a profile of you, to target advertising, or for any automated decision affecting you beyond that freeze.</p>
                     <p>Leaving, being removed, the owner ending the family wallet, or deleting your account ends your membership. The records above are deleted with your account; what a member spent from the family wallet stays on the owner's transaction record, without any link to the member's calls.</p>
+                
+                    <h4 id="how-measurements-are-kept">2.12 How We Keep These Measurements</h4>
+                    <p>The measurements in Sections 2.6, 2.7, 2.9 and 2.10 are kept in two forms, and neither carries an identifier.</p>
+                    <ul>
+                        <li><strong>Running totals.</strong> The totals those sections describe, broken down as each section says (for example by destination calling code or device platform). A running total carries <strong>no date or time of any kind</strong>.</li>
+                        <li><strong>Daily totals.</strong> For each measurement we also keep one number per day for each kind of event &mdash; for example, how many price lookups there were on a given day, how many first calls, or how many calls were refused for lack of credit. A daily total records only <strong>the day, the kind of event from a fixed list, and the number</strong>. It records no destination, country, platform, app version or anything else, so it cannot be lined up with the running totals to place a particular destination or device on a particular day.</li>
+                    </ul>
+                    <p><strong>How the day is decided.</strong> Our server assigns the day (in Coordinated Universal Time) when an event arrives; the app never sends a time. Events are held in our server's memory and written in batches no more than once an hour, never one at a time, so what is stored does not show when within a day anything happened.</p>
+                    <p><strong>What is never kept.</strong> For these measurements we never store or log the exact time of an event, your account identifier, a device identifier, your IP address, your phone number, any digit of a dialled number beyond what Sections 2.6 and 2.10 describe, anything you typed, or a request identifier. The requests that carry setup steps and after-call ratings are not written to our server logs. To stop floods of automated requests, our server holds the sending IP address in memory for up to four hours and never writes it down.</p>
+                    <p><strong>Test accounts.</strong> Accounts that we use to test Kalum are marked as test accounts. Once a device has been signed in to one, the app on that device stops sending setup steps and after-call ratings, and our server does not count price lookups or refused calls from a signed-in test account. A test device may send a few setup steps once, before it is first signed in.</p>
+                    <p><strong>How long.</strong> Running totals are kept indefinitely. Daily totals are kept for 13 months; after that, each month's daily totals are combined into one total for the month, which is kept indefinitely.</p>
+                    <p><strong>How we look at them.</strong> In our own tools and in anything we export, after-call ratings are shown by week rather than by day, and any count below three is shown only as &ldquo;fewer than 3&rdquo;. We never copy a running total together with the date it was copied.</p>
+                    <p>Because none of this identifies anyone, there is no record within it that we can retrieve or delete in response to an access or erasure request.</p>
+
+                    <h4 id="outside-aggregate-measurement">2.13 What These Measurements Do Not Cover</h4>
+                    <p>Section 2.12 applies only to the measurements in Sections 2.6, 2.7, 2.9 and 2.10. The following are kept or collected differently, and we list them so the difference is clear:</p>
+                    <ul>
+                        <li><strong>Records we need to run the service.</strong> Calls, purchases, refunds and accounts (Section 2.2) keep exact times, because billing, financial record-keeping and fraud prevention require them.</li>
+                        <li><strong>Campaign landing pages</strong> are counted per campaign per day, as Section 2.8 describes.</li>
+                        <li><strong>Google Analytics for Firebase, on Android only.</strong> The Android app includes Google's Firebase Analytics library, which automatically collects app usage events (such as the app being opened for the first time, a session starting, or the app being updated) together with a pseudonymous app-instance identifier and device information such as the model and operating-system version, and sends them to Google. We do not log any events of our own to it and we do not connect it to your Kalum account. It is Google's measurement, follows Google's practices rather than the standard in Section 2.12, and is not anonymous in the way the totals above are. The iOS app does not include it.</li>
+                        <li><strong>Crash diagnostics</strong> from Firebase Crashlytics, as described in Section 2.2.</li>
+                        <li><strong>After-call ratings shared with Twilio.</strong> If you answer the after-call rating, it is also attached to that call's record at Twilio, as described in Sections 2.7 and 4.1.</li>
+                    </ul>
                 </section>
 
                 <section id="how-we-use">
@@ -254,7 +277,7 @@
                             </tr>
                             <tr>
                                 <td>Keep the list of refused destinations no longer than needed</td>
-                                <td>Aggregate counts of refusals per destination and reason (Section 2.10)</td>
+                                <td>Aggregate counts of refusals per destination and reason, and daily totals per reason (Sections 2.10 and 2.12)</td>
                                 <td>Legitimate interest</td>
                             </tr>
                             <tr>
@@ -304,6 +327,11 @@
                                 <td>Anonymous installation ID, device and OS version, stack traces, app state at crash</td>
                             </tr>
                             <tr>
+                                <td><strong>Google Analytics for Firebase</strong> (Google LLC) &mdash; Android app only</td>
+                                <td>App usage events collected automatically by the Firebase library (Section 2.13)</td>
+                                <td>Pseudonymous app-instance identifier, device model, operating-system version, app version, and automatically collected events such as first open, session start and app update</td>
+                            </tr>
+                            <tr>
                                 <td><strong>Twilio Inc.</strong></td>
                                 <td>Voice call routing over the public telephone network</td>
                                 <td>Account identifier, destination phone number, call control signaling, call audio (in transit only), and &mdash; only where you answer the optional after-call rating &mdash; that rating and issue tag, attached to the call's record so it can be compared against Twilio's network measurements (jitter, packet loss, delay) for the same call. Your own phone number is not passed to Twilio as the caller ID: the person you call sees a shared outbound number of ours (Terms of Use, Section 4.3).</td>
@@ -332,7 +360,7 @@
                     <ul>
                         <li>Voice call audio flows directly between your device and Twilio's servers using encrypted media streams. Our servers never receive, decode, or store call audio.</li>
                         <li>Payment card details (PAN, CVV, expiry) are submitted from your device directly to Apple (iOS) or Stripe (Android, web). We never receive, process, or store card numbers.</li>
-                        <li>We do <strong>not</strong> integrate any analytics, telemetry, or advertising SDKs (no Sentry, Mixpanel, Amplitude, AppsFlyer, Adjust, Facebook SDK, or similar).</li>
+                        <li>We do <strong>not</strong> integrate any advertising SDK, and no analytics SDK other than Google Analytics for Firebase in the Android app (Section 2.13): no Sentry, Mixpanel, Amplitude, AppsFlyer, Adjust, Facebook SDK, or similar.</li>
                     </ul>
 
                     <h4>4.2 Legal Requirements</h4>
@@ -498,8 +526,16 @@
                                 <td>Per Firebase Crashlytics defaults (typically 90 days)</td>
                             </tr>
                             <tr>
-                                <td>De-identified aggregate analytics</td>
-                                <td>Indefinitely</td>
+                                <td>Running totals of the measurements in Sections 2.6&ndash;2.10</td>
+                                <td>Indefinitely; they identify no one</td>
+                            </tr>
+                            <tr>
+                                <td>Daily totals of those measurements (Section 2.12)</td>
+                                <td>13 months, then combined into monthly totals kept indefinitely</td>
+                            </tr>
+                            <tr>
+                                <td>Google Analytics for Firebase (Android app only)</td>
+                                <td>Per the retention setting of our Google Analytics property, under Google's terms</td>
                             </tr>
                         </tbody>
                     </table>
