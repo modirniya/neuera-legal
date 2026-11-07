@@ -3,8 +3,20 @@
     "name": "NeuEra Apps",
     "description": "Studio-wide commitments that apply across every NeuEra Apps product",
     "data_charter": {
-      "current_version": "2026-11-03",
+      "current_version": "2026-11-12",
       "versions": [
+        {
+          "version": "2026-11-12",
+          "effective_date": "November 12, 2026",
+          "summary": "Play Lounge’s entry in Section 4 is rewritten to say what the app keeps. It now discloses Play Lounge’s first Tier B record and the reason for it: a return counter that answers whether people come back, which no total can answer because a total cannot say that two visits were the same device. Each device makes a random identifier, not derived from the device, the network address or the person; the server keeps only a scrambled form of it, the platform, the first and last day it was seen and whether it came back within 7 and 28 days, deletes the record 90 days after the last visit, and joins it to nothing. The entry also names two things the previous version left out although the Privacy Policy already disclosed them: connection logs kept by the host for up to 30 days, and support messages deleted once resolved and at most after 90 days. No tier definition, operating rule, other app’s position or advertising disclosure changed.",
+          "file": "2026-11-12.html",
+          "highlights": [
+            "Play Lounge entry in Section 4 discloses its first Tier B record, the return counter, with the reason a total cannot answer the question",
+            "What the counter keeps and for how long: a hashed random identifier, platform, first and last day seen, 7- and 28-day return flags; deleted 90 days after the last visit; joined to nothing",
+            "The entry now also names connection logs (up to 30 days) and support messages (until resolved, at most 90 days), already in the Privacy Policy",
+            "No change to the Tier A / Tier B definitions, the five operating rules, any other app’s position, or the advertising disclosures"
+          ]
+        },
         {
           "version": "2026-11-03",
           "effective_date": "November 3, 2026",
@@ -220,8 +232,23 @@
     "name": "Play Lounge",
     "description": "Multiplayer board game platform for web and mobile",
     "privacy": {
-      "current_version": "2026-11-01",
+      "current_version": "2026-11-12",
       "versions": [
+        {
+          "version": "2026-11-12",
+          "effective_date": "November 12, 2026",
+          "summary": "This version adds one thing: a return counter. To learn whether people come back to Play Lounge, the app and the website now store a random identifier on your device and send it to our server when the app connects. It is a random number, not derived from your device, your network address or anything about you; it is not an account and is never shared. Our server keeps only a scrambled (hashed) form of it, the platform, the first and last day it was seen, and whether it came back within 7 and 28 days, solely to count how many visitors are new and how many return, and deletes the record 90 days after your last visit. Section 2 describes it and corrects the list of what we do not collect (your device’s own identifiers, still never); Sections 4, 5, 7, 9, 14 and 15 are updated to match, including how COPPA applies to it and how to remove it. Nothing else changed: still no accounts, no advertising, no profile, no third-party analytics.",
+          "file": "2026-11-12.html",
+          "highlights": [
+            "Section 2 adds the return counter: a random device identifier, kept hashed on our server with the first and last day seen and 7- and 28-day return flags, deleted 90 days after your last visit",
+            "Section 2: your device’s own identifiers (IMEI, MAC address, advertising ID) are still never collected",
+            "Section 4: used only to count new and returning visitors",
+            "Section 5 retention table: return counter row, 90 days after the last visit",
+            "Section 7: the counter is a persistent identifier used only for internal operations; never to contact a child, profile or advertise",
+            "Section 9: clearing site data or uninstalling removes it; email us to have the server record removed sooner",
+            "Sections 14 and 15 updated to match; no other change"
+          ]
+        },
         {
           "version": "2026-11-01",
           "effective_date": "November 1, 2026",
