@@ -232,8 +232,25 @@
     "name": "Play Lounge",
     "description": "Multiplayer board game platform for web and mobile",
     "privacy": {
-      "current_version": "2026-11-12",
+      "current_version": "2026-11-20",
       "versions": [
+        {
+          "version": "2026-11-20",
+          "effective_date": "November 20, 2026",
+          "summary": "This version adds two things. First, your record: with or without an account, your browser or the app now keeps how many games you won, drew and lost in each game, and how many days in a row you played; it stays on your device and is sent to us only if you sign in. Second, optional accounts on our website, for ages 13 and up: you can sign in with Google or Apple to keep your record and your running score with other signed-in players on every device. Your email, name and photo stay with Google Firebase and never reach our server; other players see only a game name we make up, like “Brave Otter 42”. Sections 2, 4, 5, 6, 7, 9, 11, 14 and 15 describe what an account holds, why, for how long, and how to delete it. The retention table gains a “why we keep it” column and is corrected to match the service: no IP address or user agent in our logs, which are kept 7 days; games saved across a restart are kept at most 1 hour; room codes last 2 hours at most. A full written retention policy is published alongside. Anonymous play is unchanged, and the Android and iOS apps don't offer sign-in yet.",
+          "file": "2026-11-20.html",
+          "highlights": [
+            "Section 2: your record, kept on your device with or without an account",
+            "Section 2: optional accounts on playlounge.live for ages 13+, with Google or Apple sign-in through Google Firebase; what Firebase holds and what our server holds; the age check",
+            "Other players see only a made-up game name, never your name, email or photo",
+            "Section 4: account data is used only to sign you in, keep your record and saved scores, protect sign-in, and delete everything when you ask",
+            "Section 5: retention table with a “why we keep it” column; accounts expire after two years (730 days) unused; logs hold no IP address or user agent and are kept 7 days; games saved across a restart at most 1 hour; room codes 2 hours at most",
+            "Section 6: Google Firebase Authentication, Sign in with Apple and Sign in with Google",
+            "Section 7 rewritten: mixed-audience service under COPPA, accounts for ages 13 and up only, shared devices, our postal address and telephone",
+            "Section 9: how to delete an account and what deletion removes",
+            "Sections 8, 10, 11, 12, 14 and 15 updated to match; new Data Retention Policy page"
+          ]
+        },
         {
           "version": "2026-11-12",
           "effective_date": "November 12, 2026",
@@ -328,8 +345,20 @@
       ]
     },
     "terms": {
-      "current_version": "2026-11-01",
+      "current_version": "2026-11-20",
       "versions": [
+        {
+          "version": "2026-11-20",
+          "effective_date": "November 20, 2026",
+          "summary": "This version adds Section 3.5, Accounts (optional): accounts are available on our website for ages 13 and up, are for one person, can be deleted at any time, and are deleted after two years (730 days) without use; records and saved scores have no monetary value. Sections 1.1, 2.2, 3.1, 4.3, 7.1, 7.2, 12.1, 12.3, 14.1 and 14.2 now say that an account is optional and what it changes. Playing without an account is unchanged.",
+          "file": "2026-11-20.html",
+          "highlights": [
+            "New Section 3.5, Accounts (optional): ages 13+, one person, your sign-in, our right to end an account (including after 730 days unused), your right to delete it, no monetary value",
+            "Sections 1.1, 2.2, 3.1, 7.1 and 12: an account is optional and available on the website only",
+            "Section 4.3: signed-in players are shown under a game name we make up; nobody can type one",
+            "Section 7.2 adds Google Firebase Authentication; Section 14 says accounts are for ages 13 and up"
+          ]
+        },
         {
           "version": "2026-11-01",
           "effective_date": "November 1, 2026",
@@ -404,6 +433,22 @@
             "Anonymous multiplayer gameplay",
             "California law governance",
             "Binding arbitration for disputes"
+          ]
+        }
+      ]
+    },
+    "retention": {
+      "current_version": "2026-11-20",
+      "versions": [
+        {
+          "version": "2026-11-20",
+          "effective_date": "November 20, 2026",
+          "summary": "First version: Play Lounge's written data-retention policy, including for children's personal information under COPPA. For each item it says what it is, why we keep it, how long, and how it is deleted.",
+          "file": "index.html",
+          "highlights": [
+            "What we keep, why, for how long, and how it is deleted",
+            "Accounts are deleted after 730 days without use",
+            "Nothing about a child is kept indefinitely"
           ]
         }
       ]

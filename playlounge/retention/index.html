@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play Lounge Data Retention Policy - what Play Lounge keeps, why, and when it is deleted.">
+    <meta property="og:title" content="Play Lounge Data Retention Policy">
+    <meta property="og:description" content="What Play Lounge keeps, why, and when it is deleted.">
+    <title>Play Lounge Data Retention Policy - NeuEra Apps</title>
+    <link rel="icon" href="/assets/img/neuera-icon.png" type="image/png">
+    <link rel="apple-touch-icon" href="/assets/img/neuera-icon.png">
+    <link rel="stylesheet" href="/assets/css/style.css?v=6">
+    <link rel="stylesheet" href="/assets/css/print.css?v=5" media="print">
+    <link rel="canonical" href="https://legal.neuera.app/playlounge/retention/">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="brand" aria-label="NeuEra Apps home">
+                <span class="brand-mark"><img src="/assets/img/neuera-icon.png" alt=""></span>
+                <span>NeuEra Apps</span>
+            </a>
+            <nav class="main-nav" aria-label="Main">
+                <a href="/apps/" class="nav-hide-sm">Apps</a>
+                <a href="/about/" class="nav-hide-sm">About</a>
+                <a href="/legal/" class="active">Legal</a>
+                <a href="/contact/" class="btn btn--outline btn--sm">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <div class="container">
+            <a href="/">Home</a>
+            <span class="breadcrumb-sep">/</span>
+            <a href="/legal/">Legal</a>
+            <span class="breadcrumb-sep">/</span>
+            <a href="/legal/#playlounge">Play Lounge</a>
+            <span class="breadcrumb-sep">/</span>
+            <span aria-current="page">Data Retention Policy</span>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="policy-header">
+                <div class="policy-meta">
+                    <span class="current-badge">Current Version</span>
+                    <div class="version-info">
+                        <span class="version-number">Version 2026-11-20</span>
+                        <span class="effective-date">Effective: November 20, 2026</span>
+                    </div>
+                </div>
+                <div class="policy-actions">
+                    <a href="/playlounge/privacy/" class="btn btn-secondary">Privacy Policy</a>
+                    <button onclick="window.print()" class="btn btn-outline">Print Policy</button>
+                </div>
+            </div>
+
+            <article class="legal-document current-document" data-version="2026-11-20" data-product="playlounge">
+                <header class="document-header">
+                    <h2>Play Lounge Data Retention Policy</h2>
+                    <div class="document-meta">
+                        <span class="version-badge">Version: <time datetime="2026-11-20">2026-11-20</time></span>
+                        <span class="effective-date">Effective Date: <time datetime="2026-11-20">November 20, 2026</time></span>
+                    </div>
+                </header>
+
+                <section id="purpose">
+                    <h3>1. Purpose and Owner</h3>
+                    <p>This policy covers the personal information Play Lounge holds, including persistent identifiers from users of any age, and it is our written data-retention policy for children&rsquo;s personal information under the U.S. Children&rsquo;s Online Privacy Protection Act (COPPA). NeuEra Apps LLC owns it and reviews it every year, and whenever a new kind of data is added. The retention table in Section 5 of our <a href="/playlounge/privacy/">Privacy Policy</a> summarises it.</p>
+                </section>
+
+                <section id="rule">
+                    <h3>2. Rule</h3>
+                    <p>We keep each item only as long as the purpose below needs. Deletion is automatic wherever the software can do it. Nothing is kept &ldquo;just in case&rdquo;, and nothing about a child is kept indefinitely.</p>
+                </section>
+
+                <section id="schedule">
+                    <h3>3. Retention Schedule</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Purpose</th>
+                                <th>Retention</th>
+                                <th>How it is deleted</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Random player ID</td>
+                                <td>Run the game; reconnect you</td>
+                                <td>Until you disconnect, plus a 3-minute grace period in a game; it can be restored for 24 hours through the session token</td>
+                                <td>Automatic</td>
+                            </tr>
+                            <tr>
+                                <td>Session token</td>
+                                <td>Reconnect you</td>
+                                <td>24 hours</td>
+                                <td>Automatic: it expires; signing out revokes it</td>
+                            </tr>
+                            <tr>
+                                <td>Room code</td>
+                                <td>Private games</td>
+                                <td>5 minutes without activity, 2 hours at most</td>
+                                <td>Automatic</td>
+                            </tr>
+                            <tr>
+                                <td>Game checkpoint (two random player IDs and the board)</td>
+                                <td>Resume a game across a server restart</td>
+                                <td>Deleted when the game ends; at most 1 hour, swept every 15 minutes</td>
+                                <td>Automatic</td>
+                            </tr>
+                            <tr>
+                                <td>Missed result</td>
+                                <td>Tell a player the result of a game they missed</td>
+                                <td>15 minutes</td>
+                                <td>Automatic (server memory)</td>
+                            </tr>
+                            <tr>
+                                <td>Running score between players without accounts</td>
+                                <td>Show the running score</td>
+                                <td>30 minutes without a game; lost on a server restart</td>
+                                <td>Automatic (server memory)</td>
+                            </tr>
+                            <tr>
+                                <td>IP address</td>
+                                <td>Daily visitor counts, de-duplicating visits, protecting the service from abuse</td>
+                                <td>Server memory only: a scrambled form for the day&rsquo;s visitor count, the address itself for the day to de-duplicate visits, and 30 minutes for the promotion banner&rsquo;s click filter. Never logged or written to disk</td>
+                                <td>Automatic</td>
+                            </tr>
+                            <tr>
+                                <td>Daily totals</td>
+                                <td>Run and improve the service</td>
+                                <td>Kept; they hold no identifier, IP address or free text</td>
+                                <td>&mdash;</td>
+                            </tr>
+                            <tr>
+                                <td>Return counter (scrambled random device identifier, platform, first and last day seen, days visited, return flags)</td>
+                                <td>Count new and returning visitors</td>
+                                <td>90 days after the device&rsquo;s last visit</td>
+                                <td>Automatic, daily. Never joined to a player ID or an account</td>
+                            </tr>
+                            <tr>
+                                <td>Server logs (random player IDs and technical events; no IP address, user agent or token)</td>
+                                <td>Find and fix faults</td>
+                                <td>7 days</td>
+                                <td>Automatic (our host&rsquo;s log retention)</td>
+                            </tr>
+                            <tr>
+                                <td>Disk snapshots of our server&rsquo;s database</td>
+                                <td>Disaster recovery</td>
+                                <td>5 days</td>
+                                <td>Automatic (our host)</td>
+                            </tr>
+                            <tr>
+                                <td>Support messages (email, optional first name, message)</td>
+                                <td>Answer the request</td>
+                                <td>Until resolved, at most 90 days. A child&rsquo;s email address is used to reply once, then deleted</td>
+                                <td>By hand</td>
+                            </tr>
+                            <tr>
+                                <td>Account (Firebase user ID, provider, created / last used / last sign-out times, generated game name)</td>
+                                <td>Sign-in; saved scores; signing out everywhere; the game name shown to opponents</td>
+                                <td>Until the account is deleted, or 730 days (two years) without use</td>
+                                <td>Automatic: the account-deletion path, and a daily sweep for accounts not used for 730 days</td>
+                            </tr>
+                            <tr>
+                                <td>Saved scores between signed-in players</td>
+                                <td>Keep the score across devices</td>
+                                <td>Deleted with either player&rsquo;s account, including when it expires</td>
+                                <td>Automatic, with the account</td>
+                            </tr>
+                            <tr>
+                                <td>The player&rsquo;s record (per game and level: won, lost, drawn and left-early totals, last updated)</td>
+                                <td>Show the player their own record on every device</td>
+                                <td>Deleted with the account, including when it expires. No game history is kept</td>
+                                <td>Automatic, with the account</td>
+                            </tr>
+                            <tr>
+                                <td>Record-merge fingerprints (one-way fingerprint of a one-off random code, time)</td>
+                                <td>Add a device&rsquo;s record to the account only once</td>
+                                <td>Deleted with the account</td>
+                                <td>Automatic, with the account</td>
+                            </tr>
+                            <tr>
+                                <td>The device&rsquo;s own record (totals per game, days played in a row, results waiting for an account)</td>
+                                <td>Show the player their record, with or without an account</td>
+                                <td>On the device only; never sent while signed out</td>
+                                <td>The player: clearing the site&rsquo;s data or uninstalling the app</td>
+                            </tr>
+                            <tr>
+                                <td>Firebase deletion queue (Firebase user ID, attempts, next attempt)</td>
+                                <td>Finish deleting the Firebase user if Google can&rsquo;t be reached</td>
+                                <td>Until Google confirms the deletion: about 9 hours of automatic retries, then completed by hand within 30 days</td>
+                                <td>Automatic, then by hand</td>
+                            </tr>
+                            <tr>
+                                <td>Deleted-account fingerprint (one-way fingerprint of the user ID, deletion time)</td>
+                                <td>Stop a still-signed-in device from re-creating a deleted account</td>
+                                <td>30 days</td>
+                                <td>Automatic, daily</td>
+                            </tr>
+                            <tr>
+                                <td>Email, name, photo and user ID at Google Firebase</td>
+                                <td>Sign-in</td>
+                                <td>Until the account is deleted; our server asks Google to delete them</td>
+                                <td>Automatic</td>
+                            </tr>
+                            <tr>
+                                <td>Age-check answer</td>
+                                <td>Decide whether sign-in is offered</td>
+                                <td>Never leaves the browser; only a &ldquo;not eligible until&rdquo; date is kept, for one year</td>
+                                <td>Automatic (the browser)</td>
+                            </tr>
+                            <tr>
+                                <td>An account found to belong to a child under 13</td>
+                                <td>None</td>
+                                <td>Deleted as soon as we learn of it</td>
+                                <td>By hand, through the same deletion path</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>Database rows deleted from the live database also leave the disk snapshots within 5 days.</p>
+                </section>
+
+                <section id="requests">
+                    <h3>4. Deletion Requests</h3>
+                    <p>We answer a deletion request sent to <a href="mailto:hello@neuera.app">hello@neuera.app</a> within 30 days, and delete through the same path as in-app account deletion. We record only the date and that it was done, never the email address.</p>
+                </section>
+
+                <section id="contact">
+                    <h3>5. Contact</h3>
+                    <address>
+                        NeuEra Apps LLC, 1968 S. Coast Hwy #2044, Laguna Beach, CA 92651<br>
+                        (818) 641-0005 &middot; <a href="mailto:hello@neuera.app">hello@neuera.app</a>
+                    </address>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <a href="/" class="brand" style="margin-bottom: var(--space-3);">
+                        <span class="brand-mark"><img src="/assets/img/neuera-icon.png" alt=""></span>
+                        <span>NeuEra Apps</span>
+                    </a>
+                    <p>An independent app studio based in the United States.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Apps</h4>
+                    <ul>
+                        <li><a href="/netcloak/">NetCloak VPN</a></li>
+                        <li><a href="/playlounge/">Play Lounge</a></li>
+                        <li><a href="/rpsmafia/">RPS Mafia</a></li>
+                        <li><a href="/odometer/">Odo</a></li>
+                        <li><a href="/kalum/">Kalum</a></li>
+                        <li><a href="/salonledger/">Salon Ledger</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Studio</h4>
+                    <ul>
+                        <li><a href="/about/">About</a></li>
+                        <li><a href="/contact/">Contact</a></li>
+                        <li><a href="/legal/">Legal</a></li>
+                        <li><a href="/data/">Data Practices</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Elsewhere</h4>
+                    <ul>
+                        <li><a href="https://apps.apple.com/us/developer/neuera-apps/id1895216844" rel="noopener" target="_blank">App Store</a></li>
+                        <li><a href="https://play.google.com/store/apps/developer?id=NeuEra+Apps" rel="noopener" target="_blank">Google Play</a></li>
+                        <li><a href="mailto:hello@neuera.app">hello@neuera.app</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 NeuEra Apps LLC. All rights reserved.</span>
+                <span>Built independently in the United States.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/toc.js?v=2" defer></script>
+</body>
+</html>
